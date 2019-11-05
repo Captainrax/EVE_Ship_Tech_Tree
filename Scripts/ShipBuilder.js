@@ -46,7 +46,7 @@ Hawk.seticon("Scripts/images/603.png");
 var Harpy = new Ship("Harpy", "Frigate");
 Harpy.seticon("Scripts/images/603.png");
 var Crow = new Ship("Crow", "Frigate");
-Crow.seticon("../Captainrax.github.ioScripts/images/Crow.png");
+Crow.seticon("Scripts/images/Crow.png");
 var Raptor = new Ship("Raptor", "Frigate");
 Raptor.seticon("Scripts/images/583.png");
 
