@@ -52,7 +52,7 @@ Raptor.seticon("Scripts/images/583.png");
 
 var Hookbill = new Ship("Hookbill", "Frigate");
 Hookbill.seticon("Scripts/images/Hookbill.png");
-var Griffin_Navy = new Ship("Griffin_Navy_Issue", "Frigate");
+var Griffin_Navy = new Ship("Griffin Navy Issue", "Frigate");
 Griffin_Navy.seticon("Scripts/images/584.png");
 
 var Cormorant = new Ship("Cormorant", "Destroyer");
