@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="StyleSheets/Index.css" rel="stylesheet" />
+    <link href="StyleSheets/ShowShip.css" rel="stylesheet" />
+
+    <script src="Scripts/EventListeners.js" defer></script>
+    <script src="Scripts/ShipBuilder.js" defer></script>
+    <script src="Scripts/DraggableDiv.js" defer></script>
+    
+    <title>EvE Ship Tree</title>
+</head>
+
+<body>
+
+<div id="ship_div">
+    <div class="ship_div_title">
+        <pre id="close">x</pre>
+        <pre class="ship_title_name">Bantam (Frigate): Information</pre>
+    </div>
+    <div class="ship_div_header">
+        <div class="ship_div_header_img">
+            <img src="Scripts\images\582.png" id="Ship_img">
+        </div>
+        <div class="ship_div_header_name">
+            <pre class="ship_name">Bantam</pre>
+        </div>
+    </div>
+    <div class="ship_div_body">
+            <div class="ship_div_body_nav">
+                <ul class="ship_navbar">
+                    <li class="ship_tab active" id="ship_traits">    <p id="ship_traits_tab">Traits</p>  </li>
+                    <li class="ship_tab" id="ship_description">    <p id="ship_description_tab">Description</p>  </li>
+                    <li class="ship_tab" id="ship_attributes">    <p id="ship_attributes_tab">Attributes</p>  </li>
+                    <li class="ship_tab" id="ship_fitting">    <p id="ship_fitting_tab">Fitting</p>  </li>
+                    <li class="ship_tab" id="ship_requirements">    <p id="ship_requirements_tab">Requirements</p>  </li>
+                    <li class="ship_tab" id="ship_mastery">    <p id="ship_mastery_tab">Mastery</p>  </li>
+                    <li class="ship_tab" id="ship_variations">    <p id="ship_variations_tab">Variations</p>  </li>
+                    <li class="ship_tab" id="ship_industry">    <p id="ship_industry_tab">Industry</p>  </li>
+                    <li class="ship_tab" id="ship_skins">    <p id="ship_skins_tab">Skins</p>  </li>
+                </ul>
+            </div>
+            <div class="ship_div_body_content">
+                <div id="traits">
+                    <p>Traits</p>
+                    <img src="StyleSheets\borders\ship_class_border.png" alt="">
+                </div>
+                <div id="description">
+                    <p id="description_content">Description</p>
+                </div>
+                <div id="attributes"> 
+                    <p>Attributes</p>
+                </div>
+                <div id="fitting"> 
+                    <p>Fitting</p>
+                </div>
+                <div id="requirements"> 
+                    <p>Requirements</p>
+                </div>
+                <div id="mastery"> 
+                    <p>Mastery</p>
+                </div>
+                <div id="variations"> 
+                    <p>Variations</p>
+                </div>
+                <div id="industry"> 
+                    <p>Industry</p>
+                </div>
+                <div id="skins"> 
+                    <p>Skins</p>
+                </div>
+            </div>
+    </div>
+    
+</div>
+
+</body>
+</html>

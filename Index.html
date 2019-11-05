@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="StyleSheets/Index.css" rel="stylesheet" />
+    <link href="StyleSheets/Index_Lines.css" rel="stylesheet" />
+    <link href="StyleSheets/ShowShip.css" rel="stylesheet" />
+
+    <script src="Scripts/EventListeners.js" defer></script>
+    <script src="Scripts/DraggableDiv.js" defer></script>
+    
+        <script src="Scripts/ShipBuilder.js" defer></script>
+        <script src="Scripts/Caldari_Ship_Info.js" defer></script>
+
+    <title>EvE Ship Tree</title>
+</head>
+
+<body id="background">
+    <div class="grid-container">
+        
+        <div class="grid-item" id="item1">
+                <img src="StyleSheets\icons\caldari.png">
+        </div>
+
+        <div class="grid-item" id="item2">
+        
+                <div class="ship_class" id="ship_class_rookie"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_rookie1">
+                                   <div>
+                                        <img src="ship_tree_icons\transparent_background\Ibis_isis.png" id="ghost_img">
+                                   </div>
+                                </div>  
+                        </div>
+                </div>
+                
+        
+        </div>
+
+
+        <div class="grid-item" id="item3"></div>
+
+        <div class="grid-item" id="item4">
+
+                <div class="ship_class" id="ship_class_frigate"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon" id="showship_t2_frigate1">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Bantam_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                       
+                </div>
+
+
+                <div class="ship_class" id="ship_class_frigate"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon" id="showship_t2_frigate2">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Griffin_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                                       
+                </div>
+
+                <div class="ship_class" id="ship_class_frigate"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon" id="showship_t2_frigate3">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Heron_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon" id="showship_t2_frigate4">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Manticore_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                                       
+                </div>
+
+                <div class="ship_class" id="ship_class_frigate"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon" id="showship_t2_frigate5">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Merlin_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon" id="showship_t2_frigate6">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Merlin_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                                       
+                </div>
+
+                <div class="ship_class" id="ship_class_frigate"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon" id="showship_t2_frigate7">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Condor_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon" id="showship_t2_frigate8">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Condor_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                                      
+                </div>
+                
+
+        </div>
+
+        <div class="grid-item" id="item5">
+
+                <div class="ship_class" id="ship_class_frigate"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_navy">
+                                <div class="inner_ship_icon" id="showship_navy_frigate1">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Griffin_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon" id="ship_icon_navy">
+                                <div class="inner_ship_icon" id="showship_navy_frigate2">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Hookbill_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                
+
+        </div>
+
+        <div class="grid-item" id="item6">
+
+                <div class="ship_class" id="ship_class_frigate"></div>
+                <div class="ship-icon-alignment" id="ship-icon-alignment-2row">
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_frigate1">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Bantam_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_frigate2">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Condor_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_frigate3">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Griffin_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_frigate4">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Kestrel_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_frigate5">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Merlin_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_frigate6">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Heron_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+        </div>
+
+        <div class="grid-item" id="item7"></div>
+
+        <div class="grid-item" id="item8">
+
+                <div class="ship_class" id="ship_class_shuttle"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_shuttle">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Caldari_Shuttle_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+        </div>
+
+        <div class="grid-item" id="item9"></div>
+
+        <div class="grid-item" id="item10">
+
+                <div class="ship_class" id="ship_class_destroyer"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier3">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="StyleSheets\icons\caldari_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="ship_class" id="ship_class_destroyer"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Corax_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="ship_class" id="ship_class_destroyer"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Cormorant_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item11">
+
+                <div class="ship_class" id="ship_class_destroyer">
+
+                </div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_destroyer1">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Cormorant_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_destroyer2">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Corax_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item12"></div>
+
+        <div class="grid-item" id="item13"></div>
+
+        <div class="grid-item" id="item14">
+
+                <div class="ship_class" id="ship_class_cruiser">
+
+                </div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier3">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Tengu_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+        </div>
+
+        <div class="grid-item" id="item15">
+
+                <div class="ship_class" id="ship_class_cruiser"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Ibis_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="ship_class" id="ship_class_cruiser"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="StyleSheets\icons\caldari_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="ship_class" id="ship_class_cruiser"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="StyleSheets\icons\caldari_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Caracal_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="ship_class" id="ship_class_cruiser"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="StyleSheets\icons\caldari_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="StyleSheets\icons\caldari_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+        </div>
+
+        <div class="grid-item" id="item16">
+               <div class="ship_class" id="ship_class_cruiser">
+
+                </div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_navy">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Osprey_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon" id="ship_icon_navy">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Caracal_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item17">
+                <div class="ship_class" id="ship_class_cruiser">
+
+                </div>
+                <div class="ship-icon-alignment" id="ship-icon-alignment-2row">
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Osprey_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Caracal_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="StyleSheets\icons\caldari_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="StyleSheets\icons\caldari_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item18"></div>
+
+        <div class="grid-item" id="item19"></div>
+
+        <div class="grid-item" id="item20">
+                <div class="ship_class" id="ship_class_battlecruiser">
+
+                </div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Drake_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Ferox_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item21">
+                <div class="ship_class" id="ship_class_battlecruiser">
+
+                </div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_navy">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Drake_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item22">
+                <div class="ship_class" id="ship_class_battlecruiser">
+
+                </div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Ferox_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Drake_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Naga_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item23">
+                <div class="ship_class" id="ship_class_industrial">
+
+                </div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="StyleSheets\icons\caldari_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="StyleSheets\icons\caldari_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item24">
+                <div class="ship_class" id="ship_class_industrial"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="StyleSheets\icons\caldari_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="StyleSheets\icons\caldari_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item25">
+
+                <div class="ship_class" id="ship_class_battleship"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Golem_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="ship_class" id="ship_class_battleship"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Scorpion_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div  class="grid-item" id="item26">
+                <div class="ship_class" id="ship_class_battleship"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_navy">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Scorpion_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon" id="ship_icon_navy">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Raven_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item27">
+                <div class="ship_class" id="ship_class_battleship"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Scorpion_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Rokh_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Raven_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item28"></div>
+
+        <div class="grid-item" id="item29"></div>
+
+        <div class="grid-item" id="item30"></div>
+
+        <div class="grid-item" id="item31">
+
+                <div class="ship_class" id="ship_class_titan"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Leviathan_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item32">
+
+                <div class="ship_class" id="ship_class_superCapital"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="StyleSheets\icons\caldari_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Wyvern_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Chimera_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item33">
+
+               <div class="ship_class" id="ship_class_capital"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Phoenix_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item34">
+
+                <div class="ship_class" id="ship_class_freighter"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_tier2">
+                                <div class="inner_ship_icon" id="showship_t2_freighter">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Charon_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item35">
+
+                <div class="ship_class" id="ship_class_freighter"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_freighter">
+                                        <div>
+                                                <img src="ship_tree_icons\transparent_background\Charon_isis.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <hr class="background_line" id="line1">
+    <hr class="background_line" id="line2">
+    <hr class="background_line" id="line3">
+    <hr class="background_line" id="line4">
+    <hr class="background_line" id="line5">
+    <hr class="background_line" id="line6">
+    <hr class="background_line" id="line7">
+    <hr class="background_line" id="line8">
+    <hr class="background_line" id="line9">
+    <hr class="background_line" id="line10">
+    <hr class="background_line" id="line11">
+    <hr class="background_line" id="line12">
+    <hr class="background_line" id="line13">
+    <hr class="background_line" id="line14">
+    <hr class="background_line" id="line15">
+    <hr class="background_line" id="line16">
+    <hr class="background_line" id="line17">
+    <hr class="background_line" id="line18">
+    <hr class="background_line" id="line19">
+    <hr class="background_line" id="line20">
+    <hr class="background_line" id="line21">
+    <hr class="background_line" id="line22">
+    <hr class="background_line" id="line23">
+    <hr class="background_line" id="line24">
+    <hr class="background_line" id="line25">
+    <hr class="background_line" id="line26">
+    <hr class="background_line" id="line27">
+    <hr class="background_line" id="line28">
+    <hr class="background_line" id="line29">
+    <hr class="background_line" id="line30">
+    <hr class="background_line" id="line31">
+    <hr class="background_line" id="line32">
+    <hr class="background_line" id="line33">
+    <hr class="background_line" id="line34">
+    <hr class="background_line" id="line35">
+    <hr class="background_line" id="line36">
+    <hr class="background_line" id="line37">
+    <hr class="background_line" id="line38">
+
+    <p id="copyright">“©CCP hf. All rights reserved. Used with permission.</p>
+</body>
+
+</html> 

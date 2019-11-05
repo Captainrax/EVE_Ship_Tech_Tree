@@ -1,0 +1,308 @@
+html {
+  font-family: evesans;
+}
+@font-face {
+  font-family:"evesans";
+  src: url("evesansneue-regular.TTF") format("truetype");
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(11, 13, 22);
+    background-image: linear-gradient(rgba(241, 241, 241, 0.02) 1px, transparent 0%),
+      linear-gradient(90deg, rgba(241, 241, 241, 0.02) 1px, transparent 0%),
+      linear-gradient(rgba(241, 241, 241, 0.02) 1px, transparent 1%),
+      linear-gradient(90deg, rgba(241, 241, 241, 0.02) 1px, transparent 1%);
+    background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+}
+.grid-container {
+  background-image: url("../StyleSheets/icons/caldari_transparent.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-gap: 10px;
+  grid-auto-flow: column;
+  padding: 40px 0px 0px 20px;
+}
+.grid-item{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: rgba(255, 255, 255, 0);
+  height: 100px;
+  width: 230px;
+  gap: 2px 2px;
+}
+.ship-icon-alignment{
+  display: grid;
+  gap: 2px 20px;
+  grid-template-columns: 58px 58px 58px;
+  grid-template-rows: auto;
+  grid-auto-flow: column;
+}
+#ship-icon-alignment-2row{
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 58px 58px 58px;
+  grid-template-rows: auto auto;
+}
+#item1{
+  grid-row: 1 / 5;
+  height: 620px;
+}
+#item1 > img{
+  height: 80px;
+}
+#item2{
+  display: grid;
+  
+  height: 100px;
+}
+#item3 {
+  height: 100px;
+}
+#item4{
+  margin: 0px 40px;
+  display: grid;
+  grid-row: 1 / 3;
+  height: 400px;
+  width: 100px;
+}
+#item5{
+  height: 100px;
+}
+#item6{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 280px;
+  height: 100px;
+}
+#item9{
+  width: 200px;
+}
+#item10{
+  margin: 0px 40px;
+  grid-row: 2 / 4;
+  height: auto;
+  width: 100px;
+}
+#item11{
+  width: 200px;
+}
+#item12{
+  width: 200px;
+}
+#item13{
+  width: 200px;
+}
+#item14{
+  margin: 0px 60px;
+  width: 100px;
+  height: 80px;
+  grid-row: 1 / 2;
+}
+#item15{
+  margin: 0px 40px;
+  width: 100px;
+  height: 310px;
+  grid-row: 2 / 3;
+}
+#item17{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 280px;
+  height: 100px;
+}
+#item20{
+  margin: 210px 40px;
+  width: 100px;
+  height: 0px;
+  grid-row: 1 / 3;
+}
+#item22{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 250px;
+  height: 100px;
+}
+#item23{
+  grid-row: 5 / 6 ;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0px 40px;
+  width: 200px;
+  height: 100px;
+}
+#item25{
+  grid-row: 1 / 3;
+  margin: 54px 40px;
+  width: 100px;
+  height: 310px;
+}
+#item27{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 280px;
+  height: 100px;
+}
+#item30{
+  grid-row: 1 / 2;
+  height: 100px;
+  width: 200px;
+}
+#item31{
+  grid-row: 2 / 3;
+  height: 200px;
+  width: 120px;
+}
+#item31 .ship-icon-alignment{
+  width: 80px;
+}
+#item32{
+  grid-row: 3 / 4;
+  margin: -90px 0px;
+  height: 190px;
+  width: 200px;
+}
+#item32 .ship-icon-alignment{
+  width: 156px;
+}
+#item33{
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100px;
+  height: 100px;
+}
+#item33 .ship-icon-alignment{
+  width: 80px;
+}
+#item34{
+  margin: 0px 40px;
+  width: 120px;
+}
+#item34 .ship-icon-alignment{
+  width: 80px;
+}
+#item35{
+  width: 100px;
+}
+#item35 .ship-icon-alignment{
+  width: 80px;
+}
+.ship_class{
+  width: 24px;
+  height: 24px;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(12, 16, 20);
+  background-repeat: no-repeat;
+  background-size: 34px;
+  background-position: center;
+  border-style: solid;
+  border-color: blue;
+  border-width: 10px;
+  border-radius: 0px;
+  border-image: url(" ../StyleSheets/borders/ship_class_border.png") 10 repeat;
+}
+.ship_icon{
+  margin: 0px;
+  padding: 0px;
+  height: 70px;
+  width: 70px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  border-style: solid;
+  border-color: rgba(31, 37, 43, 0.6);
+  border-width: 2px;
+}
+.ship_icon:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.inner_ship_icon{
+  margin: 1px;
+  padding: 0px;
+  height: 60px;
+  width: 60px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-color:rgba(31, 37, 43, 0.2);
+  border-style: solid;
+  border-color: rgba(31, 37, 43, 0.6);
+  border-width: 4px;
+  border-image: url(" ../StyleSheets/borders/ship_icon_border.png") 10 repeat;
+}
+#ship_icon_tier3{
+  background-image: url("../StyleSheets/icons/tier3Class.png");
+}
+#ship_icon_tier2{
+  background-image: url("../StyleSheets/icons/tier2Class.png");
+}
+#ship_icon_tier2{
+  background-image: url("../StyleSheets/icons/tier2Class.png");
+}
+#ship_icon_navy{
+  background-image: url("../StyleSheets/icons/navyClass.png");
+}
+
+#ghost_img{
+  height: 60px;
+  opacity: 0.9;
+}
+
+#ship_class_rookie{
+  background-image: url("../StyleSheets/icons/rookie_64.png");
+}
+#ship_class_shuttle{
+  background-image: url("../StyleSheets/icons/shuttle_64.png");
+}
+#ship_class_frigate{
+  background-image: url("../StyleSheets/icons/frigate_64.png");
+}
+#ship_class_destroyer{
+  background-image: url("../StyleSheets/icons/destroyer_64.png");
+}
+#ship_class_cruiser{
+  background-image: url("../StyleSheets/icons/cruiser_64.png");
+}
+#ship_class_battlecruiser{
+  background-image: url("../StyleSheets/icons/battlecruiser_64.png");
+}
+#ship_class_industrial{
+  background-image: url("../StyleSheets/icons/industrial_64.png");
+}
+#ship_class_battleship{
+  background-image: url("../StyleSheets/icons/battleship_64.png");
+}
+#ship_class_titan{
+  background-image: url("../StyleSheets/icons/titan_64.png");
+}
+#ship_class_superCapital{
+  background-image: url("../StyleSheets/icons/superCapital_64.png");
+}
+#ship_class_capital{
+  background-image: url("../StyleSheets/icons/capital_64.png");
+}
+#ship_class_freighter{
+  background-image: url("../StyleSheets/icons/freighter_64.png");
+}
+
+
+
+
+
+
+
+#copyright {
+    position: absolute;
+    left: 80vw;
+    bottom: 1vh;
+    color: rgba(241, 241, 241, 0.2);
+}

@@ -1,0 +1,344 @@
+﻿{ 
+	"Kestrel": [
+		{
+			"Kestrel_Data.Column1.attribute_id": "588",
+			"Kestrel_Data.Column1.value": "5"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "129",
+			"Kestrel_Data.Column1.value": "6"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1154",
+			"Kestrel_Data.Column1.value": "3"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "3",
+			"Kestrel_Data.Column1.value": "0"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "4",
+			"Kestrel_Data.Column1.value": "1113000"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "662",
+			"Kestrel_Data.Column1.value": "0.05"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "263",
+			"Kestrel_Data.Column1.value": "500"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "136",
+			"Kestrel_Data.Column1.value": "1"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "9",
+			"Kestrel_Data.Column1.value": "400"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "11",
+			"Kestrel_Data.Column1.value": "45"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "12",
+			"Kestrel_Data.Column1.value": "2"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "13",
+			"Kestrel_Data.Column1.value": "4"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "14",
+			"Kestrel_Data.Column1.value": "4"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "15",
+			"Kestrel_Data.Column1.value": "0"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "272",
+			"Kestrel_Data.Column1.value": "0.5"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "273",
+			"Kestrel_Data.Column1.value": "0.6"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "274",
+			"Kestrel_Data.Column1.value": "0.8"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "19",
+			"Kestrel_Data.Column1.value": "1"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "269",
+			"Kestrel_Data.Column1.value": "0.75"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "21",
+			"Kestrel_Data.Column1.value": "0"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "661",
+			"Kestrel_Data.Column1.value": "3000"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "153",
+			"Kestrel_Data.Column1.value": "2.2400000000000002E-6"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1178",
+			"Kestrel_Data.Column1.value": "100"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "283",
+			"Kestrel_Data.Column1.value": "0"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "265",
+			"Kestrel_Data.Column1.value": "350"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "161",
+			"Kestrel_Data.Column1.value": "19700"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "162",
+			"Kestrel_Data.Column1.value": "45.98"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1179",
+			"Kestrel_Data.Column1.value": "0.01"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "422",
+			"Kestrel_Data.Column1.value": "1"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "37",
+			"Kestrel_Data.Column1.value": "325"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "38",
+			"Kestrel_Data.Column1.value": "160"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1137",
+			"Kestrel_Data.Column1.value": "3"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "552",
+			"Kestrel_Data.Column1.value": "38"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "18",
+			"Kestrel_Data.Column1.value": "0"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1196",
+			"Kestrel_Data.Column1.value": "0.01"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1198",
+			"Kestrel_Data.Column1.value": "0.01"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1199",
+			"Kestrel_Data.Column1.value": "100"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "48",
+			"Kestrel_Data.Column1.value": "180"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "49",
+			"Kestrel_Data.Column1.value": "0"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "564",
+			"Kestrel_Data.Column1.value": "620"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "182",
+			"Kestrel_Data.Column1.value": "3330"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "55",
+			"Kestrel_Data.Column1.value": "165000"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1547",
+			"Kestrel_Data.Column1.value": "1"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "264",
+			"Kestrel_Data.Column1.value": "0"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "192",
+			"Kestrel_Data.Column1.value": "5"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "525",
+			"Kestrel_Data.Column1.value": "1"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "267",
+			"Kestrel_Data.Column1.value": "0.5"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "70",
+			"Kestrel_Data.Column1.value": "3.27"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1224",
+			"Kestrel_Data.Column1.value": "1"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "268",
+			"Kestrel_Data.Column1.value": "0.9"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1200",
+			"Kestrel_Data.Column1.value": "100"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "76",
+			"Kestrel_Data.Column1.value": "50000"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "79",
+			"Kestrel_Data.Column1.value": "4000"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "208",
+			"Kestrel_Data.Column1.value": "0"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "209",
+			"Kestrel_Data.Column1.value": "0"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "210",
+			"Kestrel_Data.Column1.value": "0"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "211",
+			"Kestrel_Data.Column1.value": "11"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1281",
+			"Kestrel_Data.Column1.value": "1"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "270",
+			"Kestrel_Data.Column1.value": "0.55000000000000004"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "463",
+			"Kestrel_Data.Column1.value": "10"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1262",
+			"Kestrel_Data.Column1.value": "0.25"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "600",
+			"Kestrel_Data.Column1.value": "5"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "217",
+			"Kestrel_Data.Column1.value": "395"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "271",
+			"Kestrel_Data.Column1.value": "1"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "479",
+			"Kestrel_Data.Column1.value": "625000"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "482",
+			"Kestrel_Data.Column1.value": "330"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "484",
+			"Kestrel_Data.Column1.value": "0.75"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "101",
+			"Kestrel_Data.Column1.value": "4"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "102",
+			"Kestrel_Data.Column1.value": "0"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1768",
+			"Kestrel_Data.Column1.value": "11324"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1259",
+			"Kestrel_Data.Column1.value": "0.63"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1132",
+			"Kestrel_Data.Column1.value": "400"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "109",
+			"Kestrel_Data.Column1.value": "0.67"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "110",
+			"Kestrel_Data.Column1.value": "0.67"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "111",
+			"Kestrel_Data.Column1.value": "0.67"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1555",
+			"Kestrel_Data.Column1.value": "25"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "113",
+			"Kestrel_Data.Column1.value": "0.67"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1261",
+			"Kestrel_Data.Column1.value": "0.63"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "246",
+			"Kestrel_Data.Column1.value": "395"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "1271",
+			"Kestrel_Data.Column1.value": "0"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "633",
+			"Kestrel_Data.Column1.value": "0"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "511",
+			"Kestrel_Data.Column1.value": "0"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "124",
+			"Kestrel_Data.Column1.value": "16777215"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "524",
+			"Kestrel_Data.Column1.value": "0.75"
+		},
+		{
+			"Kestrel_Data.Column1.attribute_id": "277",
+			"Kestrel_Data.Column1.value": "1"
+		}
+	]
+}
