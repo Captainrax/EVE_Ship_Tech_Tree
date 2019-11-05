@@ -3,7 +3,7 @@ html {
 }
 @font-face {
   font-family:"evesans";
-  src: url("evesansneue-regular.TTF") format("truetype");
+  src: url("../StyleSheets/evesansneue-regular.ttf") format("truetype");
 }
 body {
     padding: 0px;
