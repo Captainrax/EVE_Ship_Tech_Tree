@@ -3,7 +3,7 @@ html {
 }
 @font-face {
   font-family:"evesans";
-  src: url("../StyleSheets/evesansneue-regular.ttf") format("truetype");
+  src: url("evesansneue-regular.ttf") format("truetype");
 }
 body {
     padding: 0px;
@@ -20,7 +20,7 @@ body {
     background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
 }
 .grid-container {
-  background-image: url("../StyleSheets/icons/caldari_transparent.png");
+  background-image: url("icons/caldari_transparent.png");
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center;
@@ -210,7 +210,7 @@ body {
   border-color: blue;
   border-width: 10px;
   border-radius: 0px;
-  border-image: url(" ../StyleSheets/borders/ship_class_border.png") 10 repeat;
+  border-image: url("borders/ship_class_border.png") 10 repeat;
 }
 .ship_icon{
   margin: 0px;
@@ -237,19 +237,19 @@ body {
   border-style: solid;
   border-color: rgba(31, 37, 43, 0.6);
   border-width: 4px;
-  border-image: url(" ../StyleSheets/borders/ship_icon_border.png") 10 repeat;
+  border-image: url("borders/ship_icon_border.png") 10 repeat;
 }
 #ship_icon_tier3{
-  background-image: url("../StyleSheets/icons/tier3Class.png");
+  background-image: url("icons/tier3Class.png");
 }
 #ship_icon_tier2{
-  background-image: url("../StyleSheets/icons/tier2Class.png");
+  background-image: url("icons/tier2Class.png");
 }
 #ship_icon_tier2{
-  background-image: url("../StyleSheets/icons/tier2Class.png");
+  background-image: url("icons/tier2Class.png");
 }
 #ship_icon_navy{
-  background-image: url("../StyleSheets/icons/navyClass.png");
+  background-image: url("icons/navyClass.png");
 }
 
 #ghost_img{
@@ -258,40 +258,40 @@ body {
 }
 
 #ship_class_rookie{
-  background-image: url("../StyleSheets/icons/rookie_64.png");
+  background-image: url("icons/rookie_64.png");
 }
 #ship_class_shuttle{
-  background-image: url("../StyleSheets/icons/shuttle_64.png");
+  background-image: url("icons/shuttle_64.png");
 }
 #ship_class_frigate{
-  background-image: url("../StyleSheets/icons/frigate_64.png");
+  background-image: url("icons/frigate_64.png");
 }
 #ship_class_destroyer{
-  background-image: url("../StyleSheets/icons/destroyer_64.png");
+  background-image: url("icons/destroyer_64.png");
 }
 #ship_class_cruiser{
-  background-image: url("../StyleSheets/icons/cruiser_64.png");
+  background-image: url("icons/cruiser_64.png");
 }
 #ship_class_battlecruiser{
-  background-image: url("../StyleSheets/icons/battlecruiser_64.png");
+  background-image: url("icons/battlecruiser_64.png");
 }
 #ship_class_industrial{
-  background-image: url("../StyleSheets/icons/industrial_64.png");
+  background-image: url("icons/industrial_64.png");
 }
 #ship_class_battleship{
-  background-image: url("../StyleSheets/icons/battleship_64.png");
+  background-image: url("icons/battleship_64.png");
 }
 #ship_class_titan{
-  background-image: url("../StyleSheets/icons/titan_64.png");
+  background-image: url("icons/titan_64.png");
 }
 #ship_class_superCapital{
-  background-image: url("../StyleSheets/icons/superCapital_64.png");
+  background-image: url("icons/superCapital_64.png");
 }
 #ship_class_capital{
-  background-image: url("../StyleSheets/icons/capital_64.png");
+  background-image: url("icons/capital_64.png");
 }
 #ship_class_freighter{
-  background-image: url("../StyleSheets/icons/freighter_64.png");
+  background-image: url("icons/freighter_64.png");
 }
 
 

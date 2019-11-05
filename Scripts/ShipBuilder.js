@@ -16,52 +16,52 @@ class Ship {
 }
 
 var Ibis = new Ship("Ibis", "Corvette");
-Ibis.seticon("../Captainrax.github.io/Scripts/images/601.png");
+Ibis.seticon("Scripts/images/601.png");
 var Shuttle = new Ship("Shuttle", "Shuttle");
-Shuttle.seticon("../Captainrax.github.io/Scripts/images/Caldari_Shuttle.png");
+Shuttle.seticon("Scripts/images/Caldari_Shuttle.png");
 
 var Bantam = new Ship("Bantam", "Frigate");
-Bantam.seticon("../Captainrax.github.io/Scripts/images/582.png");
+Bantam.seticon("Scripts/images/582.png");
 var Condor = new Ship("Condor", "Frigate");
-Condor.seticon("../Captainrax.github.io/Scripts/images/583.png");
+Condor.seticon("Scripts/images/583.png");
 var Griffin = new Ship("Griffin", "Frigate");
-Griffin.seticon("../Captainrax.github.io/Scripts/images/584.png");
+Griffin.seticon("Scripts/images/584.png");
 var Kestrel = new Ship("Kestrel", "Frigate");
-Kestrel.seticon("../Captainrax.github.io/Scripts/images/602.png");
+Kestrel.seticon("Scripts/images/602.png");
 var Merlin = new Ship("Merlin", "Frigate");
-Merlin.seticon("../Captainrax.github.io/Scripts/images/603.png");
+Merlin.seticon("Scripts/images/603.png");
 var Heron = new Ship("Heron", "Frigate");
-Heron.seticon("../Captainrax.github.io/Scripts/images/605.png");
+Heron.seticon("Scripts/images/605.png");
 
 var Kirin = new Ship("Kirin", "Frigate");
-Kirin.seticon("../Captainrax.github.io/Scripts/images/582.png");
+Kirin.seticon("Scripts/images/582.png");
 var Kitsune = new Ship("Kitsune", "Frigate");
-Kitsune.seticon("../Captainrax.github.io/Scripts/images/584.png");
+Kitsune.seticon("Scripts/images/584.png");
 var Buzzard = new Ship("Buzzard", "Frigate");
-Buzzard.seticon("../Captainrax.github.io/Scripts/images/605.png");
+Buzzard.seticon("Scripts/images/605.png");
 var Manticore = new Ship("Manticore", "Frigate");
-Manticore.seticon("../Captainrax.github.io/Scripts/images/Manticore.png");
+Manticore.seticon("Scripts/images/Manticore.png");
 var Hawk = new Ship("Hawk", "Frigate");
-Hawk.seticon("../Captainrax.github.io/Scripts/images/603.png");
+Hawk.seticon("Scripts/images/603.png");
 var Harpy = new Ship("Harpy", "Frigate");
-Harpy.seticon("../Captainrax.github.io/Scripts/images/603.png");
+Harpy.seticon("Scripts/images/603.png");
 var Crow = new Ship("Crow", "Frigate");
 Crow.seticon("../Captainrax.github.ioScripts/images/Crow.png");
 var Raptor = new Ship("Raptor", "Frigate");
-Raptor.seticon("../Captainrax.github.io/Scripts/images/583.png");
+Raptor.seticon("Scripts/images/583.png");
 
 var Hookbill = new Ship("Hookbill", "Frigate");
-Hookbill.seticon("../Captainrax.github.io/Scripts/images/Hookbill.png");
+Hookbill.seticon("Scripts/images/Hookbill.png");
 var Griffin_Navy = new Ship("Griffin_Navy_Issue", "Frigate");
-Griffin_Navy.seticon("../Captainrax.github.io/Scripts/images/584.png");
+Griffin_Navy.seticon("Scripts/images/584.png");
 
 var Cormorant = new Ship("Cormorant", "Destroyer");
-Cormorant.seticon("../Captainrax.github.io/Scripts/images/Cormorant.png");
+Cormorant.seticon("Scripts/images/Cormorant.png");
 var Corax = new Ship("Corax", "Destroyer");
-Corax.seticon("../Captainrax.github.io/Scripts/images/Corax.png");
+Corax.seticon("Scripts/images/Corax.png");
 
 var Charon = new Ship("Charon", "Freighter");
-Charon.seticon("../Captainrax.github.io/Scripts/images/doot.png");
+Charon.seticon("Scripts/images/doot.png");
 
 
 console.log(Ibis);
@@ -324,57 +324,57 @@ function insert(Ship) {
     Attributes_Structure_Hitpoints.textContent = "Structure Hitpoints";
     Attributes_Structure_Hitpoints.className = "attribute_name";
     Attributes_Structure_Hitpoints_Img.className = "attribute_name_img";
-    Attributes_Structure_Hitpoints_Img.src = "../Captainrax.github.io/StyleSheets/ship_info_icons/Structure.png";
+    Attributes_Structure_Hitpoints_Img.src = "StyleSheets/ship_info_icons/Structure.png";
 
     Attributes_Structure_Capacity.textContent = "Capacity";
     Attributes_Structure_Capacity.className = "attribute_name";
     Attributes_Structure_Capacity_Img.className = "attribute_name_img";
-    Attributes_Structure_Capacity_Img.src = "../Captainrax.github.io/StyleSheets/ship_info_icons/Capacity.png";
+    Attributes_Structure_Capacity_Img.src = "StyleSheets/ship_info_icons/Capacity.png";
 
     Attributes_Structure_Drone_Capacity.textContent = "Drone Capacity";
     Attributes_Structure_Drone_Capacity.className = "attribute_name";
     Attributes_Structure_Drone_Capacity_Img.className = "attribute_name_img";
-    Attributes_Structure_Drone_Capacity_Img.src = "../Captainrax.github.io/StyleSheets/ship_info_icons/Drone_Capacity.png";
+    Attributes_Structure_Drone_Capacity_Img.src = "StyleSheets/ship_info_icons/Drone_Capacity.png";
 
     Attributes_Structure_Drone_Bandwidth.textContent = "Drone Bandwidth";
     Attributes_Structure_Drone_Bandwidth.className = "attribute_name";
     Attributes_Structure_Drone_Bandwidth_Img.className = "attribute_name_img";
-    Attributes_Structure_Drone_Bandwidth_Img.src = "../Captainrax.github.io/StyleSheets/ship_info_icons/Drone_Bandwidth.png";
+    Attributes_Structure_Drone_Bandwidth_Img.src = "StyleSheets/ship_info_icons/Drone_Bandwidth.png";
 
     Attributes_Structure_Mass.textContent = "Mass";
     Attributes_Structure_Mass.className = "attribute_name";
     Attributes_Structure_Mass_Img.className = "attribute_name_img";
-    Attributes_Structure_Mass_Img.src = "../Captainrax.github.io/StyleSheets/ship_info_icons/Mass.png";
+    Attributes_Structure_Mass_Img.src = "StyleSheets/ship_info_icons/Mass.png";
 
     Attributes_Structure_Volume.textContent = "Volume";
     Attributes_Structure_Volume.className = "attribute_name";
     Attributes_Structure_Volume_Img.className = "attribute_name_img";
-    Attributes_Structure_Volume_Img.src = "../Captainrax.github.io/StyleSheets/ship_info_icons/Structure.png";
+    Attributes_Structure_Volume_Img.src = "StyleSheets/ship_info_icons/Structure.png";
 
     Attributes_Structure_Inertia_Modifier.textContent = "Inertia Modifier";
     Attributes_Structure_Inertia_Modifier.className = "attribute_name";
     Attributes_Structure_Inertia_Modifier_Img.className = "attribute_name_img";
-    Attributes_Structure_Inertia_Modifier_Img.src = "../Captainrax.github.io/StyleSheets/ship_info_icons/Inertia_Modifier.png";
+    Attributes_Structure_Inertia_Modifier_Img.src = "StyleSheets/ship_info_icons/Inertia_Modifier.png";
     // Resistances
     Attributes_Structure_EM.textContent = "%";
     Attributes_Structure_EM.className = "attribute_structure_resistance";
     Attributes_Structure_EM_Img.className = "attribute_name_img";
-    Attributes_Structure_EM_Img.src = "../Captainrax.github.io/StyleSheets/ship_info_icons/EM.png";
+    Attributes_Structure_EM_Img.src = "StyleSheets/ship_info_icons/EM.png";
 
     Attributes_Structure_Thermal.textContent = "%";
     Attributes_Structure_Thermal.className = "attribute_structure_resistance";
     Attributes_Structure_Thermal_Img.className = "attribute_name_img";
-    Attributes_Structure_Thermal_Img.src = "../Captainrax.github.io/StyleSheets/ship_info_icons/Thermal.png";
+    Attributes_Structure_Thermal_Img.src = "StyleSheets/ship_info_icons/Thermal.png";
     
     Attributes_Structure_Kinetic.textContent = "%";
     Attributes_Structure_Kinetic.className = "attribute_structure_resistance";
     Attributes_Structure_Kinetic_Img.className = "attribute_name_img";
-    Attributes_Structure_Kinetic_Img.src = "../Captainrax.github.io/StyleSheets/ship_info_icons/Kinetic.png";
+    Attributes_Structure_Kinetic_Img.src = "StyleSheets/ship_info_icons/Kinetic.png";
     
     Attributes_Structure_Explosive.textContent = "%";
     Attributes_Structure_Explosive.className = "attribute_structure_resistance";
     Attributes_Structure_Explosive_Img.className = "attribute_name_img";
-    Attributes_Structure_Explosive_Img.src = "../Captainrax.github.io/StyleSheets/ship_info_icons/Explosive.png";
+    Attributes_Structure_Explosive_Img.src = "StyleSheets/ship_info_icons/Explosive.png";
     
     var Attributes_Str = document.querySelector("#AT0");
     var Attributes_Arm = document.querySelector("#AT16");

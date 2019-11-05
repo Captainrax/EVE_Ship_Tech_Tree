@@ -13,7 +13,7 @@
     
     border-width: 4px;
     border-radius: 0px;
-    border-image: url(" ../StyleSheets/borders/ship_class_border.png") 8 repeat;
+    border-image: url("borders/ship_class_border.png") 8 repeat;
 }
 .ship_div_title {
     background-color: rgba(10, 10, 10, 0.95);
