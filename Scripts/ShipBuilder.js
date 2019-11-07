@@ -358,21 +358,25 @@ function insert(Ship) {
     // Resistances
     Attributes_Structure_EM.textContent = "%";
     Attributes_Structure_EM.className = "attribute_structure_resistance";
+    Attributes_Structure_EM.id = "structure_em_resistance";
     Attributes_Structure_EM_Img.className = "attribute_name_img";
     Attributes_Structure_EM_Img.src = "StyleSheets/ship_info_icons/EM.png";
 
     Attributes_Structure_Thermal.textContent = "%";
     Attributes_Structure_Thermal.className = "attribute_structure_resistance";
+    Attributes_Structure_Thermal.id = "structure_thermal_resistance";
     Attributes_Structure_Thermal_Img.className = "attribute_name_img";
     Attributes_Structure_Thermal_Img.src = "StyleSheets/ship_info_icons/Thermal.png";
     
     Attributes_Structure_Kinetic.textContent = "%";
     Attributes_Structure_Kinetic.className = "attribute_structure_resistance";
+    Attributes_Structure_Kinetic.id = "structure_kinetic_resistance";
     Attributes_Structure_Kinetic_Img.className = "attribute_name_img";
     Attributes_Structure_Kinetic_Img.src = "StyleSheets/ship_info_icons/Kinetic.png";
     
     Attributes_Structure_Explosive.textContent = "%";
     Attributes_Structure_Explosive.className = "attribute_structure_resistance";
+    Attributes_Structure_Explosive.id = "structure_explosive_resistance";
     Attributes_Structure_Explosive_Img.className = "attribute_name_img";
     Attributes_Structure_Explosive_Img.src = "StyleSheets/ship_info_icons/Explosive.png";
     

@@ -228,26 +228,26 @@ function bantam(){
     
     Content_Description.appendChild(Description);
 
-    fetch("Scripts/KestrelData.json")
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        appendData(data);
-    })
-    .catch(function (err) {
-        console.log('error: ' + err);
-    });
-    function appendData(data) {
-        for(var i = 0;i < data.Kestrel.length;i++){
+    // fetch("Scripts/KestrelData.json")
+    // .then(function (response) {
+    //     return response.json();
+    // })
+    // .then(function (data) {
+    //     appendData(data);
+    // })
+    // .catch(function (err) {
+    //     console.log('error: ' + err);
+    // });
+    // function appendData(data) {
+    //     for(var i = 0;i < data.Kestrel.length;i++){
 
-            if(data.Kestrel[i]["Kestrel_Data.Column1.attribute_id"] === "4"){
-                var testdata = document.querySelector("#AT10");
-                testdata.textContent = data.Kestrel[i]["Kestrel_Data.Column1.value"] + " kg";
-                console.log(data.Kestrel[i]["Kestrel_Data.Column1.value"]);
-            }
-        }
-    }
+    //         if(data.Kestrel[i]["Kestrel_Data.Column1.attribute_id"] === "4"){
+    //             var testdata = document.querySelector("#AT10");
+    //             testdata.textContent = data.Kestrel[i]["Kestrel_Data.Column1.value"] + " kg";
+    //             console.log(data.Kestrel[i]["Kestrel_Data.Column1.value"]);
+    //         }
+    //     }
+    // }
 }
 
 function condor(){
@@ -306,13 +306,6 @@ function kestrel(){
     Traits_img4.src = "StyleSheets/icons/combat.png";
     Traits_img5.src = "StyleSheets/icons/shields.png";
 
-    var Content_Attributes = document.querySelector("#attributes");
-    var Attributes = document.createElement("div");
-    Attributes.textContent = "";
-
-    Content_Attributes.appendChild(Attributes);
-
-    
     fetch("Scripts/KestrelData.json")
     .then(function (response) {
         return response.json();
@@ -333,8 +326,8 @@ function kestrel(){
             }
         }
     }
-
 }
+
 function merlin(){
 
     var Content_Traits = document.querySelector("#traits");
@@ -352,6 +345,7 @@ function merlin(){
     Traits_img5.src = "StyleSheets/icons/shields.png";
 
 }
+
 function heron(){
 
     var Content_Traits = document.querySelector("#traits");
@@ -539,6 +533,7 @@ function hookbill(){
     Traits_img5.src = "StyleSheets/icons/shields.png";
 
 }
+
 function cormorant(){
 
     var Content_Traits = document.querySelector("#traits");
@@ -556,6 +551,7 @@ function cormorant(){
     Traits_img5.src = "StyleSheets/icons/shields.png";
 
 }
+
 function corax(){
 
     var Content_Traits = document.querySelector("#traits");
@@ -571,5 +567,46 @@ function corax(){
     Traits_img3.src = "StyleSheets/icons/missiles.png";
     Traits_img4.src = "StyleSheets/icons/attack.png";
     Traits_img5.src = "StyleSheets/icons/shields.png";
+    
+    var testdata = document.querySelector("#AT6");
+    testdata.textContent = "0";
+    var testdata1 = document.querySelector("#AT8");
+    testdata1.textContent = "0";
 
+    fetch("Scripts/CoraxData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+    });
+    function appendData(data) {
+        for(var i = 0;i < data.length;i++){
+
+            if(data[i]["A"] === "4"){
+                var testdata = document.querySelector("#AT10");
+                testdata.textContent = data[i]["B"] + " kg";
+                //console.log(data[i]["B"]);
+            }
+            if(data[i]["A"] === "482"){
+                var testdata = document.querySelector("#AT4");
+                testdata.textContent = data[i]["B"] + " m3";
+            }
+            if(data[i]["A"] === "9"){
+                var testdata = document.querySelector("#AT2");
+                testdata.textContent = data[i]["B"] + " HP";
+            }
+            if(data[i]["A"] === "161"){
+                var testdata = document.querySelector("#AT12");
+                testdata.textContent = data[i]["B"] + " m3";
+            }
+            if(data[i]["A"] === "70"){
+                var testdata = document.querySelector("#AT14");
+                testdata.textContent = data[i]["B"];
+            }
+        }
+    }
 }
