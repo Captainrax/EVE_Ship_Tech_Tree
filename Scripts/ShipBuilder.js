@@ -288,10 +288,10 @@ function insert(Ship) {
     var Attributes_Structure_Hitpoints_Img = document.createElement("img");
     var Attributes_Structure_Capacity = document.createElement("p");
     var Attributes_Structure_Capacity_Img = document.createElement("img");
-    var Attributes_Structure_Drone_Capacity = document.createElement("p");
-    var Attributes_Structure_Drone_Capacity_Img = document.createElement("img");
-    var Attributes_Structure_Drone_Bandwidth = document.createElement("p");
-    var Attributes_Structure_Drone_Bandwidth_Img = document.createElement("img");
+    // var Attributes_Structure_Drone_Capacity = document.createElement("p");
+    // var Attributes_Structure_Drone_Capacity_Img = document.createElement("img");
+    // var Attributes_Structure_Drone_Bandwidth = document.createElement("p");
+    // var Attributes_Structure_Drone_Bandwidth_Img = document.createElement("img");
     var Attributes_Structure_Mass = document.createElement("p");
     var Attributes_Structure_Mass_Img = document.createElement("img");
     var Attributes_Structure_Volume = document.createElement("p");
@@ -331,15 +331,15 @@ function insert(Ship) {
     Attributes_Structure_Capacity_Img.className = "attribute_name_img";
     Attributes_Structure_Capacity_Img.src = "StyleSheets/ship_info_icons/Capacity.png";
 
-    Attributes_Structure_Drone_Capacity.textContent = "Drone Capacity";
-    Attributes_Structure_Drone_Capacity.className = "attribute_name";
-    Attributes_Structure_Drone_Capacity_Img.className = "attribute_name_img";
-    Attributes_Structure_Drone_Capacity_Img.src = "StyleSheets/ship_info_icons/Drone_Capacity.png";
+    // Attributes_Structure_Drone_Capacity.textContent = "Drone Capacity";
+    // Attributes_Structure_Drone_Capacity.className = "attribute_name";
+    // Attributes_Structure_Drone_Capacity_Img.className = "attribute_name_img";
+    // Attributes_Structure_Drone_Capacity_Img.src = "StyleSheets/ship_info_icons/Drone_Capacity.png";
 
-    Attributes_Structure_Drone_Bandwidth.textContent = "Drone Bandwidth";
-    Attributes_Structure_Drone_Bandwidth.className = "attribute_name";
-    Attributes_Structure_Drone_Bandwidth_Img.className = "attribute_name_img";
-    Attributes_Structure_Drone_Bandwidth_Img.src = "StyleSheets/ship_info_icons/Drone_Bandwidth.png";
+    // Attributes_Structure_Drone_Bandwidth.textContent = "Drone Bandwidth";
+    // Attributes_Structure_Drone_Bandwidth.className = "attribute_name";
+    // Attributes_Structure_Drone_Bandwidth_Img.className = "attribute_name_img";
+    // Attributes_Structure_Drone_Bandwidth_Img.src = "StyleSheets/ship_info_icons/Drone_Bandwidth.png";
 
     Attributes_Structure_Mass.textContent = "Mass";
     Attributes_Structure_Mass.className = "attribute_name";
@@ -389,8 +389,8 @@ function insert(Ship) {
     
     var Attributes_Str_Hitpoints = document.querySelector("#AT1");
     var Attributes_Str_Capacity = document.querySelector("#AT3");
-    var Attributes_Str_Drone_Capacity = document.querySelector("#AT5");
-    var Attributes_Str_Drone_Bandwidth = document.querySelector("#AT7");
+    // var Attributes_Str_Drone_Capacity = document.querySelector("#AT5");
+    // var Attributes_Str_Drone_Bandwidth = document.querySelector("#AT7");
     var Attributes_Str_Mass = document.querySelector("#AT9");
     var Attributes_Str_Volume = document.querySelector("#AT11");
     var Attributes_Str_Inertia_Modifier = document.querySelector("#AT13");
@@ -408,10 +408,54 @@ function insert(Ship) {
     Attributes_Str_Hitpoints.appendChild(Attributes_Structure_Hitpoints);
     Attributes_Str_Capacity.appendChild(Attributes_Structure_Capacity_Img);
     Attributes_Str_Capacity.appendChild(Attributes_Structure_Capacity);
-    Attributes_Str_Drone_Capacity.appendChild(Attributes_Structure_Drone_Capacity_Img);
-    Attributes_Str_Drone_Capacity.appendChild(Attributes_Structure_Drone_Capacity);
-    Attributes_Str_Drone_Bandwidth.appendChild(Attributes_Structure_Drone_Bandwidth_Img);
-    Attributes_Str_Drone_Bandwidth.appendChild(Attributes_Structure_Drone_Bandwidth);
+    // Attributes_Str_Drone_Capacity.appendChild(Attributes_Structure_Drone_Capacity_Img);
+    // Attributes_Str_Drone_Capacity.appendChild(Attributes_Structure_Drone_Capacity);
+    // Attributes_Str_Drone_Bandwidth.appendChild(Attributes_Structure_Drone_Bandwidth_Img);
+    // Attributes_Str_Drone_Bandwidth.appendChild(Attributes_Structure_Drone_Bandwidth);
+
+    // it works :D now fix it propperly.
+function Attribute_Drone(Toggle){
+
+    if (Toggle === true) {
+        var Attributes_Structure_Drone_Capacity = document.createElement("p");
+        var Attributes_Structure_Drone_Capacity_Img = document.createElement("img");
+        var Attributes_Structure_Drone_Bandwidth = document.createElement("p");
+        var Attributes_Structure_Drone_Bandwidth_Img = document.createElement("img");
+
+        Attributes_Structure_Drone_Capacity.textContent = "Drone Capacity";
+        Attributes_Structure_Drone_Capacity.className = "attribute_name";
+        Attributes_Structure_Drone_Capacity_Img.className = "attribute_name_img";
+        Attributes_Structure_Drone_Capacity_Img.src = "StyleSheets/ship_info_icons/Drone_Capacity.png";
+
+        Attributes_Structure_Drone_Bandwidth.textContent = "Drone Bandwidth";
+        Attributes_Structure_Drone_Bandwidth.className = "attribute_name";
+        Attributes_Structure_Drone_Bandwidth_Img.className = "attribute_name_img";
+        Attributes_Structure_Drone_Bandwidth_Img.src = "StyleSheets/ship_info_icons/Drone_Bandwidth.png";
+        
+        var Attributes_Str_Drone_Capacity = document.querySelector("#AT5");
+        var Attributes_Str_Drone_Bandwidth = document.querySelector("#AT7");
+        
+        Attributes_Str_Drone_Capacity.appendChild(Attributes_Structure_Drone_Capacity_Img);
+        Attributes_Str_Drone_Capacity.appendChild(Attributes_Structure_Drone_Capacity);
+        Attributes_Str_Drone_Bandwidth.appendChild(Attributes_Structure_Drone_Bandwidth_Img);
+        Attributes_Str_Drone_Bandwidth.appendChild(Attributes_Structure_Drone_Bandwidth);
+
+    } else if (Toggle === false) {
+
+        var Attributes_Str_Drone_Capacity = document.querySelector("#AT5");
+        var Attributes_Str_Drone_Bandwidth = document.querySelector("#AT7");
+        Attributes_Str_Drone_Capacity.style.display = "none";
+        Attributes_Str_Drone_Bandwidth.style.display = "none";
+        var Attributes_Str_Drone_Capacity_AT = document.querySelector("#AT6");
+        var Attributes_Str_Drone_Bandwidth_AT = document.querySelector("#AT8");
+        Attributes_Str_Drone_Capacity_AT.style.display = "none";
+        Attributes_Str_Drone_Bandwidth_AT.style.display = "none";
+    }
+}    
+
+Attribute_Drone(false);
+
+
     Attributes_Str_Mass.appendChild(Attributes_Structure_Mass_Img);
     Attributes_Str_Mass.appendChild(Attributes_Structure_Mass);
     Attributes_Str_Volume.appendChild(Attributes_Structure_Volume_Img);
