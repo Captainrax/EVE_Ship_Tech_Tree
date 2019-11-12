@@ -552,6 +552,7 @@ function cormorant(){
 
 }
 
+
 function corax(){
 
     var Content_Traits = document.querySelector("#traits");
@@ -567,12 +568,9 @@ function corax(){
     Traits_img3.src = "StyleSheets/icons/missiles.png";
     Traits_img4.src = "StyleSheets/icons/attack.png";
     Traits_img5.src = "StyleSheets/icons/shields.png";
-    
-    var testdata = document.querySelector("#AT6");
-    testdata.textContent = "0";
-    var testdata1 = document.querySelector("#AT8");
-    testdata1.textContent = "0";
 
+    Attribute_Drone(false);
+    
     fetch("Scripts/CoraxData.json")
     .then(function (response) {
         return response.json();
@@ -584,29 +582,6 @@ function corax(){
         console.log('error: ' + err);
     });
     function appendData(data) {
-        for(var i = 0;i < data.length;i++){
-
-            if(data[i]["A"] === "4"){
-                var testdata = document.querySelector("#AT10");
-                testdata.textContent = data[i]["B"] + " kg";
-                //console.log(data[i]["B"]);
-            }
-            if(data[i]["A"] === "482"){
-                var testdata = document.querySelector("#AT4");
-                testdata.textContent = data[i]["B"] + " m3";
-            }
-            if(data[i]["A"] === "9"){
-                var testdata = document.querySelector("#AT2");
-                testdata.textContent = data[i]["B"] + " HP";
-            }
-            if(data[i]["A"] === "161"){
-                var testdata = document.querySelector("#AT12");
-                testdata.textContent = data[i]["B"] + " m3";
-            }
-            if(data[i]["A"] === "70"){
-                var testdata = document.querySelector("#AT14");
-                testdata.textContent = data[i]["B"];
-            }
-        }
+        InsertData(data);
     }
 }
