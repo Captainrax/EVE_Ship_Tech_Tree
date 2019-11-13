@@ -119,8 +119,10 @@ function ibis(){
 
     Description.textContent = "ibis very Corvettey";
 
-
     Content_Description.appendChild(Description);
+
+    
+    Attribute_Drone(true);
     
 }
 
@@ -228,6 +230,7 @@ function bantam(){
     
     Content_Description.appendChild(Description);
 
+    Attribute_Drone(true);
     // fetch("Scripts/KestrelData.json")
     // .then(function (response) {
     //     return response.json();
@@ -268,6 +271,7 @@ function condor(){
     Traits_img5.src = "StyleSheets/icons/shields.png";
     Traits_img6.src = "StyleSheets/icons/missiles.png";
 
+    Attribute_Drone(true);
 }
 
 function griffin(){
@@ -286,6 +290,7 @@ function griffin(){
     Traits_img4.src = "StyleSheets/icons/disruption.png";
     Traits_img5.src = "StyleSheets/icons/ECM.png";
 
+    Attribute_Drone(true);
 }
 // Kestrel
 
@@ -305,6 +310,8 @@ function kestrel(){
     Traits_img3.src = "StyleSheets/icons/missiles.png";
     Traits_img4.src = "StyleSheets/icons/combat.png";
     Traits_img5.src = "StyleSheets/icons/shields.png";
+
+    Attribute_Drone(false);
 
     fetch("Scripts/KestrelData.json")
     .then(function (response) {
@@ -344,6 +351,7 @@ function merlin(){
     Traits_img4.src = "StyleSheets/icons/combat.png";
     Traits_img5.src = "StyleSheets/icons/shields.png";
 
+    Attribute_Drone(true);
 }
 
 function heron(){
@@ -360,6 +368,7 @@ function heron(){
     Traits_img3.src = "StyleSheets/icons/shields.png";
     Traits_img4.src = "StyleSheets/icons/exploration.png";
 
+    Attribute_Drone(true);
 }
 
 function kirin(){
@@ -376,6 +385,7 @@ function kirin(){
     Traits_img3.src = "StyleSheets/icons/shields.png";
     Traits_img4.src = "StyleSheets/icons/exploration.png";
 
+    Attribute_Drone(true);
 }
 
 function kitsune(){
@@ -392,6 +402,7 @@ function kitsune(){
     Traits_img3.src = "StyleSheets/icons/shields.png";
     Traits_img4.src = "StyleSheets/icons/exploration.png";
 
+    Attribute_Drone(true);
 }
 
 function buzzard(){
@@ -408,6 +419,7 @@ function buzzard(){
     Traits_img3.src = "StyleSheets/icons/shields.png";
     Traits_img4.src = "StyleSheets/icons/exploration.png";
 
+    Attribute_Drone(true);
 }
 
 function manticore(){
@@ -424,6 +436,7 @@ function manticore(){
     Traits_img3.src = "StyleSheets/icons/shields.png";
     Traits_img4.src = "StyleSheets/icons/exploration.png";
 
+    Attribute_Drone(true);
 }
 
 function hawk(){
@@ -440,6 +453,7 @@ function hawk(){
     Traits_img3.src = "StyleSheets/icons/shields.png";
     Traits_img4.src = "StyleSheets/icons/exploration.png";
 
+    Attribute_Drone(true);
 }
 
 function harpy(){
@@ -456,6 +470,7 @@ function harpy(){
     Traits_img3.src = "StyleSheets/icons/shields.png";
     Traits_img4.src = "StyleSheets/icons/exploration.png";
 
+    Attribute_Drone(true);
 }
 
 function crow(){
@@ -476,6 +491,7 @@ function crow(){
     Traits_img5.src = "StyleSheets/icons/shields.png";
     Traits_img6.src = "StyleSheets/icons/missiles.png";
 
+    Attribute_Drone(true);
 }
 
 function raptor(){
@@ -492,6 +508,7 @@ function raptor(){
     Traits_img3.src = "StyleSheets/icons/shields.png";
     Traits_img4.src = "StyleSheets/icons/exploration.png";
 
+    Attribute_Drone(true);
 }
 
 function griffin_navy(){
@@ -514,6 +531,7 @@ function griffin_navy(){
     Traits_img6.src = "StyleSheets/icons/hybridTurrets.png";
     Traits_img7.src = "StyleSheets/icons/ECM.png";
 
+    Attribute_Drone(true);
 }
 
 function hookbill(){
@@ -532,6 +550,7 @@ function hookbill(){
     Traits_img4.src = "StyleSheets/icons/combat.png";
     Traits_img5.src = "StyleSheets/icons/shields.png";
 
+    Attribute_Drone(true);
 }
 
 function cormorant(){
@@ -550,6 +569,7 @@ function cormorant(){
     Traits_img4.src = "StyleSheets/icons/attack.png";
     Traits_img5.src = "StyleSheets/icons/shields.png";
 
+    Attribute_Drone(true);
 }
 
 
@@ -582,6 +602,7 @@ function corax(){
         console.log('error: ' + err);
     });
     function appendData(data) {
+        //From ShipBuilder.js
         InsertData(data);
     }
 }

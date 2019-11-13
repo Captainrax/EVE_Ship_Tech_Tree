@@ -288,10 +288,6 @@ function insert(Ship) {
     var Attributes_Structure_Hitpoints_Img = document.createElement("img");
     var Attributes_Structure_Capacity = document.createElement("p");
     var Attributes_Structure_Capacity_Img = document.createElement("img");
-    // var Attributes_Structure_Drone_Capacity = document.createElement("p");
-    // var Attributes_Structure_Drone_Capacity_Img = document.createElement("img");
-    // var Attributes_Structure_Drone_Bandwidth = document.createElement("p");
-    // var Attributes_Structure_Drone_Bandwidth_Img = document.createElement("img");
     var Attributes_Structure_Mass = document.createElement("p");
     var Attributes_Structure_Mass_Img = document.createElement("img");
     var Attributes_Structure_Volume = document.createElement("p");
@@ -299,14 +295,6 @@ function insert(Ship) {
     var Attributes_Structure_Inertia_Modifier = document.createElement("p");
     var Attributes_Structure_Inertia_Modifier_Img = document.createElement("img");
     // Structure Resistances
-    var Attributes_Structure_EM = document.createElement("p");
-    var Attributes_Structure_EM_Img = document.createElement("img");
-    var Attributes_Structure_Thermal = document.createElement("p");
-    var Attributes_Structure_Thermal_Img = document.createElement("img");
-    var Attributes_Structure_Kinetic = document.createElement("p");
-    var Attributes_Structure_Kinetic_Img = document.createElement("img");
-    var Attributes_Structure_Explosive = document.createElement("p");
-    var Attributes_Structure_Explosive_Img = document.createElement("img");
 
     Attributes_Structure_Title.textContent = "Structure";
     Attributes_Structure_Title.className = "attributes_titles";
@@ -331,16 +319,6 @@ function insert(Ship) {
     Attributes_Structure_Capacity_Img.className = "attribute_name_img";
     Attributes_Structure_Capacity_Img.src = "StyleSheets/ship_info_icons/Capacity.png";
 
-    // Attributes_Structure_Drone_Capacity.textContent = "Drone Capacity";
-    // Attributes_Structure_Drone_Capacity.className = "attribute_name";
-    // Attributes_Structure_Drone_Capacity_Img.className = "attribute_name_img";
-    // Attributes_Structure_Drone_Capacity_Img.src = "StyleSheets/ship_info_icons/Drone_Capacity.png";
-
-    // Attributes_Structure_Drone_Bandwidth.textContent = "Drone Bandwidth";
-    // Attributes_Structure_Drone_Bandwidth.className = "attribute_name";
-    // Attributes_Structure_Drone_Bandwidth_Img.className = "attribute_name_img";
-    // Attributes_Structure_Drone_Bandwidth_Img.src = "StyleSheets/ship_info_icons/Drone_Bandwidth.png";
-
     Attributes_Structure_Mass.textContent = "Mass";
     Attributes_Structure_Mass.className = "attribute_name";
     Attributes_Structure_Mass_Img.className = "attribute_name_img";
@@ -356,29 +334,6 @@ function insert(Ship) {
     Attributes_Structure_Inertia_Modifier_Img.className = "attribute_name_img";
     Attributes_Structure_Inertia_Modifier_Img.src = "StyleSheets/ship_info_icons/Inertia_Modifier.png";
     // Resistances
-    Attributes_Structure_EM.textContent = "%";
-    Attributes_Structure_EM.className = "attribute_structure_resistance";
-    Attributes_Structure_EM.id = "structure_em_resistance";
-    Attributes_Structure_EM_Img.className = "attribute_name_img";
-    Attributes_Structure_EM_Img.src = "StyleSheets/ship_info_icons/EM.png";
-
-    Attributes_Structure_Thermal.textContent = "%";
-    Attributes_Structure_Thermal.className = "attribute_structure_resistance";
-    Attributes_Structure_Thermal.id = "structure_thermal_resistance";
-    Attributes_Structure_Thermal_Img.className = "attribute_name_img";
-    Attributes_Structure_Thermal_Img.src = "StyleSheets/ship_info_icons/Thermal.png";
-    
-    Attributes_Structure_Kinetic.textContent = "%";
-    Attributes_Structure_Kinetic.className = "attribute_structure_resistance";
-    Attributes_Structure_Kinetic.id = "structure_kinetic_resistance";
-    Attributes_Structure_Kinetic_Img.className = "attribute_name_img";
-    Attributes_Structure_Kinetic_Img.src = "StyleSheets/ship_info_icons/Kinetic.png";
-    
-    Attributes_Structure_Explosive.textContent = "%";
-    Attributes_Structure_Explosive.className = "attribute_structure_resistance";
-    Attributes_Structure_Explosive.id = "structure_explosive_resistance";
-    Attributes_Structure_Explosive_Img.className = "attribute_name_img";
-    Attributes_Structure_Explosive_Img.src = "StyleSheets/ship_info_icons/Explosive.png";
     
     var Attributes_Str = document.querySelector("#AT0");
     var Attributes_Arm = document.querySelector("#AT16");
@@ -389,13 +344,10 @@ function insert(Ship) {
     
     var Attributes_Str_Hitpoints = document.querySelector("#AT1");
     var Attributes_Str_Capacity = document.querySelector("#AT3");
-    // var Attributes_Str_Drone_Capacity = document.querySelector("#AT5");
-    // var Attributes_Str_Drone_Bandwidth = document.querySelector("#AT7");
     var Attributes_Str_Mass = document.querySelector("#AT9");
     var Attributes_Str_Volume = document.querySelector("#AT11");
     var Attributes_Str_Inertia_Modifier = document.querySelector("#AT13");
 
-    var Attributes_Str_Resistances = document.querySelector("#AT15");
 
     Attributes_Str.appendChild(Attributes_Structure_Title);
     Attributes_Arm.appendChild(Attributes_Armor_Title);
@@ -408,12 +360,6 @@ function insert(Ship) {
     Attributes_Str_Hitpoints.appendChild(Attributes_Structure_Hitpoints);
     Attributes_Str_Capacity.appendChild(Attributes_Structure_Capacity_Img);
     Attributes_Str_Capacity.appendChild(Attributes_Structure_Capacity);
-    // Attributes_Str_Drone_Capacity.appendChild(Attributes_Structure_Drone_Capacity_Img);
-    // Attributes_Str_Drone_Capacity.appendChild(Attributes_Structure_Drone_Capacity);
-    // Attributes_Str_Drone_Bandwidth.appendChild(Attributes_Structure_Drone_Bandwidth_Img);
-    // Attributes_Str_Drone_Bandwidth.appendChild(Attributes_Structure_Drone_Bandwidth);
-
-
 
     Attributes_Str_Mass.appendChild(Attributes_Structure_Mass_Img);
     Attributes_Str_Mass.appendChild(Attributes_Structure_Mass);
@@ -422,14 +368,86 @@ function insert(Ship) {
     Attributes_Str_Inertia_Modifier.appendChild(Attributes_Structure_Inertia_Modifier_Img);
     Attributes_Str_Inertia_Modifier.appendChild(Attributes_Structure_Inertia_Modifier);
     
+    var Attributes_Structure_EM = document.createElement("div");
+    var Attributes_Structure_EM_Bar = document.createElement("div");
+    var Attributes_Structure_EM_Value = document.createElement("span");
+    var Attributes_Structure_EM_Img = document.createElement("img");
+    var Attributes_Structure_Thermal = document.createElement("div");
+    var Attributes_Structure_Thermal_Bar = document.createElement("div");
+    var Attributes_Structure_Thermal_Value = document.createElement("span");
+    var Attributes_Structure_Thermal_Img = document.createElement("img");
+    var Attributes_Structure_Kinetic = document.createElement("div");
+    var Attributes_Structure_Kinetic_Bar = document.createElement("div");
+    var Attributes_Structure_Kinetic_Value = document.createElement("span");
+    var Attributes_Structure_Kinetic_Img = document.createElement("img");
+    var Attributes_Structure_Explosive = document.createElement("div");
+    var Attributes_Structure_Explosive_Bar = document.createElement("div");
+    var Attributes_Structure_Explosive_Value = document.createElement("span");
+    var Attributes_Structure_Explosive_Img = document.createElement("img");
+
+    Attributes_Structure_EM.className = "attribute_structure_resistance";
+    Attributes_Structure_EM.id = "structure_em_resistance";
+    Attributes_Structure_EM_Bar.className = "structure_resistance_bar";
+    Attributes_Structure_EM_Bar.id = "structure_em_resistance_bar";
+    Attributes_Structure_EM_Value.className = "structure_resistance_value";
+    Attributes_Structure_EM_Value.id = "structure_em_resistance_value";
+    Attributes_Structure_EM_Value.textContent = " %";
+    Attributes_Structure_EM_Img.className = "attribute_name_img";
+    Attributes_Structure_EM_Img.src = "StyleSheets/ship_info_icons/EM.png";
+
+    Attributes_Structure_Thermal.className = "attribute_structure_resistance";
+    Attributes_Structure_Thermal.id = "structure_thermal_resistance";
+    Attributes_Structure_Thermal_Bar.className = "structure_resistance_bar";
+    Attributes_Structure_Thermal_Bar.id = "structure_thermal_resistance_bar";
+    Attributes_Structure_Thermal_Value.className = "structure_resistance_value";
+    Attributes_Structure_Thermal_Value.id = "structure_thermal_resistance_value";
+    Attributes_Structure_Thermal_Value.textContent = " %";
+    Attributes_Structure_Thermal_Img.className = "attribute_name_img";
+    Attributes_Structure_Thermal_Img.src = "StyleSheets/ship_info_icons/Thermal.png";
+    
+    Attributes_Structure_Kinetic.className = "attribute_structure_resistance";
+    Attributes_Structure_Kinetic.id = "structure_kinetic_resistance";
+    Attributes_Structure_Kinetic_Bar.className = "structure_resistance_bar";
+    Attributes_Structure_Kinetic_Bar.id = "structure_kinetic_resistance_bar";
+    Attributes_Structure_Kinetic_Value.className = "structure_resistance_value";
+    Attributes_Structure_Kinetic_Value.id = "structure_kinetic_resistance_value";
+    Attributes_Structure_Kinetic_Value.textContent = " %";
+    Attributes_Structure_Kinetic_Img.className = "attribute_name_img";
+    Attributes_Structure_Kinetic_Img.src = "StyleSheets/ship_info_icons/Kinetic.png";
+    
+    Attributes_Structure_Explosive.className = "attribute_structure_resistance";
+    Attributes_Structure_Explosive.id = "structure_explosive_resistance";
+    Attributes_Structure_Explosive_Bar.className = "structure_resistance_bar";
+    Attributes_Structure_Explosive_Bar.id = "structure_explosive_resistance_bar";
+    Attributes_Structure_Explosive_Value.className = "structure_resistance_value";
+    Attributes_Structure_Explosive_Value.id = "structure_explosive_resistance_value";
+    Attributes_Structure_Explosive_Value.textContent = " %";
+    Attributes_Structure_Explosive_Img.className = "attribute_name_img";
+    Attributes_Structure_Explosive_Img.src = "StyleSheets/ship_info_icons/Explosive.png";
+
+    var Attributes_Str_Resistances = document.querySelector("#AT15");
+    var Attributes_Str_Resistances_EM = document.querySelector("#structure_em_resistance");
+    var Attributes_Str_Resistances_Thermal = document.querySelector("#structure_kinetic_resistance");
+    var Attributes_Str_Resistances_Kinetic = document.querySelector("#structure_explosive_resistance");
+    var Attributes_Str_Resistances_Explosive = document.querySelector("#structure_explosive_resistance");
+
     Attributes_Str_Resistances.appendChild(Attributes_Structure_EM_Img);
     Attributes_Str_Resistances.appendChild(Attributes_Structure_EM);
+    Attributes_Structure_EM.appendChild(Attributes_Structure_EM_Bar);
+    Attributes_Structure_EM.appendChild(Attributes_Structure_EM_Value);
     Attributes_Str_Resistances.appendChild(Attributes_Structure_Thermal_Img);
     Attributes_Str_Resistances.appendChild(Attributes_Structure_Thermal);
+    Attributes_Structure_Thermal.appendChild(Attributes_Structure_Thermal_Bar);
+    Attributes_Structure_Thermal.appendChild(Attributes_Structure_Thermal_Value)
     Attributes_Str_Resistances.appendChild(Attributes_Structure_Kinetic_Img);
     Attributes_Str_Resistances.appendChild(Attributes_Structure_Kinetic);
+    Attributes_Structure_Kinetic.appendChild(Attributes_Structure_Kinetic_Bar);
+    Attributes_Structure_Kinetic.appendChild(Attributes_Structure_Kinetic_Value);
     Attributes_Str_Resistances.appendChild(Attributes_Structure_Explosive_Img);
     Attributes_Str_Resistances.appendChild(Attributes_Structure_Explosive);
+    Attributes_Structure_Explosive.appendChild(Attributes_Structure_Explosive_Bar);
+    Attributes_Structure_Explosive.appendChild(Attributes_Structure_Explosive_Value);
+
 
 
 
