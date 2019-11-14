@@ -532,5 +532,22 @@ function InsertData(data){
         var testdata = document.querySelector("#AT14");
         testdata.textContent = data[i]["B"];
     }
+    if(data[i]["A"] === "109"){
+        var resistance = document.querySelector("#structure_kinetic_resistance_bar");
+        resistance.style.width = data[i]["B"] + "%";
+    }
+    if(data[i]["A"] === "110"){
+        var resistance = document.querySelector("#structure_thermal_resistance_bar");
+        resistance.style.width = data[i]["B"] + "%";
+    }
+    if(data[i]["A"] === "111"){
+        var resistance = document.querySelector("#structure_explosive_resistance_bar");
+        resistance.style.width = data[i]["B"] + "%";
+    }
+    if(data[i]["A"] === "113"){
+        var resistance = document.querySelector("#structure_em_resistance_bar");
+        resistance.style.width = data[i]["B"] + "%";
+    }
+
 }
 }

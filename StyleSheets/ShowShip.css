@@ -181,15 +181,12 @@
 }
 .structure_resistance_bar{
     position: absolute;
-    width: 0;
-    transition: width 500ms;
-    height: 100%;
-}
-.structure_resistance_bar{
     width: 50%;
+    height: 100%;
 }
 #structure_em_resistance_bar{
     background-color: rgb(25, 95, 140);
+    width: 0%;
 }
 #structure_thermal_resistance_bar{
     background-color: rgb(140, 25, 25);

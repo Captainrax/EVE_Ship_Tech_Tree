@@ -1,344 +1,346 @@
-﻿{ 
-	"Kestrel": [
-		{
-			"Kestrel_Data.Column1.attribute_id": "588",
-			"Kestrel_Data.Column1.value": "5"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "129",
-			"Kestrel_Data.Column1.value": "6"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1154",
-			"Kestrel_Data.Column1.value": "3"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "3",
-			"Kestrel_Data.Column1.value": "0"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "4",
-			"Kestrel_Data.Column1.value": "1113000"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "662",
-			"Kestrel_Data.Column1.value": "0.05"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "263",
-			"Kestrel_Data.Column1.value": "500"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "136",
-			"Kestrel_Data.Column1.value": "1"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "9",
-			"Kestrel_Data.Column1.value": "400"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "11",
-			"Kestrel_Data.Column1.value": "45"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "12",
-			"Kestrel_Data.Column1.value": "2"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "13",
-			"Kestrel_Data.Column1.value": "4"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "14",
-			"Kestrel_Data.Column1.value": "4"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "15",
-			"Kestrel_Data.Column1.value": "0"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "272",
-			"Kestrel_Data.Column1.value": "0.5"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "273",
-			"Kestrel_Data.Column1.value": "0.6"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "274",
-			"Kestrel_Data.Column1.value": "0.8"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "19",
-			"Kestrel_Data.Column1.value": "1"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "269",
-			"Kestrel_Data.Column1.value": "0.75"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "21",
-			"Kestrel_Data.Column1.value": "0"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "661",
-			"Kestrel_Data.Column1.value": "3000"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "153",
-			"Kestrel_Data.Column1.value": "2.2400000000000002E-6"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1178",
-			"Kestrel_Data.Column1.value": "100"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "283",
-			"Kestrel_Data.Column1.value": "0"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "265",
-			"Kestrel_Data.Column1.value": "350"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "161",
-			"Kestrel_Data.Column1.value": "19700"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "162",
-			"Kestrel_Data.Column1.value": "45.98"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1179",
-			"Kestrel_Data.Column1.value": "0.01"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "422",
-			"Kestrel_Data.Column1.value": "1"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "37",
-			"Kestrel_Data.Column1.value": "325"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "38",
-			"Kestrel_Data.Column1.value": "160"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1137",
-			"Kestrel_Data.Column1.value": "3"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "552",
-			"Kestrel_Data.Column1.value": "38"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "18",
-			"Kestrel_Data.Column1.value": "0"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1196",
-			"Kestrel_Data.Column1.value": "0.01"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1198",
-			"Kestrel_Data.Column1.value": "0.01"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1199",
-			"Kestrel_Data.Column1.value": "100"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "48",
-			"Kestrel_Data.Column1.value": "180"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "49",
-			"Kestrel_Data.Column1.value": "0"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "564",
-			"Kestrel_Data.Column1.value": "620"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "182",
-			"Kestrel_Data.Column1.value": "3330"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "55",
-			"Kestrel_Data.Column1.value": "165000"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1547",
-			"Kestrel_Data.Column1.value": "1"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "264",
-			"Kestrel_Data.Column1.value": "0"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "192",
-			"Kestrel_Data.Column1.value": "5"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "525",
-			"Kestrel_Data.Column1.value": "1"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "267",
-			"Kestrel_Data.Column1.value": "0.5"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "70",
-			"Kestrel_Data.Column1.value": "3.27"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1224",
-			"Kestrel_Data.Column1.value": "1"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "268",
-			"Kestrel_Data.Column1.value": "0.9"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1200",
-			"Kestrel_Data.Column1.value": "100"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "76",
-			"Kestrel_Data.Column1.value": "50000"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "79",
-			"Kestrel_Data.Column1.value": "4000"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "208",
-			"Kestrel_Data.Column1.value": "0"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "209",
-			"Kestrel_Data.Column1.value": "0"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "210",
-			"Kestrel_Data.Column1.value": "0"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "211",
-			"Kestrel_Data.Column1.value": "11"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1281",
-			"Kestrel_Data.Column1.value": "1"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "270",
-			"Kestrel_Data.Column1.value": "0.55000000000000004"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "463",
-			"Kestrel_Data.Column1.value": "10"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1262",
-			"Kestrel_Data.Column1.value": "0.25"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "600",
-			"Kestrel_Data.Column1.value": "5"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "217",
-			"Kestrel_Data.Column1.value": "395"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "271",
-			"Kestrel_Data.Column1.value": "1"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "479",
-			"Kestrel_Data.Column1.value": "625000"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "482",
-			"Kestrel_Data.Column1.value": "330"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "484",
-			"Kestrel_Data.Column1.value": "0.75"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "101",
-			"Kestrel_Data.Column1.value": "4"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "102",
-			"Kestrel_Data.Column1.value": "0"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1768",
-			"Kestrel_Data.Column1.value": "11324"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1259",
-			"Kestrel_Data.Column1.value": "0.63"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1132",
-			"Kestrel_Data.Column1.value": "400"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "109",
-			"Kestrel_Data.Column1.value": "0.67"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "110",
-			"Kestrel_Data.Column1.value": "0.67"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "111",
-			"Kestrel_Data.Column1.value": "0.67"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1555",
-			"Kestrel_Data.Column1.value": "25"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "113",
-			"Kestrel_Data.Column1.value": "0.67"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1261",
-			"Kestrel_Data.Column1.value": "0.63"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "246",
-			"Kestrel_Data.Column1.value": "395"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "1271",
-			"Kestrel_Data.Column1.value": "0"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "633",
-			"Kestrel_Data.Column1.value": "0"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "511",
-			"Kestrel_Data.Column1.value": "0"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "124",
-			"Kestrel_Data.Column1.value": "16777215"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "524",
-			"Kestrel_Data.Column1.value": "0.75"
-		},
-		{
-			"Kestrel_Data.Column1.attribute_id": "277",
-			"Kestrel_Data.Column1.value": "1"
-		}
-	]
-}
+[
+ {
+   "A": "Kestrel_Data.Column1.attribute_id",
+   "B": "Kestrel_Data.Column1.value"
+ },
+ {
+   "A": "588",
+   "B": "5"
+ },
+ {
+   "A": "129",
+   "B": "6"
+ },
+ {
+   "A": "1154",
+   "B": "3"
+ },
+ {
+   "A": "3",
+   "B": "0"
+ },
+ {
+   "A": "4",
+   "B": "1113000"
+ },
+ {
+   "A": "662",
+   "B": "0.05"
+ },
+ {
+   "A": "263",
+   "B": "500"
+ },
+ {
+   "A": "136",
+   "B": "1"
+ },
+ {
+   "A": "9",
+   "B": "400"
+ },
+ {
+   "A": "11",
+   "B": "45"
+ },
+ {
+   "A": "12",
+   "B": "2"
+ },
+ {
+   "A": "13",
+   "B": "4"
+ },
+ {
+   "A": "14",
+   "B": "4"
+ },
+ {
+   "A": "15",
+   "B": "0"
+ },
+ {
+   "A": "272",
+   "B": "0.5"
+ },
+ {
+   "A": "273",
+   "B": "0.6"
+ },
+ {
+   "A": "274",
+   "B": "0.8"
+ },
+ {
+   "A": "19",
+   "B": "1"
+ },
+ {
+   "A": "269",
+   "B": "0.75"
+ },
+ {
+   "A": "21",
+   "B": "0"
+ },
+ {
+   "A": "661",
+   "B": "3000"
+ },
+ {
+   "A": "153",
+   "B": "0.00000224"
+ },
+ {
+   "A": "1178",
+   "B": "100"
+ },
+ {
+   "A": "283",
+   "B": "0"
+ },
+ {
+   "A": "265",
+   "B": "350"
+ },
+ {
+   "A": "161",
+   "B": "19700"
+ },
+ {
+   "A": "162",
+   "B": "45.98"
+ },
+ {
+   "A": "1179",
+   "B": "0.01"
+ },
+ {
+   "A": "422",
+   "B": "1"
+ },
+ {
+   "A": "37",
+   "B": "325"
+ },
+ {
+   "A": "38",
+   "B": "160"
+ },
+ {
+   "A": "1137",
+   "B": "3"
+ },
+ {
+   "A": "552",
+   "B": "38"
+ },
+ {
+   "A": "18",
+   "B": "0"
+ },
+ {
+   "A": "1196",
+   "B": "0.01"
+ },
+ {
+   "A": "1198",
+   "B": "0.01"
+ },
+ {
+   "A": "1199",
+   "B": "100"
+ },
+ {
+   "A": "48",
+   "B": "180"
+ },
+ {
+   "A": "49",
+   "B": "0"
+ },
+ {
+   "A": "564",
+   "B": "620"
+ },
+ {
+   "A": "182",
+   "B": "3330"
+ },
+ {
+   "A": "55",
+   "B": "165000"
+ },
+ {
+   "A": "1547",
+   "B": "1"
+ },
+ {
+   "A": "264",
+   "B": "0"
+ },
+ {
+   "A": "192",
+   "B": "5"
+ },
+ {
+   "A": "525",
+   "B": "1"
+ },
+ {
+   "A": "267",
+   "B": "0.5"
+ },
+ {
+   "A": "70",
+   "B": "3.27"
+ },
+ {
+   "A": "1224",
+   "B": "1"
+ },
+ {
+   "A": "268",
+   "B": "0.9"
+ },
+ {
+   "A": "1200",
+   "B": "100"
+ },
+ {
+   "A": "76",
+   "B": "50000"
+ },
+ {
+   "A": "79",
+   "B": "4000"
+ },
+ {
+   "A": "208",
+   "B": "0"
+ },
+ {
+   "A": "209",
+   "B": "0"
+ },
+ {
+   "A": "210",
+   "B": "0"
+ },
+ {
+   "A": "211",
+   "B": "11"
+ },
+ {
+   "A": "1281",
+   "B": "1"
+ },
+ {
+   "A": "270",
+   "B": "0.55"
+ },
+ {
+   "A": "463",
+   "B": "10"
+ },
+ {
+   "A": "1262",
+   "B": "0.25"
+ },
+ {
+   "A": "600",
+   "B": "5"
+ },
+ {
+   "A": "217",
+   "B": "395"
+ },
+ {
+   "A": "271",
+   "B": "1"
+ },
+ {
+   "A": "479",
+   "B": "625000"
+ },
+ {
+   "A": "482",
+   "B": "330"
+ },
+ {
+   "A": "484",
+   "B": "0.75"
+ },
+ {
+   "A": "101",
+   "B": "4"
+ },
+ {
+   "A": "102",
+   "B": "0"
+ },
+ {
+   "A": "1768",
+   "B": "11324"
+ },
+ {
+   "A": "1259",
+   "B": "0.63"
+ },
+ {
+   "A": "1132",
+   "B": "400"
+ },
+ {
+   "A": "109",
+   "B": "0.67"
+ },
+ {
+   "A": "110",
+   "B": "0.67"
+ },
+ {
+   "A": "111",
+   "B": "0.67"
+ },
+ {
+   "A": "1555",
+   "B": "25"
+ },
+ {
+   "A": "113",
+   "B": "0.67"
+ },
+ {
+   "A": "1261",
+   "B": "0.63"
+ },
+ {
+   "A": "246",
+   "B": "395"
+ },
+ {
+   "A": "1271",
+   "B": "0"
+ },
+ {
+   "A": "633",
+   "B": "0"
+ },
+ {
+   "A": "511",
+   "B": "0"
+ },
+ {
+   "A": "124",
+   "B": "16777215"
+ },
+ {
+   "A": "524",
+   "B": "0.75"
+ },
+ {
+   "A": "277",
+   "B": "1"
+ }
+]

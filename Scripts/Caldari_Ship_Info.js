@@ -324,14 +324,7 @@ function kestrel(){
         console.log('error: ' + err);
     });
     function appendData(data) {
-        for(var i = 0;i < data.Kestrel.length;i++){
-
-            if(data.Kestrel[i]["Kestrel_Data.Column1.attribute_id"] === "4"){
-                var testdata = document.querySelector("#AT10");
-                testdata.textContent = data.Kestrel[i]["Kestrel_Data.Column1.value"] + " kg";
-                console.log(data.Kestrel[i]["Kestrel_Data.Column1.value"]);
-            }
-        }
+        InsertData(data);
     }
 }
 
