@@ -87,11 +87,11 @@
     padding: 0px;
     margin: 0px;
 }
-.traits_icons{
+#traits img:not(:first-of-type){
     border-style: solid;
     border-color: rgba(75, 140, 175, 0.2);
     border-width: 1px;
-    margin: 0px 4px;
+    margin: 0px 1px;
 }
 .traits_header{
     font-size: 17px;
@@ -107,6 +107,10 @@
 .traits_item{
     font-weight: bold;
     color: rgba(230, 230, 230, 1);
+}
+#description_text{
+    margin: 4px;
+    padding: 0px;
 }
 #attributes{
     grid-template-columns: auto auto;
@@ -186,7 +190,6 @@
 }
 #structure_em_resistance_bar{
     background-color: rgb(25, 95, 140);
-    width: 0%;
 }
 #structure_thermal_resistance_bar{
     background-color: rgb(140, 25, 25);

@@ -64,9 +64,6 @@ var Charon = new Ship("Charon", "Freighter");
 Charon.seticon("Scripts/images/doot.png");
 
 
-console.log(Ibis);
-
-
 function insert(Ship) {
     
     var grid = document.querySelector(".grid-container");
@@ -250,15 +247,23 @@ function insert(Ship) {
     var Traits_img7 = document.createElement("img");
     var Traits_img8 = document.createElement("img");
 
-    Traits_img1.className = "traits_icon1";
-    Traits_img2.className = "traits_icon2";
-    Traits_img3.className = "traits_icon3";
-    Traits_img4.className = "traits_icon4";
-    Traits_img5.className = "traits_icon5";
-    Traits_img6.className = "traits_icon6";
-    Traits_img7.className = "traits_icon7";
-    Traits_img8.className = "traits_icon8";
-    
+    Traits_img1.id = "traits_icon1";
+    Traits_img1.className = "traits_icon";
+    Traits_img2.id = "traits_icon2";
+    Traits_img2.className = "traits_icon";
+    Traits_img3.id = "traits_icon3";
+    Traits_img3.className = "traits_icon";
+    Traits_img4.id = "traits_icon4";
+    Traits_img4.className = "traits_icon";
+    Traits_img5.id = "traits_icon5";
+    Traits_img5.className = "traits_icon";
+    Traits_img6.id = "traits_icon6";
+    Traits_img6.className = "traits_icon";
+    Traits_img7.id = "traits_icon7";
+    Traits_img7.className = "traits_icon";
+    Traits_img8.id = "traits_icon8";
+    Traits_img8.className = "traits_icon";
+
     Content_Traits.appendChild(Traits_img1);
     Content_Traits.appendChild(Traits_img2);
     Content_Traits.appendChild(Traits_img3);
@@ -268,6 +273,11 @@ function insert(Ship) {
     Content_Traits.appendChild(Traits_img7);
     Content_Traits.appendChild(Traits_img8);
 
+    var Content_Description = document.querySelector("#description");
+    var Description_P = document.createElement("p");
+
+    Description_P.id = "description_text";
+    Content_Description.appendChild(Description_P);
 
     var Content_Attributes = document.querySelector("#attributes");
     for (var i = 0; i <= 45; i++){
@@ -391,7 +401,7 @@ function insert(Ship) {
     Attributes_Structure_EM_Bar.id = "structure_em_resistance_bar";
     Attributes_Structure_EM_Value.className = "structure_resistance_value";
     Attributes_Structure_EM_Value.id = "structure_em_resistance_value";
-    Attributes_Structure_EM_Value.textContent = " %";
+    Attributes_Structure_EM_Value.textContent = "";
     Attributes_Structure_EM_Img.className = "attribute_name_img";
     Attributes_Structure_EM_Img.src = "StyleSheets/ship_info_icons/EM.png";
 
@@ -401,7 +411,7 @@ function insert(Ship) {
     Attributes_Structure_Thermal_Bar.id = "structure_thermal_resistance_bar";
     Attributes_Structure_Thermal_Value.className = "structure_resistance_value";
     Attributes_Structure_Thermal_Value.id = "structure_thermal_resistance_value";
-    Attributes_Structure_Thermal_Value.textContent = " %";
+    Attributes_Structure_Thermal_Value.textContent = "";
     Attributes_Structure_Thermal_Img.className = "attribute_name_img";
     Attributes_Structure_Thermal_Img.src = "StyleSheets/ship_info_icons/Thermal.png";
     
@@ -411,7 +421,7 @@ function insert(Ship) {
     Attributes_Structure_Kinetic_Bar.id = "structure_kinetic_resistance_bar";
     Attributes_Structure_Kinetic_Value.className = "structure_resistance_value";
     Attributes_Structure_Kinetic_Value.id = "structure_kinetic_resistance_value";
-    Attributes_Structure_Kinetic_Value.textContent = " %";
+    Attributes_Structure_Kinetic_Value.textContent = "";
     Attributes_Structure_Kinetic_Img.className = "attribute_name_img";
     Attributes_Structure_Kinetic_Img.src = "StyleSheets/ship_info_icons/Kinetic.png";
     
@@ -421,7 +431,7 @@ function insert(Ship) {
     Attributes_Structure_Explosive_Bar.id = "structure_explosive_resistance_bar";
     Attributes_Structure_Explosive_Value.className = "structure_resistance_value";
     Attributes_Structure_Explosive_Value.id = "structure_explosive_resistance_value";
-    Attributes_Structure_Explosive_Value.textContent = " %";
+    Attributes_Structure_Explosive_Value.textContent = "";
     Attributes_Structure_Explosive_Img.className = "attribute_name_img";
     Attributes_Structure_Explosive_Img.src = "StyleSheets/ship_info_icons/Explosive.png";
 
@@ -465,9 +475,9 @@ function Close() {
 Ship_nav();
 
 dragElement(document.getElementById("ship_div"));
+// insures only 1 window can be open at a time, if more than 1 window is open the close button breaks.
 Close();
 }
-
 
 
 
@@ -496,6 +506,13 @@ function Attribute_Drone(Toggle){
         Attributes_Str_Drone_Capacity.appendChild(Attributes_Structure_Drone_Capacity);
         Attributes_Str_Drone_Bandwidth.appendChild(Attributes_Structure_Drone_Bandwidth_Img);
         Attributes_Str_Drone_Bandwidth.appendChild(Attributes_Structure_Drone_Bandwidth);
+        
+        Attributes_Str_Drone_Capacity.style.display = "grid";
+        Attributes_Str_Drone_Bandwidth.style.display = "grid";
+        var Attributes_Str_Drone_Capacity_AT = document.querySelector("#AT6");
+        var Attributes_Str_Drone_Bandwidth_AT = document.querySelector("#AT8");
+        Attributes_Str_Drone_Capacity_AT.style.display = "grid";
+        Attributes_Str_Drone_Bandwidth_AT.style.display = "grid";
 
     } else if (Toggle === false) {
 
@@ -508,46 +525,93 @@ function Attribute_Drone(Toggle){
         Attributes_Str_Drone_Capacity_AT.style.display = "none";
         Attributes_Str_Drone_Bandwidth_AT.style.display = "none";
     }
-}    
+} 
 
 function InsertData(data){
-    for(var i = 0;i < data.length;i++){
-    if(data[i]["A"] === "4"){
-        var testdata = document.querySelector("#AT10");
-        testdata.textContent = data[i]["B"] + " kg";
-    }
-    if(data[i]["A"] === "482"){
-        var testdata = document.querySelector("#AT4");
-        testdata.textContent = data[i]["B"] + " m3";
-    }
-    if(data[i]["A"] === "9"){
-        var testdata = document.querySelector("#AT2");
-        testdata.textContent = data[i]["B"] + " HP";
-    }
-    if(data[i]["A"] === "161"){
-        var testdata = document.querySelector("#AT12");
-        testdata.textContent = data[i]["B"] + " m3";
-    }
-    if(data[i]["A"] === "70"){
-        var testdata = document.querySelector("#AT14");
-        testdata.textContent = data[i]["B"];
-    }
-    if(data[i]["A"] === "109"){
-        var resistance = document.querySelector("#structure_kinetic_resistance_bar");
-        resistance.style.width = data[i]["B"] + "%";
-    }
-    if(data[i]["A"] === "110"){
-        var resistance = document.querySelector("#structure_thermal_resistance_bar");
-        resistance.style.width = data[i]["B"] + "%";
-    }
-    if(data[i]["A"] === "111"){
-        var resistance = document.querySelector("#structure_explosive_resistance_bar");
-        resistance.style.width = data[i]["B"] + "%";
-    }
-    if(data[i]["A"] === "113"){
-        var resistance = document.querySelector("#structure_em_resistance_bar");
-        resistance.style.width = data[i]["B"] + "%";
-    }
 
+    Attribute_Drone(false);
+
+    for(x in data["dogma_attributes"]){
+        var desc = document.querySelector("#description_text");
+        desc.textContent = data["description"];
+
+        switch(data["dogma_attributes"][x]["attribute_id"]){
+            case 4:
+                    var testdata = document.querySelector("#AT10");
+                    testdata.textContent = data["dogma_attributes"][x]["value"] + " kg";
+                break;
+            case 9:
+                    var testdata = document.querySelector("#AT2");
+                    testdata.textContent = data["dogma_attributes"][x]["value"] + " HP";
+                break;
+            case 70:
+                    var testdata = document.querySelector("#AT14");
+                    testdata.textContent = data["dogma_attributes"][x]["value"] + " x";
+                break;
+            case 109:
+                    var resistance = document.querySelector("#structure_kinetic_resistance_bar");
+                    var value = document.querySelector("#structure_kinetic_resistance_value");
+                    resistance.style.width = data["dogma_attributes"][x]["value"] + "%";
+                    value.textContent = data["dogma_attributes"][x]["value"] + "%";
+                break;
+            case 110:
+                    var resistance = document.querySelector("#structure_thermal_resistance_bar");
+                    var value = document.querySelector("#structure_thermal_resistance_value");
+                    resistance.style.width = data["dogma_attributes"][x]["value"] + "%";
+                    value.textContent = data["dogma_attributes"][x]["value"] + "%";
+                break;
+            case 111:
+                    var resistance = document.querySelector("#structure_explosive_resistance_bar");
+                    var value = document.querySelector("#structure_explosive_resistance_value");
+                    resistance.style.width = data["dogma_attributes"][x]["value"] + "%";
+                    value.textContent = data["dogma_attributes"][x]["value"] + "%";
+                break;
+            case 113:
+                    var resistance = document.querySelector("#structure_em_resistance_bar");
+                    var value = document.querySelector("#structure_em_resistance_value");
+                    resistance.style.width = data["dogma_attributes"][x]["value"] + "%";
+                    value.textContent = data["dogma_attributes"][x]["value"] + "%";
+                break;
+            case 161:
+                    var testdata = document.querySelector("#AT12");
+                    testdata.textContent = data["dogma_attributes"][x]["value"] + " m3";
+                    var pack = data["packaged_volume"];
+                    testdata.textContent += " (" + pack + " m3 Packaged)";
+                break;
+            case 482:
+                    var testdata = document.querySelector("#AT4");
+                    testdata.textContent = data["dogma_attributes"][x]["value"] + " m3";
+                break;
+            case 283:
+                    if(data["dogma_attributes"][x]["value"] != 0){
+                        Attribute_Drone(true);
+                    }
+                    var testdata = document.querySelector("#AT6");
+                    testdata.textContent = data["dogma_attributes"][x]["value"] + " m3";
+                break;
+            case 1271:
+                    var testdata = document.querySelector("#AT8");
+                    testdata.textContent = data["dogma_attributes"][x]["value"] + " Mbit/sec";
+                break;
+
+
+            default:
+                // try{
+                // var testdata = document.querySelector("#AT"+x);
+                // if (testdata.innerHTML === ""){
+                //     var testdata = document.querySelector("#AT"+x);
+                //     testdata.textContent = "Error";
+                // }
+                // }catch{}
+        }
+    }
 }
+function DisplayError(){
+    for(var x = 0; x < 100; x++){
+        var testdata = document.querySelector("#AT"+x);
+        if (testdata.innerHTML === ""){
+            var testdata = document.querySelector("#AT"+x);
+            testdata.textContent = "Error";
+        }
+    }
 }

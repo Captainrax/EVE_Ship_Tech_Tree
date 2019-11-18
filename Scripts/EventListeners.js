@@ -40,11 +40,8 @@ Rookie1.addEventListener("click", function(){
 //ensures only 1 Ship_Div can be created
     if (pagecount === false){
         pagecount = true;
-
         insert(Ibis);
         ibis();
-    } else if (pagecount === true){
-        console.log("wat the fuck");
     }
 });
 
