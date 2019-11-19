@@ -857,7 +857,6 @@ function cormorant(){
     }
 }
 
-
 function corax(){
 
     var Content_Traits = document.querySelector("#traits");
