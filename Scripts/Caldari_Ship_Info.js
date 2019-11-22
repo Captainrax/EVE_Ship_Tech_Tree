@@ -1,3 +1,85 @@
+var Ibis = new Ship("Ibis", "Corvette");
+Ibis.seticon("Scripts/images/601.png");
+var Shuttle = new Ship("Shuttle", "Shuttle");
+Shuttle.seticon("Scripts/images/Caldari_Shuttle.png");
+
+var Bantam = new Ship("Bantam", "Frigate");
+Bantam.seticon("Scripts/images/582.png");
+var Condor = new Ship("Condor", "Frigate");
+Condor.seticon("Scripts/images/583.png");
+var Griffin = new Ship("Griffin", "Frigate");
+Griffin.seticon("Scripts/images/584.png");
+var Kestrel = new Ship("Kestrel", "Frigate");
+Kestrel.seticon("Scripts/images/602.png");
+var Merlin = new Ship("Merlin", "Frigate");
+Merlin.seticon("Scripts/images/603.png");
+var Heron = new Ship("Heron", "Frigate");
+Heron.seticon("Scripts/images/605.png");
+
+var Kirin = new Ship("Kirin", "Frigate");
+Kirin.seticon("Scripts/images/582.png");
+var Kitsune = new Ship("Kitsune", "Frigate");
+Kitsune.seticon("Scripts/images/584.png");
+var Buzzard = new Ship("Buzzard", "Frigate");
+Buzzard.seticon("Scripts/images/605.png");
+var Manticore = new Ship("Manticore", "Frigate");
+Manticore.seticon("Scripts/images/Manticore.png");
+var Hawk = new Ship("Hawk", "Frigate");
+Hawk.seticon("Scripts/images/603.png");
+var Harpy = new Ship("Harpy", "Frigate");
+Harpy.seticon("Scripts/images/603.png");
+var Crow = new Ship("Crow", "Frigate");
+Crow.seticon("Scripts/images/Crow.png");
+var Raptor = new Ship("Raptor", "Frigate");
+Raptor.seticon("Scripts/images/583.png");
+
+var Hookbill = new Ship("Hookbill", "Frigate");
+Hookbill.seticon("Scripts/images/Hookbill.png");
+var Griffin_Navy = new Ship("Griffin Navy Issue", "Frigate");
+Griffin_Navy.seticon("Scripts/images/584.png");
+
+var Cormorant = new Ship("Cormorant", "Destroyer");
+Cormorant.seticon("Scripts/images/Cormorant.png");
+var Corax = new Ship("Corax", "Destroyer");
+Corax.seticon("Scripts/images/Corax.png");
+
+var Flycatcher = new Ship("Flycatcher", "Destroyer");
+Flycatcher.seticon("Scripts/images/Flycatcher.png");
+var Stork = new Ship("Stork", "Destroyer");
+Stork.seticon("Scripts/images/Stork.png");
+var Jackdaw = new Ship("Jackdaw", "Destroyer");
+Jackdaw.seticon("Scripts/images/Jackdaw.png");
+
+var Osprey = new Ship("Osprey", "Destroyer");
+Osprey.seticon("Scripts/images/Corax.png");
+var Blackbird = new Ship("Blackbird", "Destroyer");
+Blackbird.seticon("Scripts/images/Corax.png");
+var Caracal = new Ship("Caracal", "Destroyer");
+Caracal.seticon("Scripts/images/Corax.png");
+var Moa = new Ship("Moa", "Destroyer");
+Moa.seticon("Scripts/images/Corax.png");
+
+var Osprey_Navy = new Ship("Osprey Navy Issue", "Destroyer");
+Osprey_Navy.seticon("Scripts/images/Corax.png");
+var Caracal_Navy = new Ship("Caracal Navy Issue", "Destroyer");
+Caracal_Navy.seticon("Scripts/images/Corax.png");
+
+var tbd = new Ship("Corax", "Destroyer");
+tbd.seticon("Scripts/images/Corax.png");
+var tbd = new Ship("Corax", "Destroyer");
+tbd.seticon("Scripts/images/Corax.png");
+var tbd = new Ship("Corax", "Destroyer");
+tbd.seticon("Scripts/images/Corax.png");
+var tbd = new Ship("Corax", "Destroyer");
+tbd.seticon("Scripts/images/Corax.png");
+var tbd = new Ship("Corax", "Destroyer");
+tbd.seticon("Scripts/images/Corax.png");
+var tbd = new Ship("Corax", "Destroyer");
+tbd.seticon("Scripts/images/Corax.png");
+
+var Charon = new Ship("Charon", "Freighter");
+Charon.seticon("Scripts/images/doot.png");
+
 
 function ibis(){
     

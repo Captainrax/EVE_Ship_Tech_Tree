@@ -15,55 +15,6 @@ class Ship {
 
 }
 
-var Ibis = new Ship("Ibis", "Corvette");
-Ibis.seticon("Scripts/images/601.png");
-var Shuttle = new Ship("Shuttle", "Shuttle");
-Shuttle.seticon("Scripts/images/Caldari_Shuttle.png");
-
-var Bantam = new Ship("Bantam", "Frigate");
-Bantam.seticon("Scripts/images/582.png");
-var Condor = new Ship("Condor", "Frigate");
-Condor.seticon("Scripts/images/583.png");
-var Griffin = new Ship("Griffin", "Frigate");
-Griffin.seticon("Scripts/images/584.png");
-var Kestrel = new Ship("Kestrel", "Frigate");
-Kestrel.seticon("Scripts/images/602.png");
-var Merlin = new Ship("Merlin", "Frigate");
-Merlin.seticon("Scripts/images/603.png");
-var Heron = new Ship("Heron", "Frigate");
-Heron.seticon("Scripts/images/605.png");
-
-var Kirin = new Ship("Kirin", "Frigate");
-Kirin.seticon("Scripts/images/582.png");
-var Kitsune = new Ship("Kitsune", "Frigate");
-Kitsune.seticon("Scripts/images/584.png");
-var Buzzard = new Ship("Buzzard", "Frigate");
-Buzzard.seticon("Scripts/images/605.png");
-var Manticore = new Ship("Manticore", "Frigate");
-Manticore.seticon("Scripts/images/Manticore.png");
-var Hawk = new Ship("Hawk", "Frigate");
-Hawk.seticon("Scripts/images/603.png");
-var Harpy = new Ship("Harpy", "Frigate");
-Harpy.seticon("Scripts/images/603.png");
-var Crow = new Ship("Crow", "Frigate");
-Crow.seticon("Scripts/images/Crow.png");
-var Raptor = new Ship("Raptor", "Frigate");
-Raptor.seticon("Scripts/images/583.png");
-
-var Hookbill = new Ship("Hookbill", "Frigate");
-Hookbill.seticon("Scripts/images/Hookbill.png");
-var Griffin_Navy = new Ship("Griffin Navy Issue", "Frigate");
-Griffin_Navy.seticon("Scripts/images/584.png");
-
-var Cormorant = new Ship("Cormorant", "Destroyer");
-Cormorant.seticon("Scripts/images/Cormorant.png");
-var Corax = new Ship("Corax", "Destroyer");
-Corax.seticon("Scripts/images/Corax.png");
-
-var Charon = new Ship("Charon", "Freighter");
-Charon.seticon("Scripts/images/doot.png");
-
-
 function insert(Ship) {
     
     var grid = document.querySelector(".grid-container");
@@ -304,7 +255,6 @@ function insert(Ship) {
     var Attributes_Structure_Volume_Img = document.createElement("img");
     var Attributes_Structure_Inertia_Modifier = document.createElement("p");
     var Attributes_Structure_Inertia_Modifier_Img = document.createElement("img");
-    // Structure Resistances
 
     Attributes_Structure_Title.textContent = "Structure";
     Attributes_Structure_Title.className = "attributes_titles";
@@ -343,8 +293,8 @@ function insert(Ship) {
     Attributes_Structure_Inertia_Modifier.className = "attribute_name";
     Attributes_Structure_Inertia_Modifier_Img.className = "attribute_name_img";
     Attributes_Structure_Inertia_Modifier_Img.src = "StyleSheets/ship_info_icons/Inertia_Modifier.png";
+
     // Resistances
-    
     var Attributes_Str = document.querySelector("#AT0");
     var Attributes_Arm = document.querySelector("#AT16");
     var Attributes_Shi = document.querySelector("#AT20");
@@ -436,10 +386,6 @@ function insert(Ship) {
     Attributes_Structure_Explosive_Img.src = "StyleSheets/ship_info_icons/Explosive.png";
 
     var Attributes_Str_Resistances = document.querySelector("#AT15");
-    var Attributes_Str_Resistances_EM = document.querySelector("#structure_em_resistance");
-    var Attributes_Str_Resistances_Thermal = document.querySelector("#structure_kinetic_resistance");
-    var Attributes_Str_Resistances_Kinetic = document.querySelector("#structure_explosive_resistance");
-    var Attributes_Str_Resistances_Explosive = document.querySelector("#structure_explosive_resistance");
 
     Attributes_Str_Resistances.appendChild(Attributes_Structure_EM_Img);
     Attributes_Str_Resistances.appendChild(Attributes_Structure_EM);
@@ -459,73 +405,155 @@ function insert(Ship) {
     Attributes_Structure_Explosive.appendChild(Attributes_Structure_Explosive_Value);
 
 
-
-
 function Close() {
     var Ship_Div = document.querySelector("#ship_div");
     const CloseButton = document.querySelector("#close");
     CloseButton.addEventListener("click", function(){
 
     Ship_Div.remove();
-    //From EventListener.js - ensures only 1 Ship_Div can be created
+    //From Caldari_EventListener.js - ensures only 1 Ship_Div can be created
     pagecount = false;
     });
 }
 
-Ship_nav();
+// Navigation menu inside the Information panel
+function Ship_nav(){
 
+    var Ship_Traits = document.querySelector("#ship_traits");
+    var Ship_Description = document.querySelector("#ship_description");
+    var Ship_Attributes = document.querySelector("#ship_attributes");
+    var Ship_Fitting = document.querySelector("#ship_fitting");
+    var Ship_Requirements = document.querySelector("#ship_requirements");
+    var Ship_Mastery = document.querySelector("#ship_mastery");
+    var Ship_Variations = document.querySelector("#ship_variations");
+    var Ship_Industry = document.querySelector("#ship_industry");
+    var Ship_Skins = document.querySelector("#ship_skins");
+    var Traits = document.querySelector("#traits");
+    var Description = document.querySelector("#description");
+    var Attributes = document.querySelector("#attributes");
+    var Fitting = document.querySelector("#fitting");
+    var Requirements = document.querySelector("#requirements");
+    var Mastery = document.querySelector("#mastery");
+    var Variations = document.querySelector("#variations");
+    var Industry = document.querySelector("#industry");
+    var Skins = document.querySelector("#skins");
+    
+    Ship_Traits.addEventListener("click", function(){
+        Traits.style.display = "block";
+        Description.style.display = "none";
+        Attributes.style.display = "none";
+        Fitting.style.display = "none";
+        Requirements.style.display = "none";
+        Mastery.style.display = "none";
+        Variations.style.display = "none";
+        Industry.style.display = "none";
+        Skins.style.display = "none";
+    });
+    Ship_Description.addEventListener("click", function(){
+        Traits.style.display = "none";
+        Description.style.display = "block";
+        Attributes.style.display = "none";
+        Fitting.style.display = "none";
+        Requirements.style.display = "none";
+        Mastery.style.display = "none";
+        Variations.style.display = "none";
+        Industry.style.display = "none";
+        Skins.style.display = "none";
+    });
+    Ship_Attributes.addEventListener("click", function(){
+        Traits.style.display = "none";
+        Description.style.display = "none";
+        Attributes.style.display = "grid";
+        Fitting.style.display = "none";
+        Requirements.style.display = "none";
+        Mastery.style.display = "none";
+        Variations.style.display = "none";
+        Industry.style.display = "none";
+        Skins.style.display = "none";
+    });
+    Ship_Fitting.addEventListener("click", function(){
+        Traits.style.display = "none";
+        Description.style.display = "none";
+        Attributes.style.display = "none";
+        Fitting.style.display = "block";
+        Requirements.style.display = "none";
+        Mastery.style.display = "none";
+        Variations.style.display = "none";
+        Industry.style.display = "none";
+        Skins.style.display = "none";
+    });
+    Ship_Requirements.addEventListener("click", function(){
+        Traits.style.display = "none";
+        Description.style.display = "none";
+        Attributes.style.display = "none";
+        Fitting.style.display = "none";
+        Requirements.style.display = "block";
+        Mastery.style.display = "none";
+        Variations.style.display = "none";
+        Industry.style.display = "none";
+        Skins.style.display = "none";
+    });
+    Ship_Mastery.addEventListener("click", function(){
+        Traits.style.display = "none";
+        Description.style.display = "none";
+        Attributes.style.display = "none";
+        Fitting.style.display = "none";
+        Requirements.style.display = "none";
+        Mastery.style.display = "block";
+        Variations.style.display = "none";
+        Industry.style.display = "none";
+        Skins.style.display = "none";
+    });
+    Ship_Variations.addEventListener("click", function(){
+        Traits.style.display = "none";
+        Description.style.display = "none";
+        Attributes.style.display = "none";
+        Fitting.style.display = "none";
+        Requirements.style.display = "none";
+        Mastery.style.display = "none";
+        Variations.style.display = "block";
+        Industry.style.display = "none";
+        Skins.style.display = "none";
+    });
+    Ship_Industry.addEventListener("click", function(){
+        Traits.style.display = "none";
+        Description.style.display = "none";
+        Attributes.style.display = "none";
+        Fitting.style.display = "none";
+        Requirements.style.display = "none";
+        Mastery.style.display = "none";
+        Variations.style.display = "none";
+        Industry.style.display = "block";
+        Skins.style.display = "none";
+    });
+    Ship_Skins.addEventListener("click", function(){
+        Traits.style.display = "none";
+        Description.style.display = "none";
+        Attributes.style.display = "none";
+        Fitting.style.display = "none";
+        Requirements.style.display = "none";
+        Mastery.style.display = "none";
+        Variations.style.display = "none";
+        Industry.style.display = "none";
+        Skins.style.display = "block";
+    });
+    // Add active class to the current button (highlight it)
+    var header = document.querySelector(".ship_navbar");
+    var btns = header.getElementsByClassName("ship_tab");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+}
+Ship_nav();
+// From DraggableDiv.js
 dragElement(document.getElementById("ship_div"));
 // insures only 1 window can be open at a time, if more than 1 window is open the close button breaks.
 Close();
 }
-
-
-
-function Attribute_Drone(Toggle){
-
-    if (Toggle === true) {
-        var Attributes_Structure_Drone_Capacity = document.createElement("p");
-        var Attributes_Structure_Drone_Capacity_Img = document.createElement("img");
-        var Attributes_Structure_Drone_Bandwidth = document.createElement("p");
-        var Attributes_Structure_Drone_Bandwidth_Img = document.createElement("img");
-
-        Attributes_Structure_Drone_Capacity.textContent = "Drone Capacity";
-        Attributes_Structure_Drone_Capacity.className = "attribute_name";
-        Attributes_Structure_Drone_Capacity_Img.className = "attribute_name_img";
-        Attributes_Structure_Drone_Capacity_Img.src = "StyleSheets/ship_info_icons/Drone_Capacity.png";
-
-        Attributes_Structure_Drone_Bandwidth.textContent = "Drone Bandwidth";
-        Attributes_Structure_Drone_Bandwidth.className = "attribute_name";
-        Attributes_Structure_Drone_Bandwidth_Img.className = "attribute_name_img";
-        Attributes_Structure_Drone_Bandwidth_Img.src = "StyleSheets/ship_info_icons/Drone_Bandwidth.png";
-        
-        var Attributes_Str_Drone_Capacity = document.querySelector("#AT5");
-        var Attributes_Str_Drone_Bandwidth = document.querySelector("#AT7");
-        
-        Attributes_Str_Drone_Capacity.appendChild(Attributes_Structure_Drone_Capacity_Img);
-        Attributes_Str_Drone_Capacity.appendChild(Attributes_Structure_Drone_Capacity);
-        Attributes_Str_Drone_Bandwidth.appendChild(Attributes_Structure_Drone_Bandwidth_Img);
-        Attributes_Str_Drone_Bandwidth.appendChild(Attributes_Structure_Drone_Bandwidth);
-        
-        Attributes_Str_Drone_Capacity.style.display = "grid";
-        Attributes_Str_Drone_Bandwidth.style.display = "grid";
-        var Attributes_Str_Drone_Capacity_AT = document.querySelector("#AT6");
-        var Attributes_Str_Drone_Bandwidth_AT = document.querySelector("#AT8");
-        Attributes_Str_Drone_Capacity_AT.style.display = "grid";
-        Attributes_Str_Drone_Bandwidth_AT.style.display = "grid";
-
-    } else if (Toggle === false) {
-
-        var Attributes_Str_Drone_Capacity = document.querySelector("#AT5");
-        var Attributes_Str_Drone_Bandwidth = document.querySelector("#AT7");
-        Attributes_Str_Drone_Capacity.style.display = "none";
-        Attributes_Str_Drone_Bandwidth.style.display = "none";
-        var Attributes_Str_Drone_Capacity_AT = document.querySelector("#AT6");
-        var Attributes_Str_Drone_Bandwidth_AT = document.querySelector("#AT8");
-        Attributes_Str_Drone_Capacity_AT.style.display = "none";
-        Attributes_Str_Drone_Bandwidth_AT.style.display = "none";
-    }
-} 
 
 function InsertData(data){
 
@@ -615,3 +643,49 @@ function DisplayError(){
         }
     }
 }
+
+function Attribute_Drone(Toggle){
+
+    if (Toggle === true) {
+        var Attributes_Structure_Drone_Capacity = document.createElement("p");
+        var Attributes_Structure_Drone_Capacity_Img = document.createElement("img");
+        var Attributes_Structure_Drone_Bandwidth = document.createElement("p");
+        var Attributes_Structure_Drone_Bandwidth_Img = document.createElement("img");
+
+        Attributes_Structure_Drone_Capacity.textContent = "Drone Capacity";
+        Attributes_Structure_Drone_Capacity.className = "attribute_name";
+        Attributes_Structure_Drone_Capacity_Img.className = "attribute_name_img";
+        Attributes_Structure_Drone_Capacity_Img.src = "StyleSheets/ship_info_icons/Drone_Capacity.png";
+
+        Attributes_Structure_Drone_Bandwidth.textContent = "Drone Bandwidth";
+        Attributes_Structure_Drone_Bandwidth.className = "attribute_name";
+        Attributes_Structure_Drone_Bandwidth_Img.className = "attribute_name_img";
+        Attributes_Structure_Drone_Bandwidth_Img.src = "StyleSheets/ship_info_icons/Drone_Bandwidth.png";
+        
+        var Attributes_Str_Drone_Capacity = document.querySelector("#AT5");
+        var Attributes_Str_Drone_Bandwidth = document.querySelector("#AT7");
+        
+        Attributes_Str_Drone_Capacity.appendChild(Attributes_Structure_Drone_Capacity_Img);
+        Attributes_Str_Drone_Capacity.appendChild(Attributes_Structure_Drone_Capacity);
+        Attributes_Str_Drone_Bandwidth.appendChild(Attributes_Structure_Drone_Bandwidth_Img);
+        Attributes_Str_Drone_Bandwidth.appendChild(Attributes_Structure_Drone_Bandwidth);
+        
+        Attributes_Str_Drone_Capacity.style.display = "grid";
+        Attributes_Str_Drone_Bandwidth.style.display = "grid";
+        var Attributes_Str_Drone_Capacity_AT = document.querySelector("#AT6");
+        var Attributes_Str_Drone_Bandwidth_AT = document.querySelector("#AT8");
+        Attributes_Str_Drone_Capacity_AT.style.display = "grid";
+        Attributes_Str_Drone_Bandwidth_AT.style.display = "grid";
+
+    } else if (Toggle === false) {
+
+        var Attributes_Str_Drone_Capacity = document.querySelector("#AT5");
+        var Attributes_Str_Drone_Bandwidth = document.querySelector("#AT7");
+        Attributes_Str_Drone_Capacity.style.display = "none";
+        Attributes_Str_Drone_Bandwidth.style.display = "none";
+        var Attributes_Str_Drone_Capacity_AT = document.querySelector("#AT6");
+        var Attributes_Str_Drone_Bandwidth_AT = document.querySelector("#AT8");
+        Attributes_Str_Drone_Capacity_AT.style.display = "none";
+        Attributes_Str_Drone_Bandwidth_AT.style.display = "none";
+    }
+} 
