@@ -1,84 +1,94 @@
 var Ibis = new Ship("Ibis", "Corvette");
-Ibis.seticon("Scripts/images/601.png");
+Ibis.seticon("Scripts/Caldari_Data/images/Ibis.png");
 var Shuttle = new Ship("Shuttle", "Shuttle");
-Shuttle.seticon("Scripts/images/Caldari_Shuttle.png");
+Shuttle.seticon("Scripts/Caldari_Data/images/Caldari_Shuttle.png");
 
 var Bantam = new Ship("Bantam", "Frigate");
-Bantam.seticon("Scripts/images/582.png");
+Bantam.seticon("Scripts/Caldari_Data/images/Bantam.png");
 var Condor = new Ship("Condor", "Frigate");
-Condor.seticon("Scripts/images/583.png");
+Condor.seticon("Scripts/Caldari_Data/images/Condor.png");
 var Griffin = new Ship("Griffin", "Frigate");
-Griffin.seticon("Scripts/images/584.png");
+Griffin.seticon("Scripts/Caldari_Data/images/Griffin.png");
 var Kestrel = new Ship("Kestrel", "Frigate");
-Kestrel.seticon("Scripts/images/602.png");
+Kestrel.seticon("Scripts/Caldari_Data/images/Kestrel.png");
 var Merlin = new Ship("Merlin", "Frigate");
-Merlin.seticon("Scripts/images/603.png");
+Merlin.seticon("Scripts/Caldari_Data/images/Merlin.png");
 var Heron = new Ship("Heron", "Frigate");
-Heron.seticon("Scripts/images/605.png");
+Heron.seticon("Scripts/Caldari_Data/images/Heron.png");
 
 var Kirin = new Ship("Kirin", "Frigate");
-Kirin.seticon("Scripts/images/582.png");
+Kirin.seticon("Scripts/Caldari_Data/images/Bantam.png");
 var Kitsune = new Ship("Kitsune", "Frigate");
-Kitsune.seticon("Scripts/images/584.png");
+Kitsune.seticon("Scripts/Caldari_Data/images/Griffin.png");
 var Buzzard = new Ship("Buzzard", "Frigate");
-Buzzard.seticon("Scripts/images/605.png");
+Buzzard.seticon("Scripts/Caldari_Data/images/Heron.png");
 var Manticore = new Ship("Manticore", "Frigate");
-Manticore.seticon("Scripts/images/Manticore.png");
+Manticore.seticon("Scripts/Caldari_Data/images/Manticore.png");
 var Hawk = new Ship("Hawk", "Frigate");
-Hawk.seticon("Scripts/images/603.png");
+Hawk.seticon("Scripts/Caldari_Data/images/Merlin.png");
 var Harpy = new Ship("Harpy", "Frigate");
-Harpy.seticon("Scripts/images/603.png");
+Harpy.seticon("Scripts/Caldari_Data/images/Merlin.png");
 var Crow = new Ship("Crow", "Frigate");
-Crow.seticon("Scripts/images/Crow.png");
+Crow.seticon("Scripts/Caldari_Data/images/Crow.png");
 var Raptor = new Ship("Raptor", "Frigate");
-Raptor.seticon("Scripts/images/583.png");
+Raptor.seticon("Scripts/Caldari_Data/images/Crow.png");
 
 var Hookbill = new Ship("Hookbill", "Frigate");
-Hookbill.seticon("Scripts/images/Hookbill.png");
+Hookbill.seticon("Scripts/Caldari_Data/images/Hookbill.png");
 var Griffin_Navy = new Ship("Griffin Navy Issue", "Frigate");
-Griffin_Navy.seticon("Scripts/images/584.png");
+Griffin_Navy.seticon("Scripts/Caldari_Data/images/Griffin.png");
 
 var Cormorant = new Ship("Cormorant", "Destroyer");
-Cormorant.seticon("Scripts/images/Cormorant.png");
+Cormorant.seticon("Scripts/Caldari_Data/images/Cormorant.png");
 var Corax = new Ship("Corax", "Destroyer");
-Corax.seticon("Scripts/images/Corax.png");
+Corax.seticon("Scripts/Caldari_Data/images/Corax.png");
 
 var Flycatcher = new Ship("Flycatcher", "Destroyer");
-Flycatcher.seticon("Scripts/images/Flycatcher.png");
+Flycatcher.seticon("Scripts/Caldari_Data/images/Flycatcher.png");
 var Stork = new Ship("Stork", "Destroyer");
-Stork.seticon("Scripts/images/Stork.png");
+Stork.seticon("Scripts/Caldari_Data/images/Stork.png");
 var Jackdaw = new Ship("Jackdaw", "Destroyer");
-Jackdaw.seticon("Scripts/images/Jackdaw.png");
+Jackdaw.seticon("Scripts/Caldari_Data/images/Jackdaw.png");
 
-var Osprey = new Ship("Osprey", "Destroyer");
-Osprey.seticon("Scripts/images/Corax.png");
-var Blackbird = new Ship("Blackbird", "Destroyer");
-Blackbird.seticon("Scripts/images/Corax.png");
-var Caracal = new Ship("Caracal", "Destroyer");
-Caracal.seticon("Scripts/images/Corax.png");
-var Moa = new Ship("Moa", "Destroyer");
-Moa.seticon("Scripts/images/Corax.png");
+var Osprey = new Ship("Osprey", "Cruiser");
+Osprey.seticon("Scripts/Caldari_Data/images/Osprey.png");
+var Blackbird = new Ship("Blackbird", "Cruiser");
+Blackbird.seticon("Scripts/Caldari_Data/images/Blackbird.png");
+var Caracal = new Ship("Caracal", "Cruiser");
+Caracal.seticon("Scripts/Caldari_Data/images/Caracal.png");
+var Moa = new Ship("Moa", "Cruiser");
+Moa.seticon("Scripts/Caldari_Data/images/Moa.png");
 
-var Osprey_Navy = new Ship("Osprey Navy Issue", "Destroyer");
-Osprey_Navy.seticon("Scripts/images/Corax.png");
-var Caracal_Navy = new Ship("Caracal Navy Issue", "Destroyer");
-Caracal_Navy.seticon("Scripts/images/Corax.png");
+var Osprey_Navy = new Ship("Osprey Navy Issue", "Cruiser");
+Osprey_Navy.seticon("Scripts/Caldari_Data/images/Osprey.png");
+var Caracal_Navy = new Ship("Caracal Navy Issue", "Cruiser");
+Caracal_Navy.seticon("Scripts/Caldari_Data/images/Caracal.png");
 
 var tbd = new Ship("Corax", "Destroyer");
-tbd.seticon("Scripts/images/Corax.png");
+tbd.seticon("Scripts/Caldari_Data/images/Corax.png");
 var tbd = new Ship("Corax", "Destroyer");
-tbd.seticon("Scripts/images/Corax.png");
+tbd.seticon("Scripts/Caldari_Data/images/Corax.png");
 var tbd = new Ship("Corax", "Destroyer");
-tbd.seticon("Scripts/images/Corax.png");
+tbd.seticon("Scripts/Caldari_Data/images/Corax.png");
 var tbd = new Ship("Corax", "Destroyer");
-tbd.seticon("Scripts/images/Corax.png");
+tbd.seticon("Scripts/Caldari_Data/images/Corax.png");
 var tbd = new Ship("Corax", "Destroyer");
-tbd.seticon("Scripts/images/Corax.png");
+tbd.seticon("Scripts/Caldari_Data/images/Corax.png");
 var tbd = new Ship("Corax", "Destroyer");
-tbd.seticon("Scripts/images/Corax.png");
+tbd.seticon("Scripts/Caldari_Data/images/Corax.png");
+
+var Tengu = new Ship("Tengu", "Cruiser");
+Tengu.seticon("Scripts/Caldari_Data/images/Tengu.png");
+
+var Ferox = new Ship("Ferox", "Battlecruiser");
+Ferox.seticon("Scripts/Caldari_Data/images/Ferox.png");
+var Drake = new Ship("Drake", "Battlecruiser");
+Drake.seticon("Scripts/Caldari_Data/images/Drake.png");
+var Naga = new Ship("Naga", "Battlecruiser");
+Naga.seticon("Scripts/Caldari_Data/images/Naga.png");
 
 var Charon = new Ship("Charon", "Freighter");
-Charon.seticon("Scripts/images/doot.png");
+Charon.seticon("Scripts/Caldari_Data/images/doot.png");
 
 
 function ibis(){
@@ -196,7 +206,7 @@ function ibis(){
     Traits_Bonus_Div4.appendChild(Traits_Bonus_Item4);
     Traits_Bonus_Div4.appendChild(Traits_Bonus_Text42);
 
-    fetch("Scripts/Ship_Data/IbisData.json")
+    fetch("Scripts/Caldari_Data/IbisData.json")
     .then(function (response) {
         return response.json();
     })
@@ -210,7 +220,44 @@ function ibis(){
     function appendData(data) {
        InsertData(data);
     }
+}
+
+function shuttle(){
+
+    var Content_Traits = document.querySelector("#traits");
     
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/tackling.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.src = "StyleSheets/icons/missiles.png";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/Caldari_ShuttleData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        InsertData(data);
+    }
 }
 
 function bantam(){
@@ -314,7 +361,7 @@ function bantam(){
     Traits_Bonus_Div3.appendChild(Traits_Bonus_Item3);
     Traits_Bonus_Div3.appendChild(Traits_Bonus_Text32);
 
-    fetch("Scripts/Ship_Data/BantamData.json")
+    fetch("Scripts/Caldari_Data/BantamData.json")
     .then(function (response) {
         return response.json();
     })
@@ -352,7 +399,7 @@ function condor(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/CondorData.json")
+    fetch("Scripts/Caldari_Data/CondorData.json")
     .then(function (response) {
         return response.json();
     })
@@ -390,7 +437,7 @@ function griffin(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/GriffinData.json")
+    fetch("Scripts/Caldari_Data/GriffinData.json")
     .then(function (response) {
         return response.json();
     })
@@ -406,7 +453,6 @@ function griffin(){
     }
 }
 // Kestrel
-
 function kestrel(){
 
 
@@ -430,7 +476,7 @@ function kestrel(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/KestrelData.json")
+    fetch("Scripts/Caldari_Data/KestrelData.json")
     .then(function (response) {
         return response.json();
     })
@@ -468,7 +514,7 @@ function merlin(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/MerlinData.json")
+    fetch("Scripts/Caldari_Data/MerlinData.json")
     .then(function (response) {
         return response.json();
     })
@@ -505,7 +551,7 @@ function heron(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/HeronData.json")
+    fetch("Scripts/Caldari_Data/HeronData.json")
     .then(function (response) {
         return response.json();
     })
@@ -543,7 +589,7 @@ function kirin(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/KirinData.json")
+    fetch("Scripts/Caldari_Data/KirinData.json")
     .then(function (response) {
         return response.json();
     })
@@ -581,7 +627,7 @@ function kitsune(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/KitsuneData.json")
+    fetch("Scripts/Caldari_Data/KitsuneData.json")
     .then(function (response) {
         return response.json();
     })
@@ -619,7 +665,7 @@ function buzzard(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/BuzzardData.json")
+    fetch("Scripts/Caldari_Data/BuzzardData.json")
     .then(function (response) {
         return response.json();
     })
@@ -657,7 +703,7 @@ function manticore(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/ManticoreData.json")
+    fetch("Scripts/Caldari_Data/ManticoreData.json")
     .then(function (response) {
         return response.json();
     })
@@ -695,7 +741,7 @@ function hawk(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/HawkData.json")
+    fetch("Scripts/Caldari_Data/HawkData.json")
     .then(function (response) {
         return response.json();
     })
@@ -733,7 +779,7 @@ function harpy(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/HarpyData.json")
+    fetch("Scripts/Caldari_Data/HarpyData.json")
     .then(function (response) {
         return response.json();
     })
@@ -771,7 +817,7 @@ function crow(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/CrowData.json")
+    fetch("Scripts/Caldari_Data/CrowData.json")
     .then(function (response) {
         return response.json();
     })
@@ -809,7 +855,7 @@ function raptor(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/RaptorData.json")
+    fetch("Scripts/Caldari_Data/RaptorData.json")
     .then(function (response) {
         return response.json();
     })
@@ -847,7 +893,7 @@ function griffin_navy(){
     Traits_img7.src = "StyleSheets/icons/ECM.png";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/Navy_GriffinData.json")
+    fetch("Scripts/Caldari_Data/Navy_GriffinData.json")
     .then(function (response) {
         return response.json();
     })
@@ -885,7 +931,7 @@ function hookbill(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/HookbillData.json")
+    fetch("Scripts/Caldari_Data/HookbillData.json")
     .then(function (response) {
         return response.json();
     })
@@ -923,7 +969,7 @@ function cormorant(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/CormorantData.json")
+    fetch("Scripts/Caldari_Data/CormorantData.json")
     .then(function (response) {
         return response.json();
     })
@@ -961,7 +1007,7 @@ function corax(){
     Traits_img7.style.display = "none";
     Traits_img8.style.display = "none";
 
-    fetch("Scripts/Ship_Data/CoraxData.json")
+    fetch("Scripts/Caldari_Data/CoraxData.json")
     .then(function (response) {
         return response.json();
     })
@@ -977,3 +1023,1299 @@ function corax(){
         InsertData(data);
     }
 }
+
+function flycatcher(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/FlycatcherData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+
+function stork(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/StorkData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function jackdaw(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/JackdawData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function osprey(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/OspreyData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function caracal(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/CaracalData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function blackbird(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/BlackbirdData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function moa(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/MoaData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function osprey_navy(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/Osprey_NavyData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function caracal_navy(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/Caracal_NavyData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function tengu(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/TenguData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function ferox(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/FeroxData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function drake(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/DrakeData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function naga(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/NagaData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function drake_navy(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/Drake_NavyData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function nighthawk(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/NighthawkData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function vulture(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/VultureData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function badger(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/BadgerData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function tayra(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/TayraData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function crane(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/CraneData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function bustard(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/BustardData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function scorpion(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/ScorpionData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function rokh(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/RokhData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function raven(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/RavenData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function scorpion_navy(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/Scorpion_NavyData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function raven_navy(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/Raven_NavyData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function widow(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/WidowData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function golem(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/GolemData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function phoenix(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/PhoenixData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function minokawa(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/MinokawaData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function wyvern(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/WyvernData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function chimera(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/ChimeraData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function leviathan(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/LeviathanData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function charon(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/CharonData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+function rhea(){
+
+    var Content_Traits = document.querySelector("#traits");
+    
+    var Traits_img1 = document.querySelector("#traits_icon1");
+    var Traits_img2 = document.querySelector("#traits_icon2");
+    var Traits_img3 = document.querySelector("#traits_icon3");
+    var Traits_img4 = document.querySelector("#traits_icon4");
+    var Traits_img5 = document.querySelector("#traits_icon5");
+    var Traits_img6 = document.querySelector("#traits_icon6");
+    var Traits_img7 = document.querySelector("#traits_icon7");
+    var Traits_img8 = document.querySelector("#traits_icon8");
+
+    Traits_img1.src = "StyleSheets/icons/dot.png";
+    Traits_img2.src = "StyleSheets/icons/small.png";
+    Traits_img3.src = "StyleSheets/icons/missiles.png";
+    Traits_img4.src = "StyleSheets/icons/attack.png";
+    Traits_img5.src = "StyleSheets/icons/shields.png";
+    Traits_img6.style.display = "none";
+    Traits_img7.style.display = "none";
+    Traits_img8.style.display = "none";
+
+    fetch("Scripts/Caldari_Data/RheaData.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+        DisplayError();
+    });
+    function appendData(data) {
+        //From ShipBuilder.js
+        InsertData(data);
+    }
+}
+
+

@@ -689,3 +689,14 @@ function Attribute_Drone(Toggle){
         Attributes_Str_Drone_Bandwidth_AT.style.display = "none";
     }
 } 
+
+// faction menu highlighting
+var faction_header = document.querySelector(".menu_navbar");
+var faction_btns = faction_header.getElementsByClassName("menu_tab");
+for (var i = 0; i < faction_btns.length; i++) {
+    faction_btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("faction_active");
+        current[0].className = current[0].className.replace(" faction_active", "");
+        this.className += " faction_active";
+    });
+}

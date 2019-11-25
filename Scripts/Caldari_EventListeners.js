@@ -42,7 +42,7 @@ var T2_Cruiser3 = document.querySelector("#showship_t2_cruiser3");
 var T2_Cruiser4 = document.querySelector("#showship_t2_cruiser4");
 var T2_Cruiser5 = document.querySelector("#showship_t2_cruiser5");
 var T2_Cruiser6 = document.querySelector("#showship_t2_cruiser6");
-var T3_Cruiser1 = document.querySelector("#showship_t3_cruiser2");
+var T3_Cruiser1 = document.querySelector("#showship_t3_cruiser1");
 
 var Battlecruiser1 = document.querySelector("#showship_battlecruiser1");
 var Battlecruiser2 = document.querySelector("#showship_battlecruiser2");
@@ -96,6 +96,7 @@ Shuttle.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
         insert(Shuttle);
+        shuttle();
     }
 });
 Frigate1.addEventListener("click", function(){
@@ -334,6 +335,27 @@ T3_Cruiser1.addEventListener("click", function(){
         pagecount = true;
         insert(Tengu);
         tengu();
+    } 
+});
+Battlecruiser1.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Ferox);
+        ferox();
+    } 
+});
+Battlecruiser2.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Drake);
+        drake();
+    } 
+});
+Battlecruiser3.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Naga);
+        naga();
     } 
 });
 
