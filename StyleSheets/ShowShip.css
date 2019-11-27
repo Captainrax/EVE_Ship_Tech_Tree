@@ -1,8 +1,8 @@
 #ship_div {
     display: block;
     position: absolute;
-    top: 5vh;
-    left: 40vw;
+    top: 12vh;
+    left: 35vw;
     background-color:rgba(10, 10, 10, 0.8);
     height: 500px;
     width: 500px;
@@ -39,7 +39,7 @@
     font-size: 16px;
 }
 #Ship_img{
-    background-color: purple;
+    background-color: rgba(40, 40, 40, 0.4);
     height: 80px;
     width: 80px;
 }
@@ -118,7 +118,7 @@
 #AT {
     height: 30px;
 }
-#AT1, #AT3, #AT5, #AT7, #AT9, #AT11, #AT13 {
+#AT1, #AT3, #AT5, #AT7, #AT9, #AT11, #AT13, #AT15 { /* Left side */
     display: grid;
     grid-template-columns: auto auto;
     margin-left: 0px;
@@ -140,7 +140,7 @@
 .attribute_name_img{
     width: 22px;
 }
-#AT2, #AT4, #AT6, #AT8, #AT10, #AT12, #AT14, #AT18, #AT22, #AT24, #AT28, #AT30, #AT33, #AT35, #AT37, #AT39, #AT43, #AT45{
+#AT2, #AT4, #AT6, #AT8, #AT10, #AT12, #AT14, #AT16, #AT18, #AT22, #AT24, #AT28, #AT30, #AT33, #AT35, #AT37, #AT39, #AT43, #AT45{ /* Right side */
     height: 30px;
     margin-left:auto; 
     margin-right:0;
@@ -161,7 +161,7 @@
     grid-column: 1 / 3;
     background-color: rgba(32, 32, 32, 0.9);
 }
-#AT15{
+#AT25{ /* Structure Resistance */
     grid-column: 1 / 3;
     display: grid;
     grid-template-columns: auto 100px auto 100px auto 100px auto 100px;
@@ -169,7 +169,6 @@
     margin-right: 20px;
     margin: 0;
     padding: 0;
-
 }
 .attribute_structure_resistance{
     position: relative;
@@ -200,7 +199,7 @@
 #structure_explosive_resistance_bar{
     background-color: rgb(140, 95, 25);
 }
-#AT16{
+#AT26{
     grid-column: 1 / 3;
     background-color: rgba(32, 32, 32, 0.9);
 }

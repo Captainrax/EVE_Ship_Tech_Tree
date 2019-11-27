@@ -49,7 +49,6 @@ var Battlecruiser2 = document.querySelector("#showship_battlecruiser2");
 var Battlecruiser3 = document.querySelector("#showship_battlecruiser3");
 
 var Navy_Battlecruiser1 = document.querySelector("#showship_navy_battlecruiser1");
-var Navy_Battlecruiser2 = document.querySelector("#showship_navy_battlecruiser2");
 
 var T2_Battlecruiser1 = document.querySelector("#showship_t2_battlecruiser1");
 var T2_Battlecruiser2 = document.querySelector("#showship_t2_battlecruiser2");
@@ -291,43 +290,43 @@ Navy_Cruiser2.addEventListener("click", function(){
 T2_Cruiser1.addEventListener("click", function(){
     if (pagecount == false){
         pagecount = true;
-        insert();
-        caracal_navy();
+        insert(Basilisk);
+        basilisk();
     } 
 });
 T2_Cruiser2.addEventListener("click", function(){
     if (pagecount == false){
         pagecount = true;
-        insert();
-        caracal_navy();
+        insert(Onyx);
+        onyx();
     } 
 });
 T2_Cruiser3.addEventListener("click", function(){
     if (pagecount == false){
         pagecount = true;
-        insert();
-        caracal_navy();
+        insert(Eagle);
+        eagle();
     } 
 });
 T2_Cruiser4.addEventListener("click", function(){
     if (pagecount == false){
         pagecount = true;
-        insert();
-        caracal_navy();
+        insert(Cerberus);
+        cerberus();
     } 
 });
 T2_Cruiser5.addEventListener("click", function(){
     if (pagecount == false){
         pagecount = true;
-        insert();
-        caracal_navy();
+        insert(Rook);
+        rook();
     } 
 });
 T2_Cruiser6.addEventListener("click", function(){
     if (pagecount == false){
         pagecount = true;
-        insert();
-        caracal_navy();
+        insert(Falcon);
+        falcon();
     } 
 });
 T3_Cruiser1.addEventListener("click", function(){
@@ -358,16 +357,150 @@ Battlecruiser3.addEventListener("click", function(){
         naga();
     } 
 });
-
-
-
-
-
-
-
+Navy_Battlecruiser1.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Drake_Navy);
+        drake_navy();
+    } 
+});
+T2_Battlecruiser1.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Nighthawk);
+        nighthawk();
+    } 
+});
+T2_Battlecruiser2.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Vulture);
+        vulture();
+    } 
+});
+Industrial1.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Badger);
+        badger();
+    } 
+});
+Industrial2.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Tayra);
+        tayra();
+    } 
+});
+T2_Industrial1.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Crane);
+        crane();
+    } 
+});
+T2_Industrial2.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Bustard);
+        bustard();
+    } 
+});
+Battleship1.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Scorpion);
+        scorpion();
+    } 
+});
+Battleship2.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Rokh);
+        rokh();
+    } 
+});
+Battleship3.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Raven);
+        raven();
+    } 
+});
+Navy_Battleship1.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Scorpion_Navy);
+        scorpion_navy();
+    } 
+});
+Navy_Battleship2.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Raven_Navy);
+        raven_navy();
+    } 
+});
+T2_Battleship1.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Golem);
+        golem();
+    } 
+});
+T2_Battleship2.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Widow);
+        widow();
+    } 
+});
+Capital1.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Phoenix);
+        phoenix();
+    } 
+});
+Supercapital1.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Minokawa);
+        minokawa();
+    } 
+});
+Supercapital2.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Wyvern);
+        wyvern();
+    } 
+});
+Supercapital3.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Chimera);
+        chimera();
+    } 
+});
+Titan1.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        insert(Leviathan);
+        leviathan();
+    } 
+});
 Freighter.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
         insert(Charon);
+        charon();
+    }
+});
+T2_Freighter.addEventListener("click", function(){
+    if (pagecount === false){
+        pagecount = true;
+        insert(Rhea);
+        rhea();
     }
 });

@@ -294,11 +294,11 @@ function insert(Ship) {
     Attributes_Structure_Inertia_Modifier_Img.className = "attribute_name_img";
     Attributes_Structure_Inertia_Modifier_Img.src = "StyleSheets/ship_info_icons/Inertia_Modifier.png";
 
-    // Resistances
+    // Attribute Titles
     var Attributes_Str = document.querySelector("#AT0");
-    var Attributes_Arm = document.querySelector("#AT16");
-    var Attributes_Shi = document.querySelector("#AT20");
-    var Attributes_Cap = document.querySelector("#AT26");
+    var Attributes_Arm = document.querySelector("#AT26");
+    var Attributes_Shi = document.querySelector("#AT27");
+    var Attributes_Cap = document.querySelector("#AT28");
     var Attributes_Tar = document.querySelector("#AT31");
     var Attributes_Pro = document.querySelector("#AT41");
     
@@ -384,8 +384,8 @@ function insert(Ship) {
     Attributes_Structure_Explosive_Value.textContent = "";
     Attributes_Structure_Explosive_Img.className = "attribute_name_img";
     Attributes_Structure_Explosive_Img.src = "StyleSheets/ship_info_icons/Explosive.png";
-
-    var Attributes_Str_Resistances = document.querySelector("#AT15");
+    // AT where Structure resistances is placed.
+    var Attributes_Str_Resistances = document.querySelector("#AT25");
 
     Attributes_Str_Resistances.appendChild(Attributes_Structure_EM_Img);
     Attributes_Str_Resistances.appendChild(Attributes_Structure_EM);
@@ -438,6 +438,15 @@ function Ship_nav(){
     var Industry = document.querySelector("#industry");
     var Skins = document.querySelector("#skins");
     
+    Traits.style.display = "block";
+    Description.style.display = "none";
+    Attributes.style.display = "none";
+    Fitting.style.display = "none";
+    Requirements.style.display = "none";
+    Mastery.style.display = "none";
+    Variations.style.display = "none";
+    Industry.style.display = "none";
+    Skins.style.display = "none";
     Ship_Traits.addEventListener("click", function(){
         Traits.style.display = "block";
         Description.style.display = "none";
@@ -556,13 +565,20 @@ Close();
 }
 
 function InsertData(data){
-
+    // this is stupid but hey it works.
     Attribute_Drone(false);
-
+    Subsystem_Hold_Capacity(false);
+    Ore_Hold_Capacity(false);
+    Planetary_Commodities_Capacity(false);
+    Mineral_Hold_Capacity(false);
+    Ammo_Hold_Capacity(false);
     for(x in data["dogma_attributes"]){
         var desc = document.querySelector("#description_text");
         desc.textContent = data["description"];
-
+        
+        var Capacity = document.querySelector("#AT4");
+        Capacity.textContent = data["capacity"] + " m3";
+        
         switch(data["dogma_attributes"][x]["attribute_id"]){
             case 4:
                     var testdata = document.querySelector("#AT10");
@@ -606,10 +622,10 @@ function InsertData(data){
                     var pack = data["packaged_volume"];
                     testdata.textContent += " (" + pack + " m3 Packaged)";
                 break;
-            case 482:
-                    var testdata = document.querySelector("#AT4");
-                    testdata.textContent = data["dogma_attributes"][x]["value"] + " m3";
-                break;
+            // case 482:  capacitor capacity
+            //         var testdata = document.querySelector("#AT4");
+            //         testdata.textContent = data["dogma_attributes"][x]["value"] + " m3";
+            //     break;
             case 283:
                     if(data["dogma_attributes"][x]["value"] != 0){
                         Attribute_Drone(true);
@@ -621,7 +637,13 @@ function InsertData(data){
                     var testdata = document.querySelector("#AT8");
                     testdata.textContent = data["dogma_attributes"][x]["value"] + " Mbit/sec";
                 break;
-
+            case 2675:
+                    if(data["dogma_attributes"][x]["value"] != 0){
+                        Subsystem_Hold_Capacity(true);
+                    }
+                    var testdata = document.querySelector("#AT16");
+                    testdata.textContent = data["dogma_attributes"][x]["value"] + " m3";
+                break;
 
             default:
                 // try{
@@ -636,10 +658,10 @@ function InsertData(data){
 }
 function DisplayError(){
     for(var x = 0; x < 100; x++){
-        var testdata = document.querySelector("#AT"+x);
-        if (testdata.innerHTML === ""){
-            var testdata = document.querySelector("#AT"+x);
-            testdata.textContent = "Error";
+        var Testdata = document.querySelector("#AT"+x);
+        if (Testdata.innerHTML === ""){
+            var Testdata = document.querySelector("#AT"+x);
+            Testdata.textContent = "Error";
         }
     }
 }
@@ -689,6 +711,150 @@ function Attribute_Drone(Toggle){
         Attributes_Str_Drone_Bandwidth_AT.style.display = "none";
     }
 } 
+
+function Subsystem_Hold_Capacity(Toggle){
+
+    if (Toggle === true) {
+        var Attributes_Structure_Subsystem_Hold = document.createElement("p");
+        var Attributes_Structure_Subsystem_Hold_Img = document.createElement("img");
+
+        Attributes_Structure_Subsystem_Hold.textContent = "Subsystem Hold Capacity";
+        Attributes_Structure_Subsystem_Hold.className = "attribute_name";
+        Attributes_Structure_Subsystem_Hold_Img.className = "attribute_name_img";
+        Attributes_Structure_Subsystem_Hold_Img.src = "StyleSheets/ship_info_icons/Capacity.png";
+        
+        var Attributes_Str_Subsystem_Hold_Capacity = document.querySelector("#AT15");
+        Attributes_Str_Subsystem_Hold_Capacity.style.display = "grid";
+        
+        Attributes_Str_Subsystem_Hold_Capacity.appendChild(Attributes_Structure_Subsystem_Hold_Img);
+        Attributes_Str_Subsystem_Hold_Capacity.appendChild(Attributes_Structure_Subsystem_Hold);
+        
+        var Attributes_Str_Subsystem_Hold_AT = document.querySelector("#AT16");
+        Attributes_Str_Subsystem_Hold_AT.style.display = "grid";
+
+    } else if (Toggle === false) {
+        var Attributes_Str_Subsystem_Hold_Capacity = document.querySelector("#AT15");
+        Attributes_Str_Subsystem_Hold_Capacity.style.display = "none";
+        var Attributes_Str_Subsystem_Hold_AT = document.querySelector("#AT16");
+        Attributes_Str_Subsystem_Hold_AT.style.display = "none";
+    }
+} 
+
+function Ore_Hold_Capacity(Toggle){
+
+    if (Toggle === true) {
+        var Attributes_Structure_Hold = document.createElement("p");
+        var Attributes_Structure_Hold_Img = document.createElement("img");
+
+        Attributes_Structure_Hold.textContent = "Ore Hold Capacity";
+        Attributes_Structure_Hold.className = "attribute_name";
+        Attributes_Structure_Hold_Img.className = "attribute_name_img";
+        Attributes_Structure_Hold_Img.src = "StyleSheets/ship_info_icons/Capacity.png";
+        
+        var Attributes_Str_Hold_Capacity = document.querySelector("#AT17");
+        Attributes_Str_Hold_Capacity.style.display = "grid";
+        
+        Attributes_Str_Hold_Capacity.appendChild(Attributes_Structure_Hold_Img);
+        Attributes_Str_Hold_Capacity.appendChild(Attributes_Structure_Hold);
+        
+        var Attributes_Str__Hold_AT = document.querySelector("#AT18");
+        Attributes_Str__Hold_AT.style.display = "grid";
+
+    } else if (Toggle === false) {
+        var Attributes_Str_Hold_Capacity = document.querySelector("#AT17");
+        Attributes_Str_Hold_Capacity.style.display = "none";
+        var Attributes_Str_Hold_AT = document.querySelector("#AT18");
+        Attributes_Str_Hold_AT.style.display = "none";
+    }
+} 
+function Planetary_Commodities_Capacity(Toggle){
+
+    if (Toggle === true) {
+        var Attributes_Structure_Hold = document.createElement("p");
+        var Attributes_Structure_Hold_Img = document.createElement("img");
+
+        Attributes_Structure_Hold.textContent = "Planetary Commodities Capacity";
+        Attributes_Structure_Hold.className = "attribute_name";
+        Attributes_Structure_Hold_Img.className = "attribute_name_img";
+        Attributes_Structure_Hold_Img.src = "StyleSheets/ship_info_icons/Capacity.png";
+        
+        var Attributes_Str_Hold_Capacity = document.querySelector("#AT19");
+        Attributes_Str_Hold_Capacity.style.display = "grid";
+        
+        Attributes_Str_Hold_Capacity.appendChild(Attributes_Structure_Hold_Img);
+        Attributes_Str_Hold_Capacity.appendChild(Attributes_Structure_Hold);
+        
+        var Attributes_Str__Hold_AT = document.querySelector("#AT20");
+        Attributes_Str__Hold_AT.style.display = "grid";
+
+    } else if (Toggle === false) {
+        var Attributes_Str_Hold_Capacity = document.querySelector("#AT19");
+        Attributes_Str_Hold_Capacity.style.display = "none";
+        var Attributes_Str_Hold_AT = document.querySelector("#AT20");
+        Attributes_Str_Hold_AT.style.display = "none";
+    }
+} 
+function Mineral_Hold_Capacity(Toggle){
+
+    if (Toggle === true) {
+        var Attributes_Structure_Hold = document.createElement("p");
+        var Attributes_Structure_Hold_Img = document.createElement("img");
+
+        Attributes_Structure_Hold.textContent = "Mineral Hold Capacity";
+        Attributes_Structure_Hold.className = "attribute_name";
+        Attributes_Structure_Hold_Img.className = "attribute_name_img";
+        Attributes_Structure_Hold_Img.src = "StyleSheets/ship_info_icons/Capacity.png";
+        
+        var Attributes_Str_Hold_Capacity = document.querySelector("#AT21");
+        Attributes_Str_Hold_Capacity.style.display = "grid";
+        
+        Attributes_Str_Hold_Capacity.appendChild(Attributes_Structure_Hold_Img);
+        Attributes_Str_Hold_Capacity.appendChild(Attributes_Structure_Hold);
+        
+        var Attributes_Str__Hold_AT = document.querySelector("#AT22");
+        Attributes_Str__Hold_AT.style.display = "grid";
+
+    } else if (Toggle === false) {
+        var Attributes_Str_Hold_Capacity = document.querySelector("#AT21");
+        Attributes_Str_Hold_Capacity.style.display = "none";
+        var Attributes_Str_Hold_AT = document.querySelector("#AT22");
+        Attributes_Str_Hold_AT.style.display = "none";
+    }
+} 
+function Ammo_Hold_Capacity(Toggle){
+
+    if (Toggle === true) {
+        var Attributes_Structure_Hold = document.createElement("p");
+        var Attributes_Structure_Hold_Img = document.createElement("img");
+
+        Attributes_Structure_Hold.textContent = "Ammo Hold Capacity";
+        Attributes_Structure_Hold.className = "attribute_name";
+        Attributes_Structure_Hold_Img.className = "attribute_name_img";
+        Attributes_Structure_Hold_Img.src = "StyleSheets/ship_info_icons/Capacity.png";
+        
+        var Attributes_Str_Hold_Capacity = document.querySelector("#AT23");
+        Attributes_Str_Hold_Capacity.style.display = "grid";
+        
+        Attributes_Str_Hold_Capacity.appendChild(Attributes_Structure_Hold_Img);
+        Attributes_Str_Hold_Capacity.appendChild(Attributes_Structure_Hold);
+        
+        var Attributes_Str__Hold_AT = document.querySelector("#AT24");
+        Attributes_Str__Hold_AT.style.display = "grid";
+
+    } else if (Toggle === false) {
+        var Attributes_Str_Hold_Capacity = document.querySelector("#AT23");
+        Attributes_Str_Hold_Capacity.style.display = "none";
+        var Attributes_Str_Hold_AT = document.querySelector("#AT24");
+        Attributes_Str_Hold_AT.style.display = "none";
+    }
+} 
+
+
+
+
+
+
+
 
 // faction menu highlighting
 var faction_header = document.querySelector(".menu_navbar");
