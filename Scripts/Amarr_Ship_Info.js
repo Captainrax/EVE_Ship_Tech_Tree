@@ -59,22 +59,22 @@ Augoror.seticon("Scripts/Amarr_Data/images/Augoror.png");
 var Arbitrator = new Ship("Arbitrator", "Cruiser");
 Arbitrator.seticon("Scripts/Amarr_Data/images/Arbitrator.png");
 
-var Augoror_Navy = new Ship("Maller Navy Issue", "Cruiser");
+var Augoror_Navy = new Ship("Augoror Navy Issue", "Cruiser");
 Augoror_Navy.seticon("Scripts/Amarr_Data/images/Augoror_Navy.png");
-var Omen_Navy = new Ship("Augoror Navy Issue", "Cruiser");
+var Omen_Navy = new Ship("Omen Navy Issue", "Cruiser");
 Omen_Navy.seticon("Scripts/Amarr_Data/images/Omen_Navy.png");
 
-var Guardian = new Ship("Guardian", "Destroyer");
+var Guardian = new Ship("Guardian", "Cruiser");
 Guardian.seticon("Scripts/Amarr_Data/images/Guardian.png");
-var Devoter = new Ship("Devoter", "Destroyer");
+var Devoter = new Ship("Devoter", "Cruiser");
 Devoter.seticon("Scripts/Amarr_Data/images/Devoter.png");
-var Zealot = new Ship("Zealot", "Destroyer");
+var Zealot = new Ship("Zealot", "Cruiser");
 Zealot.seticon("Scripts/Amarr_Data/images/Zealot.png");
-var Sacrilege = new Ship("Sacrilege", "Destroyer");
+var Sacrilege = new Ship("Sacrilege", "Cruiser");
 Sacrilege.seticon("Scripts/Amarr_Data/images/Sacrilege.png");
-var Curse = new Ship("Curse", "Destroyer");
+var Curse = new Ship("Curse", "Cruiser");
 Curse.seticon("Scripts/Amarr_Data/images/Curse.png");
-var Pilgrim = new Ship("Pilgrim", "Destroyer");
+var Pilgrim = new Ship("Pilgrim", "Cruiser");
 Pilgrim.seticon("Scripts/Amarr_Data/images/Pilgrim.png");
 
 var Legion = new Ship("Legion", "Cruiser");

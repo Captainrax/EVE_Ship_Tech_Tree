@@ -297,9 +297,9 @@ function insert(Ship) {
     // Attribute Titles
     var Attributes_Str = document.querySelector("#AT0");
     var Attributes_Arm = document.querySelector("#AT26");
-    var Attributes_Shi = document.querySelector("#AT27");
-    var Attributes_Cap = document.querySelector("#AT28");
-    var Attributes_Tar = document.querySelector("#AT31");
+    var Attributes_Shi = document.querySelector("#AT30");
+    var Attributes_Cap = document.querySelector("#AT36");
+    var Attributes_Tar = document.querySelector("#AT37");
     var Attributes_Pro = document.querySelector("#AT41");
     
     var Attributes_Str_Hitpoints = document.querySelector("#AT1");
@@ -307,7 +307,6 @@ function insert(Ship) {
     var Attributes_Str_Mass = document.querySelector("#AT9");
     var Attributes_Str_Volume = document.querySelector("#AT11");
     var Attributes_Str_Inertia_Modifier = document.querySelector("#AT13");
-
 
     Attributes_Str.appendChild(Attributes_Structure_Title);
     Attributes_Arm.appendChild(Attributes_Armor_Title);
@@ -327,7 +326,7 @@ function insert(Ship) {
     Attributes_Str_Volume.appendChild(Attributes_Structure_Volume);
     Attributes_Str_Inertia_Modifier.appendChild(Attributes_Structure_Inertia_Modifier_Img);
     Attributes_Str_Inertia_Modifier.appendChild(Attributes_Structure_Inertia_Modifier);
-    
+    // Structure Resistances.
     var Attributes_Structure_EM = document.createElement("div");
     var Attributes_Structure_EM_Bar = document.createElement("div");
     var Attributes_Structure_EM_Value = document.createElement("span");
@@ -345,41 +344,41 @@ function insert(Ship) {
     var Attributes_Structure_Explosive_Value = document.createElement("span");
     var Attributes_Structure_Explosive_Img = document.createElement("img");
 
-    Attributes_Structure_EM.className = "attribute_structure_resistance";
+    Attributes_Structure_EM.className = "attribute_resistance";
     Attributes_Structure_EM.id = "structure_em_resistance";
-    Attributes_Structure_EM_Bar.className = "structure_resistance_bar";
+    Attributes_Structure_EM_Bar.className = "resistance_bar";
     Attributes_Structure_EM_Bar.id = "structure_em_resistance_bar";
-    Attributes_Structure_EM_Value.className = "structure_resistance_value";
+    Attributes_Structure_EM_Value.className = "resistance_value";
     Attributes_Structure_EM_Value.id = "structure_em_resistance_value";
     Attributes_Structure_EM_Value.textContent = "";
     Attributes_Structure_EM_Img.className = "attribute_name_img";
     Attributes_Structure_EM_Img.src = "StyleSheets/ship_info_icons/EM.png";
 
-    Attributes_Structure_Thermal.className = "attribute_structure_resistance";
+    Attributes_Structure_Thermal.className = "attribute_resistance";
     Attributes_Structure_Thermal.id = "structure_thermal_resistance";
-    Attributes_Structure_Thermal_Bar.className = "structure_resistance_bar";
+    Attributes_Structure_Thermal_Bar.className = "resistance_bar";
     Attributes_Structure_Thermal_Bar.id = "structure_thermal_resistance_bar";
-    Attributes_Structure_Thermal_Value.className = "structure_resistance_value";
+    Attributes_Structure_Thermal_Value.className = "resistance_value";
     Attributes_Structure_Thermal_Value.id = "structure_thermal_resistance_value";
     Attributes_Structure_Thermal_Value.textContent = "";
     Attributes_Structure_Thermal_Img.className = "attribute_name_img";
     Attributes_Structure_Thermal_Img.src = "StyleSheets/ship_info_icons/Thermal.png";
     
-    Attributes_Structure_Kinetic.className = "attribute_structure_resistance";
+    Attributes_Structure_Kinetic.className = "attribute_resistance";
     Attributes_Structure_Kinetic.id = "structure_kinetic_resistance";
-    Attributes_Structure_Kinetic_Bar.className = "structure_resistance_bar";
+    Attributes_Structure_Kinetic_Bar.className = "resistance_bar";
     Attributes_Structure_Kinetic_Bar.id = "structure_kinetic_resistance_bar";
-    Attributes_Structure_Kinetic_Value.className = "structure_resistance_value";
+    Attributes_Structure_Kinetic_Value.className = "resistance_value";
     Attributes_Structure_Kinetic_Value.id = "structure_kinetic_resistance_value";
     Attributes_Structure_Kinetic_Value.textContent = "";
     Attributes_Structure_Kinetic_Img.className = "attribute_name_img";
     Attributes_Structure_Kinetic_Img.src = "StyleSheets/ship_info_icons/Kinetic.png";
     
-    Attributes_Structure_Explosive.className = "attribute_structure_resistance";
+    Attributes_Structure_Explosive.className = "attribute_resistance";
     Attributes_Structure_Explosive.id = "structure_explosive_resistance";
-    Attributes_Structure_Explosive_Bar.className = "structure_resistance_bar";
+    Attributes_Structure_Explosive_Bar.className = "resistance_bar";
     Attributes_Structure_Explosive_Bar.id = "structure_explosive_resistance_bar";
-    Attributes_Structure_Explosive_Value.className = "structure_resistance_value";
+    Attributes_Structure_Explosive_Value.className = "resistance_value";
     Attributes_Structure_Explosive_Value.id = "structure_explosive_resistance_value";
     Attributes_Structure_Explosive_Value.textContent = "";
     Attributes_Structure_Explosive_Img.className = "attribute_name_img";
@@ -403,6 +402,194 @@ function insert(Ship) {
     Attributes_Str_Resistances.appendChild(Attributes_Structure_Explosive);
     Attributes_Structure_Explosive.appendChild(Attributes_Structure_Explosive_Bar);
     Attributes_Structure_Explosive.appendChild(Attributes_Structure_Explosive_Value);
+    // Armor
+    var Attributes_Armor_Hitpoints = document.createElement("p");
+    var Attributes_Armor_Hitpoints_Img = document.createElement("img");
+
+    Attributes_Armor_Hitpoints.textContent = "Armor Hitpoints";
+    Attributes_Armor_Hitpoints.className = "attribute_name";
+    Attributes_Armor_Hitpoints_Img.className = "attribute_name_img";
+    Attributes_Armor_Hitpoints_Img.src = "StyleSheets/ship_info_icons/Armor.png";
+
+    var Attributes_Arm_Hitpoints = document.querySelector("#AT27");
+    
+    Attributes_Arm_Hitpoints.appendChild(Attributes_Armor_Hitpoints_Img);
+    Attributes_Arm_Hitpoints.appendChild(Attributes_Armor_Hitpoints);
+    // Armor Resistances.
+    var Attributes_Armor_EM = document.createElement("div");
+    var Attributes_Armor_EM_Bar = document.createElement("div");
+    var Attributes_Armor_EM_Value = document.createElement("span");
+    var Attributes_Armor_EM_Img = document.createElement("img");
+    var Attributes_Armor_Thermal = document.createElement("div");
+    var Attributes_Armor_Thermal_Bar = document.createElement("div");
+    var Attributes_Armor_Thermal_Value = document.createElement("span");
+    var Attributes_Armor_Thermal_Img = document.createElement("img");
+    var Attributes_Armor_Kinetic = document.createElement("div");
+    var Attributes_Armor_Kinetic_Bar = document.createElement("div");
+    var Attributes_Armor_Kinetic_Value = document.createElement("span");
+    var Attributes_Armor_Kinetic_Img = document.createElement("img");
+    var Attributes_Armor_Explosive = document.createElement("div");
+    var Attributes_Armor_Explosive_Bar = document.createElement("div");
+    var Attributes_Armor_Explosive_Value = document.createElement("span");
+    var Attributes_Armor_Explosive_Img = document.createElement("img");
+    
+    Attributes_Armor_EM.className = "attribute_resistance";
+    Attributes_Armor_EM.id = "armor_resistance";
+    Attributes_Armor_EM_Bar.className = "resistance_bar";
+    Attributes_Armor_EM_Bar.id = "armor_em_resistance_bar";
+    Attributes_Armor_EM_Value.className = "resistance_value";
+    Attributes_Armor_EM_Value.id = "armor_em_resistance_value";
+    Attributes_Armor_EM_Value.textContent = "";
+    Attributes_Armor_EM_Img.className = "attribute_name_img";
+    Attributes_Armor_EM_Img.src = "StyleSheets/ship_info_icons/EM.png";
+
+    Attributes_Armor_Thermal.className = "attribute_resistance";
+    Attributes_Armor_Thermal.id = "armor_resistance";
+    Attributes_Armor_Thermal_Bar.className = "resistance_bar";
+    Attributes_Armor_Thermal_Bar.id = "armor_thermal_resistance_bar";
+    Attributes_Armor_Thermal_Value.className = "resistance_value";
+    Attributes_Armor_Thermal_Value.id = "armor_thermal_resistance_value";
+    Attributes_Armor_Thermal_Value.textContent = "";
+    Attributes_Armor_Thermal_Img.className = "attribute_name_img";
+    Attributes_Armor_Thermal_Img.src = "StyleSheets/ship_info_icons/Thermal.png";
+
+    Attributes_Armor_Kinetic.className = "attribute_resistance";
+    Attributes_Armor_Kinetic.id = "armor_kinetic_resistance";
+    Attributes_Armor_Kinetic_Bar.className = "resistance_bar";
+    Attributes_Armor_Kinetic_Bar.id = "armor_kinetic_resistance_bar";
+    Attributes_Armor_Kinetic_Value.className = "resistance_value";
+    Attributes_Armor_Kinetic_Value.id = "armor_kinetic_resistance_value";
+    Attributes_Armor_Kinetic_Value.textContent = "";
+    Attributes_Armor_Kinetic_Img.className = "attribute_name_img";
+    Attributes_Armor_Kinetic_Img.src = "StyleSheets/ship_info_icons/Kinetic.png";
+
+    Attributes_Armor_Explosive.className = "attribute_resistance";
+    Attributes_Armor_Explosive.id = "armor_explosive_resistance";
+    Attributes_Armor_Explosive_Bar.className = "resistance_bar";
+    Attributes_Armor_Explosive_Bar.id = "armor_explosive_resistance_bar";
+    Attributes_Armor_Explosive_Value.className = "resistance_value";
+    Attributes_Armor_Explosive_Value.id = "armor_explosive_resistance_value";
+    Attributes_Armor_Explosive_Value.textContent = "";
+    Attributes_Armor_Explosive_Img.className = "attribute_name_img";
+    Attributes_Armor_Explosive_Img.src = "StyleSheets/ship_info_icons/Explosive.png";
+    // AT where Armor resistances is placed.
+    var Attributes_Arm_Resistances = document.querySelector("#AT29");
+    
+    Attributes_Arm_Resistances.appendChild(Attributes_Armor_EM_Img);
+    Attributes_Arm_Resistances.appendChild(Attributes_Armor_EM);
+    Attributes_Armor_EM.appendChild(Attributes_Armor_EM_Bar);
+    Attributes_Armor_EM.appendChild(Attributes_Armor_EM_Value);
+    Attributes_Arm_Resistances.appendChild(Attributes_Armor_Thermal_Img);
+    Attributes_Arm_Resistances.appendChild(Attributes_Armor_Thermal);
+    Attributes_Armor_Thermal.appendChild(Attributes_Armor_Thermal_Bar);
+    Attributes_Armor_Thermal.appendChild(Attributes_Armor_Thermal_Value)
+    Attributes_Arm_Resistances.appendChild(Attributes_Armor_Kinetic_Img);
+    Attributes_Arm_Resistances.appendChild(Attributes_Armor_Kinetic);
+    Attributes_Armor_Kinetic.appendChild(Attributes_Armor_Kinetic_Bar);
+    Attributes_Armor_Kinetic.appendChild(Attributes_Armor_Kinetic_Value);
+    Attributes_Arm_Resistances.appendChild(Attributes_Armor_Explosive_Img);
+    Attributes_Arm_Resistances.appendChild(Attributes_Armor_Explosive);
+    Attributes_Armor_Explosive.appendChild(Attributes_Armor_Explosive_Bar);
+    Attributes_Armor_Explosive.appendChild(Attributes_Armor_Explosive_Value);
+    // Shield
+    var Attributes_Shield_Hitpoints = document.createElement("p");
+    var Attributes_Shield_Hitpoints_Img = document.createElement("img");
+    var Attributes_Shield_Recharge = document.createElement("p");
+    var Attributes_Shield_Recharge_Img = document.createElement("img");
+
+    Attributes_Shield_Hitpoints.textContent = "Shield Capacity";
+    Attributes_Shield_Hitpoints.className = "attribute_name";
+    Attributes_Shield_Hitpoints_Img.className = "attribute_name_img";
+    Attributes_Shield_Hitpoints_Img.src = "StyleSheets/ship_info_icons/Shield.png";
+
+    Attributes_Shield_Recharge.textContent = "Shield recharge time";
+    Attributes_Shield_Recharge.className = "attribute_name";
+    Attributes_Shield_Recharge_Img.className = "attribute_name_img";
+    Attributes_Shield_Recharge_Img.src = "StyleSheets/ship_info_icons/Shield_Recharge.png";
+
+    var Attributes_Shi_Hitpoints = document.querySelector("#AT31");
+    var Attributes_Shi_Recharge = document.querySelector("#AT33");
+
+    Attributes_Shi_Hitpoints.appendChild(Attributes_Shield_Hitpoints_Img);
+    Attributes_Shi_Hitpoints.appendChild(Attributes_Shield_Hitpoints);
+    Attributes_Shi_Recharge.appendChild(Attributes_Shield_Recharge_Img);
+    Attributes_Shi_Recharge.appendChild(Attributes_Shield_Recharge);
+    // Shield Resistances.
+    var Attributes_Shield_EM = document.createElement("div");
+    var Attributes_Shield_EM_Bar = document.createElement("div");
+    var Attributes_Shield_EM_Value = document.createElement("span");
+    var Attributes_Shield_EM_Img = document.createElement("img");
+    var Attributes_Shield_Thermal = document.createElement("div");
+    var Attributes_Shield_Thermal_Bar = document.createElement("div");
+    var Attributes_Shield_Thermal_Value = document.createElement("span");
+    var Attributes_Shield_Thermal_Img = document.createElement("img");
+    var Attributes_Shield_Kinetic = document.createElement("div");
+    var Attributes_Shield_Kinetic_Bar = document.createElement("div");
+    var Attributes_Shield_Kinetic_Value = document.createElement("span");
+    var Attributes_Shield_Kinetic_Img = document.createElement("img");
+    var Attributes_Shield_Explosive = document.createElement("div");
+    var Attributes_Shield_Explosive_Bar = document.createElement("div");
+    var Attributes_Shield_Explosive_Value = document.createElement("span");
+    var Attributes_Shield_Explosive_Img = document.createElement("img");
+
+    Attributes_Shield_EM.className = "attribute_resistance";
+    Attributes_Shield_EM.id = "shield_resistance";
+    Attributes_Shield_EM_Bar.className = "resistance_bar";
+    Attributes_Shield_EM_Bar.id = "shield_em_resistance_bar";
+    Attributes_Shield_EM_Value.className = "resistance_value";
+    Attributes_Shield_EM_Value.id = "shield_em_resistance_value";
+    Attributes_Shield_EM_Value.textContent = "";
+    Attributes_Shield_EM_Img.className = "attribute_name_img";
+    Attributes_Shield_EM_Img.src = "StyleSheets/ship_info_icons/EM.png";
+
+    Attributes_Shield_Thermal.className = "attribute_resistance";
+    Attributes_Shield_Thermal.id = "shield_resistance";
+    Attributes_Shield_Thermal_Bar.className = "resistance_bar";
+    Attributes_Shield_Thermal_Bar.id = "shield_thermal_resistance_bar";
+    Attributes_Shield_Thermal_Value.className = "resistance_value";
+    Attributes_Shield_Thermal_Value.id = "shield_thermal_resistance_value";
+    Attributes_Shield_Thermal_Value.textContent = "";
+    Attributes_Shield_Thermal_Img.className = "attribute_name_img";
+    Attributes_Shield_Thermal_Img.src = "StyleSheets/ship_info_icons/Thermal.png";
+
+    Attributes_Shield_Kinetic.className = "attribute_resistance";
+    Attributes_Shield_Kinetic.id = "shield_kinetic_resistance";
+    Attributes_Shield_Kinetic_Bar.className = "resistance_bar";
+    Attributes_Shield_Kinetic_Bar.id = "shield_kinetic_resistance_bar";
+    Attributes_Shield_Kinetic_Value.className = "resistance_value";
+    Attributes_Shield_Kinetic_Value.id = "shield_kinetic_resistance_value";
+    Attributes_Shield_Kinetic_Value.textContent = "";
+    Attributes_Shield_Kinetic_Img.className = "attribute_name_img";
+    Attributes_Shield_Kinetic_Img.src = "StyleSheets/ship_info_icons/Kinetic.png";
+
+    Attributes_Shield_Explosive.className = "attribute_resistance";
+    Attributes_Shield_Explosive.id = "shield_explosive_resistance";
+    Attributes_Shield_Explosive_Bar.className = "resistance_bar";
+    Attributes_Shield_Explosive_Bar.id = "shield_explosive_resistance_bar";
+    Attributes_Shield_Explosive_Value.className = "resistance_value";
+    Attributes_Shield_Explosive_Value.id = "shield_explosive_resistance_value";
+    Attributes_Shield_Explosive_Value.textContent = "";
+    Attributes_Shield_Explosive_Img.className = "attribute_name_img";
+    Attributes_Shield_Explosive_Img.src = "StyleSheets/ship_info_icons/Explosive.png";
+    // AT where Armor resistances is placed.
+    var Attributes_Shi_Resistances = document.querySelector("#AT35");
+
+    Attributes_Shi_Resistances.appendChild(Attributes_Shield_EM_Img);
+    Attributes_Shi_Resistances.appendChild(Attributes_Shield_EM);
+    Attributes_Shield_EM.appendChild(Attributes_Shield_EM_Bar);
+    Attributes_Shield_EM.appendChild(Attributes_Shield_EM_Value);
+    Attributes_Shi_Resistances.appendChild(Attributes_Shield_Thermal_Img);
+    Attributes_Shi_Resistances.appendChild(Attributes_Shield_Thermal);
+    Attributes_Shield_Thermal.appendChild(Attributes_Shield_Thermal_Bar);
+    Attributes_Shield_Thermal.appendChild(Attributes_Shield_Thermal_Value)
+    Attributes_Shi_Resistances.appendChild(Attributes_Shield_Kinetic_Img);
+    Attributes_Shi_Resistances.appendChild(Attributes_Shield_Kinetic);
+    Attributes_Shield_Kinetic.appendChild(Attributes_Shield_Kinetic_Bar);
+    Attributes_Shield_Kinetic.appendChild(Attributes_Shield_Kinetic_Value);
+    Attributes_Shi_Resistances.appendChild(Attributes_Shield_Explosive_Img);
+    Attributes_Shi_Resistances.appendChild(Attributes_Shield_Explosive);
+    Attributes_Shield_Explosive.appendChild(Attributes_Shield_Explosive_Bar);
+    Attributes_Shield_Explosive.appendChild(Attributes_Shield_Explosive_Value);
 
 
 function Close() {
@@ -572,55 +759,132 @@ function InsertData(data){
     Planetary_Commodities_Capacity(false);
     Mineral_Hold_Capacity(false);
     Ammo_Hold_Capacity(false);
+    
+    var desc = document.querySelector("#description_text");
+    desc.textContent = data["description"];
+
+    var spandata = document.createElement("span");
+    spandata.className = "spandata";
+    var Capacity = document.querySelector("#AT4");
+    spandata.textContent = data["capacity"].toLocaleString() + " m3";
+    Capacity.appendChild(spandata);
+
     for(x in data["dogma_attributes"]){
-        var desc = document.querySelector("#description_text");
-        desc.textContent = data["description"];
-        
-        var Capacity = document.querySelector("#AT4");
-        Capacity.textContent = data["capacity"] + " m3";
-        
         switch(data["dogma_attributes"][x]["attribute_id"]){
             case 4:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
                     var testdata = document.querySelector("#AT10");
-                    testdata.textContent = data["dogma_attributes"][x]["value"] + " kg";
+                    var DATA = data["dogma_attributes"][x]["value"];
+                    spandata.textContent = DATA.toLocaleString() + " kg";
+                    testdata.appendChild(spandata);
                 break;
             case 9:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
                     var testdata = document.querySelector("#AT2");
-                    testdata.textContent = data["dogma_attributes"][x]["value"] + " HP";
+                    var DATA = data["dogma_attributes"][x]["value"];
+                    spandata.textContent = DATA.toLocaleString() + " HP";
+                    testdata.appendChild(spandata);
                 break;
             case 70:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
                     var testdata = document.querySelector("#AT14");
-                    testdata.textContent = data["dogma_attributes"][x]["value"] + " x";
+                    spandata.textContent = data["dogma_attributes"][x]["value"] + " x";
+                    testdata.appendChild(spandata);
                 break;
             case 109:
                     var resistance = document.querySelector("#structure_kinetic_resistance_bar");
                     var value = document.querySelector("#structure_kinetic_resistance_value");
-                    resistance.style.width = data["dogma_attributes"][x]["value"] + "%";
-                    value.textContent = data["dogma_attributes"][x]["value"] + "%";
+                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
                 break;
             case 110:
                     var resistance = document.querySelector("#structure_thermal_resistance_bar");
                     var value = document.querySelector("#structure_thermal_resistance_value");
-                    resistance.style.width = data["dogma_attributes"][x]["value"] + "%";
-                    value.textContent = data["dogma_attributes"][x]["value"] + "%";
+                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
                 break;
             case 111:
                     var resistance = document.querySelector("#structure_explosive_resistance_bar");
                     var value = document.querySelector("#structure_explosive_resistance_value");
-                    resistance.style.width = data["dogma_attributes"][x]["value"] + "%";
-                    value.textContent = data["dogma_attributes"][x]["value"] + "%";
+                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
                 break;
             case 113:
                     var resistance = document.querySelector("#structure_em_resistance_bar");
                     var value = document.querySelector("#structure_em_resistance_value");
-                    resistance.style.width = data["dogma_attributes"][x]["value"] + "%";
-                    value.textContent = data["dogma_attributes"][x]["value"] + "%";
+                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
                 break;
             case 161:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
                     var testdata = document.querySelector("#AT12");
-                    testdata.textContent = data["dogma_attributes"][x]["value"] + " m3";
+                    var DATA = data["dogma_attributes"][x]["value"];
+                    spandata.textContent = DATA.toLocaleString() + " m3";
                     var pack = data["packaged_volume"];
-                    testdata.textContent += " (" + pack + " m3 Packaged)";
+                    spandata.textContent += " (" + pack.toLocaleString() + " m3 Packaged)";
+                    testdata.appendChild(spandata);
+                break;
+            case 265:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT28");
+                    var DATA = data["dogma_attributes"][x]["value"];
+                    spandata.textContent = DATA.toLocaleString() + " HP";
+                    testdata.appendChild(spandata);
+                break;
+            case 267:
+                    var resistance = document.querySelector("#armor_em_resistance_bar");
+                    var value = document.querySelector("#armor_em_resistance_value");
+                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                break;
+            case 268:
+                    var resistance = document.querySelector("#armor_explosive_resistance_bar");
+                    var value = document.querySelector("#armor_explosive_resistance_value");
+                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                break;
+            case 269:
+                    var resistance = document.querySelector("#armor_kinetic_resistance_bar");
+                    var value = document.querySelector("#armor_kinetic_resistance_value");
+                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                break;
+            case 270:
+                    var resistance = document.querySelector("#armor_thermal_resistance_bar");
+                    var value = document.querySelector("#armor_thermal_resistance_value");
+                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                break;
+            case 271:
+                    var resistance = document.querySelector("#shield_em_resistance_bar");
+                    var value = document.querySelector("#shield_em_resistance_value");
+                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                break;
+            case 272:
+                    var resistance = document.querySelector("#shield_explosive_resistance_bar");
+                    var value = document.querySelector("#shield_explosive_resistance_value");
+                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    // this is broken, fix it.
+                    console.log(1 % (data["dogma_attributes"][x]["value"] * 100));
+                break;
+            case 273:
+                    var resistance = document.querySelector("#shield_kinetic_resistance_bar");
+                    var value = document.querySelector("#shield_kinetic_resistance_value");
+                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                break;
+            case 274:
+                    var resistance = document.querySelector("#shield_thermal_resistance_bar");
+                    var value = document.querySelector("#shield_thermal_resistance_value");
+                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
                 break;
             // case 482:  capacitor capacity
             //         var testdata = document.querySelector("#AT4");
@@ -630,29 +894,77 @@ function InsertData(data){
                     if(data["dogma_attributes"][x]["value"] != 0){
                         Attribute_Drone(true);
                     }
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
                     var testdata = document.querySelector("#AT6");
-                    testdata.textContent = data["dogma_attributes"][x]["value"] + " m3";
+                    spandata.textContent = data["dogma_attributes"][x]["value"] + " m3";
+                    testdata.appendChild(spandata);
                 break;
             case 1271:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
                     var testdata = document.querySelector("#AT8");
-                    testdata.textContent = data["dogma_attributes"][x]["value"] + " Mbit/sec";
+                    spandata.textContent = data["dogma_attributes"][x]["value"] + " Mbit/sec";
+                    testdata.appendChild(spandata);
                 break;
             case 2675:
                     if(data["dogma_attributes"][x]["value"] != 0){
                         Subsystem_Hold_Capacity(true);
                     }
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
                     var testdata = document.querySelector("#AT16");
-                    testdata.textContent = data["dogma_attributes"][x]["value"] + " m3";
+                    var DATA = data["dogma_attributes"][x]["value"];
+                    spandata.textContent = DATA.toLocaleString() + " m3";
+                    testdata.appendChild(spandata);
+                break;
+            case 1653:
+                    if(data["dogma_attributes"][x]["value"] != 0){
+                        Ore_Hold_Capacity(true);
+                    }
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT18");
+                    var DATA = data["dogma_attributes"][x]["value"];
+                    spandata.textContent = DATA.toLocaleString() + " m3";
+                    testdata.appendChild(spandata);
+                break;
+            case 1556:
+                    if(data["dogma_attributes"][x]["value"] != 0){
+                        Planetary_Commodities_Capacity(true);
+                    }
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT20");
+                    var DATA = data["dogma_attributes"][x]["value"];
+                    spandata.textContent = DATA.toLocaleString() + " m3";
+                    testdata.appendChild(spandata);
+                break;
+            case 1558:
+                    if(data["dogma_attributes"][x]["value"] != 0){
+                        Mineral_Hold_Capacity(true);
+                    }
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT22");
+                    var DATA = data["dogma_attributes"][x]["value"];
+                    spandata.textContent = DATA.toLocaleString() + " m3";
+                    testdata.appendChild(spandata);
+                break;
+            case 1573:
+                    if(data["dogma_attributes"][x]["value"] != 0){
+                        Ammo_Hold_Capacity(true);
+                    }
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT24");
+                    var DATA = data["dogma_attributes"][x]["value"];
+                    spandata.textContent = DATA.toLocaleString() + " m3";
+                    testdata.appendChild(spandata);
                 break;
 
             default:
-                // try{
-                // var testdata = document.querySelector("#AT"+x);
-                // if (testdata.innerHTML === ""){
-                //     var testdata = document.querySelector("#AT"+x);
-                //     testdata.textContent = "Error";
-                // }
-                // }catch{}
+
         }
     }
 }
