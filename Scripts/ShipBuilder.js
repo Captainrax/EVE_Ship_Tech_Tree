@@ -765,8 +765,8 @@ function InsertData(data){
 
     var spandata = document.createElement("span");
     spandata.className = "spandata";
-    var Capacity = document.querySelector("#AT4");
     spandata.textContent = data["capacity"].toLocaleString() + " m3";
+    var Capacity = document.querySelector("#AT4");
     Capacity.appendChild(spandata);
 
     for(x in data["dogma_attributes"]){
@@ -797,26 +797,42 @@ function InsertData(data){
             case 109:
                     var resistance = document.querySelector("#structure_kinetic_resistance_bar");
                     var value = document.querySelector("#structure_kinetic_resistance_value");
-                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
-                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    resistance.style.width = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    value.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    if(parseFloat(value.textContent) % 1 === 0){
+                        resistance.style.width = parseFloat(resistance.textContent).toFixed(0) + "%";
+                        value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
+                    }
                 break;
             case 110:
                     var resistance = document.querySelector("#structure_thermal_resistance_bar");
                     var value = document.querySelector("#structure_thermal_resistance_value");
-                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
-                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    resistance.style.width = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    value.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    if(parseFloat(value.textContent) % 1 === 0){
+                        resistance.style.width = parseFloat(resistance.textContent).toFixed(0) + "%";
+                        value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
+                    }
                 break;
             case 111:
                     var resistance = document.querySelector("#structure_explosive_resistance_bar");
                     var value = document.querySelector("#structure_explosive_resistance_value");
-                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
-                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    resistance.style.width = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    value.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    if(parseFloat(value.textContent) % 1 === 0){
+                        resistance.style.width = parseFloat(resistance.textContent).toFixed(0) + "%";
+                        value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
+                    }
                 break;
             case 113:
                     var resistance = document.querySelector("#structure_em_resistance_bar");
                     var value = document.querySelector("#structure_em_resistance_value");
-                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
-                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    resistance.style.width = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    value.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    if(parseFloat(value.textContent) % 1 === 0){
+                        resistance.style.width = parseFloat(resistance.textContent).toFixed(0) + "%";
+                        value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
+                    }
                 break;
             case 161:
                     var spandata = document.createElement("span");
@@ -826,6 +842,14 @@ function InsertData(data){
                     spandata.textContent = DATA.toLocaleString() + " m3";
                     var pack = data["packaged_volume"];
                     spandata.textContent += " (" + pack.toLocaleString() + " m3 Packaged)";
+                    testdata.appendChild(spandata);
+                break;
+            case 263:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT32");
+                    var DATA = data["dogma_attributes"][x]["value"];
+                    spandata.textContent = DATA.toLocaleString() + " HP";
                     testdata.appendChild(spandata);
                 break;
             case 265:
@@ -839,52 +863,82 @@ function InsertData(data){
             case 267:
                     var resistance = document.querySelector("#armor_em_resistance_bar");
                     var value = document.querySelector("#armor_em_resistance_value");
-                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
-                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    resistance.style.width = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    value.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    if(parseFloat(value.textContent) % 1 === 0){
+                        resistance.style.width = parseFloat(resistance.textContent).toFixed(0) + "%";
+                        value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
+                    }
                 break;
             case 268:
                     var resistance = document.querySelector("#armor_explosive_resistance_bar");
                     var value = document.querySelector("#armor_explosive_resistance_value");
-                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
-                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    resistance.style.width = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    value.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    if(parseFloat(value.textContent) % 1 === 0){
+                        resistance.style.width = parseFloat(resistance.textContent).toFixed(0) + "%";
+                        value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
+                    }
                 break;
             case 269:
                     var resistance = document.querySelector("#armor_kinetic_resistance_bar");
                     var value = document.querySelector("#armor_kinetic_resistance_value");
-                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
-                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    resistance.style.width = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    value.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    if(parseFloat(value.textContent) % 1 === 0){
+                        resistance.style.width = parseFloat(resistance.textContent).toFixed(0) + "%";
+                        value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
+                    }
                 break;
             case 270:
                     var resistance = document.querySelector("#armor_thermal_resistance_bar");
                     var value = document.querySelector("#armor_thermal_resistance_value");
-                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
-                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    resistance.style.width = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    value.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    if(parseFloat(value.textContent) % 1 === 0){
+                        resistance.style.width = parseFloat(resistance.textContent).toFixed(0) + "%";
+                        value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
+                    }
                 break;
             case 271:
                     var resistance = document.querySelector("#shield_em_resistance_bar");
                     var value = document.querySelector("#shield_em_resistance_value");
-                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
-                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    resistance.style.width = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    value.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    if(parseFloat(value.textContent) % 1 === 0){
+                        resistance.style.width = parseFloat(resistance.textContent).toFixed(0) + "%";
+                        value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
+                    }
                 break;
             case 272:
                     var resistance = document.querySelector("#shield_explosive_resistance_bar");
                     var value = document.querySelector("#shield_explosive_resistance_value");
-                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
-                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
-                    // this is broken, fix it.
-                    console.log(1 % (data["dogma_attributes"][x]["value"] * 100));
+                    resistance.style.width = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    value.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    if(parseFloat(value.textContent) % 1 === 0){
+                        resistance.style.width = parseFloat(resistance.textContent).toFixed(0) + "%";
+                        value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
+                    }
                 break;
             case 273:
                     var resistance = document.querySelector("#shield_kinetic_resistance_bar");
                     var value = document.querySelector("#shield_kinetic_resistance_value");
-                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
-                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    resistance.style.width = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    value.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    if(parseFloat(value.textContent) % 1 === 0){
+                        resistance.style.width = parseFloat(resistance.textContent).toFixed(0) + "%";
+                        value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
+                    }
                 break;
             case 274:
                     var resistance = document.querySelector("#shield_thermal_resistance_bar");
                     var value = document.querySelector("#shield_thermal_resistance_value");
-                    resistance.style.width = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
-                    value.textContent = 100 % (data["dogma_attributes"][x]["value"] * 100) + "%";
+                    resistance.style.width = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    value.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + "%";
+                    if(parseFloat(value.textContent) % 1 === 0){
+                        resistance.style.width = parseFloat(resistance.textContent).toFixed(0) + "%";
+                        value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
+                    }
                 break;
             // case 482:  capacitor capacity
             //         var testdata = document.querySelector("#AT4");
@@ -898,6 +952,14 @@ function InsertData(data){
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT6");
                     spandata.textContent = data["dogma_attributes"][x]["value"] + " m3";
+                    testdata.appendChild(spandata);
+                break;
+            case 479:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT34");
+                    var DATA = data["dogma_attributes"][x]["value"];
+                    spandata.textContent = (DATA / 1000).toFixed(2) + " s";
                     testdata.appendChild(spandata);
                 break;
             case 1271:
