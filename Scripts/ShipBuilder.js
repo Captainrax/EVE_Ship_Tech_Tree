@@ -231,7 +231,7 @@ function insert(Ship) {
     Content_Description.appendChild(Description_P);
 
     var Content_Attributes = document.querySelector("#attributes");
-    for (var i = 0; i <= 45; i++){
+    for (var i = 0; i <= 60; i++){
         var Attributes_Div = document.createElement("div");
         Attributes_Div.className = "AT";
         Attributes_Div.id = "AT" + i;
@@ -294,13 +294,13 @@ function insert(Ship) {
     Attributes_Structure_Inertia_Modifier_Img.className = "attribute_name_img";
     Attributes_Structure_Inertia_Modifier_Img.src = "StyleSheets/ship_info_icons/Inertia_Modifier.png";
 
-    // Attribute Titles
+    // Attribute titles that every ship has
     var Attributes_Str = document.querySelector("#AT0");
     var Attributes_Arm = document.querySelector("#AT26");
     var Attributes_Shi = document.querySelector("#AT30");
-    var Attributes_Cap = document.querySelector("#AT36");
-    var Attributes_Tar = document.querySelector("#AT37");
-    var Attributes_Pro = document.querySelector("#AT41");
+    var Attributes_Cap = document.querySelector("#AT51");
+    var Attributes_Tar = document.querySelector("#AT56");
+    var Attributes_Pro = document.querySelector("#AT60");
     
     var Attributes_Str_Hitpoints = document.querySelector("#AT1");
     var Attributes_Str_Capacity = document.querySelector("#AT3");
@@ -591,6 +591,29 @@ function insert(Ship) {
     Attributes_Shield_Explosive.appendChild(Attributes_Shield_Explosive_Bar);
     Attributes_Shield_Explosive.appendChild(Attributes_Shield_Explosive_Value);
 
+    //Capacitor
+    var Attributes_Capacitor_Capacity = document.createElement("p");
+    var Attributes_Capacitor_Capacity_Img = document.createElement("img");
+    var Attributes_Capacitor_Recharge_Time = document.createElement("p");
+    var Attributes_Capacitor_Recharge_Time_Img = document.createElement("img");
+
+    Attributes_Capacitor_Capacity.textContent = "Capacitor Capacity";
+    Attributes_Capacitor_Capacity.className = "attribute_name";
+    Attributes_Capacitor_Capacity_Img.className = "attribute_name_img";
+    Attributes_Capacitor_Capacity_Img.src = "StyleSheets/ship_info_icons/Capacitor.png";
+
+    Attributes_Capacitor_Recharge_Time.textContent = "Capacitor Recharge Time";
+    Attributes_Capacitor_Recharge_Time.className = "attribute_name";
+    Attributes_Capacitor_Recharge_Time_Img.className = "attribute_name_img";
+    Attributes_Capacitor_Recharge_Time_Img.src = "StyleSheets/ship_info_icons/Shield_Recharge.png";
+
+    var Attributes_Cap_Capacity = document.querySelector("#AT52");
+    var Attributes_Cap_Recharge_Time = document.querySelector("#AT54");
+
+    Attributes_Cap_Capacity.appendChild(Attributes_Capacitor_Capacity_Img);
+    Attributes_Cap_Capacity.appendChild(Attributes_Capacitor_Capacity);
+    Attributes_Cap_Recharge_Time.appendChild(Attributes_Capacitor_Recharge_Time_Img);
+    Attributes_Cap_Recharge_Time.appendChild(Attributes_Capacitor_Recharge_Time);
 
 function Close() {
     var Ship_Div = document.querySelector("#ship_div");
@@ -759,6 +782,7 @@ function InsertData(data){
     Planetary_Commodities_Capacity(false);
     Mineral_Hold_Capacity(false);
     Ammo_Hold_Capacity(false);
+    Electronic_Resistances(false);
     
     var desc = document.querySelector("#description_text");
     desc.textContent = data["description"];
@@ -940,10 +964,6 @@ function InsertData(data){
                         value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
                     }
                 break;
-            // case 482:  capacitor capacity
-            //         var testdata = document.querySelector("#AT4");
-            //         testdata.textContent = data["dogma_attributes"][x]["value"] + " m3";
-            //     break;
             case 283:
                     if(data["dogma_attributes"][x]["value"] != 0){
                         Attribute_Drone(true);
@@ -962,6 +982,22 @@ function InsertData(data){
                     spandata.textContent = (DATA / 1000).toFixed(2) + " s";
                     testdata.appendChild(spandata);
                 break;
+            case 482:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT53");
+                    var DATA = data["dogma_attributes"][x]["value"];
+                    spandata.textContent = DATA.toFixed(1) + " GJ";
+                    testdata.appendChild(spandata);
+                    break;
+            case 55:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT55");
+                    var DATA = data["dogma_attributes"][x]["value"];
+                    spandata.textContent = (DATA / 1000).toFixed(2) + " s";
+                    testdata.appendChild(spandata);
+                    break;
             case 1271:
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
@@ -1024,12 +1060,85 @@ function InsertData(data){
                     spandata.textContent = DATA.toLocaleString() + " m3";
                     testdata.appendChild(spandata);
                 break;
-
+            case 2135:
+                    if(data["dogma_attributes"][x]["value"] != 0){
+                        Electronic_Resistances(true);
+                    }
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT38");
+                    spandata.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + " %";
+                    if(parseFloat(spandata.textContent) % 1 === 0){
+                        spandata.textContent = parseFloat(spandata.textContent).toFixed(0) + " %";
+                    }
+                    testdata.appendChild(spandata);
+                break;
+            case 2116:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT40");
+                    spandata.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + " %";
+                    if(parseFloat(spandata.textContent) % 1 === 0){
+                        spandata.textContent = parseFloat(spandata.textContent).toFixed(0) + " %";
+                    }
+                    testdata.appendChild(spandata);
+                break;
+            case 2045:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT42");
+                    spandata.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + " %";
+                    if(parseFloat(spandata.textContent) % 1 === 0){
+                        spandata.textContent = parseFloat(spandata.textContent).toFixed(0) + " %";
+                    }
+                    testdata.appendChild(spandata);
+                break;
+            case 2112:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT44");
+                    spandata.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + " %";
+                    if(parseFloat(spandata.textContent) % 1 === 0){
+                        spandata.textContent = parseFloat(spandata.textContent).toFixed(0) + " %";
+                    }
+                    testdata.appendChild(spandata);
+                break;
+            case 2115:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT46");
+                    spandata.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + " %";
+                    if(parseFloat(spandata.textContent) % 1 === 0){
+                        spandata.textContent = parseFloat(spandata.textContent).toFixed(0) + " %";
+                    }
+                    testdata.appendChild(spandata);
+                break;
+            case 2114:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT48");
+                    spandata.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + " %";
+                    if(parseFloat(spandata.textContent) % 1 === 0){
+                        spandata.textContent = parseFloat(spandata.textContent).toFixed(0) + " %";
+                    }
+                    testdata.appendChild(spandata);
+                break;
+            case 2113:
+                    var spandata = document.createElement("span");
+                    spandata.className = "spandata";
+                    var testdata = document.querySelector("#AT50");
+                    spandata.textContent = ((1 - data["dogma_attributes"][x]["value"]) * 100).toFixed(2) + " %";
+                    if(parseFloat(spandata.textContent) % 1 === 0){
+                        spandata.textContent = parseFloat(spandata.textContent).toFixed(0) + " %";
+                    }
+                    testdata.appendChild(spandata);
+                break;
             default:
 
         }
     }
 }
+// used in the same place as the json is fetched to display an error if a stat is missing
 function DisplayError(){
     for(var x = 0; x < 100; x++){
         var Testdata = document.querySelector("#AT"+x);
@@ -1224,6 +1333,145 @@ function Ammo_Hold_Capacity(Toggle){
 } 
 
 
+function Electronic_Resistances(Toggle){
+
+    if (Toggle === true) {
+        // Title
+        var Attributes_Electronic_Resistances_Title = document.createElement("p");
+        Attributes_Electronic_Resistances_Title.textContent = "Electronic Resistances";
+        Attributes_Electronic_Resistances_Title.className = "attributes_titles";
+        var Attributes_Elect = document.querySelector("#AT36");
+        Attributes_Elect.appendChild(Attributes_Electronic_Resistances_Title);
+        
+        // Stats
+        var Attributes_Remote_Electronic_Assistance_Impedance = document.createElement("p");
+        var Attributes_Remote_Electronic_Assistance_Impedance_Img = document.createElement("img");
+        var Attributes_Remote_Logistics_Impedance = document.createElement("p");
+        var Attributes_Remote_Logistics_Impedance_Img = document.createElement("img");
+        var Attributes_Capacitor_Warfare_Resistance = document.createElement("p");
+        var Attributes_Capacitor_Warfare_Resistance_Img = document.createElement("img");
+        var Attributes_Sensor_Warfare_Resistance = document.createElement("p");
+        var Attributes_Sensor_Warfare_Resistance_Img = document.createElement("img");
+        var Attributes_Stasis_Webifier_Resistance = document.createElement("p");
+        var Attributes_Stasis_Webifier_Resistance_Img = document.createElement("img");
+        var Attributes_Target_Painter_Resistance = document.createElement("p");
+        var Attributes_Target_Painter_Resistance_Img = document.createElement("img");
+        var Attributes_Weapon_Disruption_Resistance = document.createElement("p");
+        var Attributes_Weapon_Disruption_Resistance_Img = document.createElement("img");
+
+        Attributes_Remote_Electronic_Assistance_Impedance.textContent = "Remote Electronic Assistance Impedance";
+        Attributes_Remote_Electronic_Assistance_Impedance.className = "attribute_name";
+        Attributes_Remote_Electronic_Assistance_Impedance_Img.className = "attribute_name_img";
+        Attributes_Remote_Electronic_Assistance_Impedance_Img.src = "StyleSheets/ship_info_icons/Drone_Capacity.png";
+
+        Attributes_Remote_Logistics_Impedance.textContent = "Remote Logistics Impedance";
+        Attributes_Remote_Logistics_Impedance.className = "attribute_name";
+        Attributes_Remote_Logistics_Impedance_Img.className = "attribute_name_img";
+        Attributes_Remote_Logistics_Impedance_Img.src = "StyleSheets/ship_info_icons/Drone_Bandwidth.png";
+
+        Attributes_Capacitor_Warfare_Resistance.textContent = "Capacitor Warfare Resistance";
+        Attributes_Capacitor_Warfare_Resistance.className = "attribute_name";
+        Attributes_Capacitor_Warfare_Resistance_Img.className = "attribute_name_img";
+        Attributes_Capacitor_Warfare_Resistance_Img.src = "StyleSheets/ship_info_icons/Drone_Bandwidth.png";
+
+        Attributes_Sensor_Warfare_Resistance.textContent = "Sensor Warfare Resistance";
+        Attributes_Sensor_Warfare_Resistance.className = "attribute_name";
+        Attributes_Sensor_Warfare_Resistance_Img.className = "attribute_name_img";
+        Attributes_Sensor_Warfare_Resistance_Img.src = "StyleSheets/ship_info_icons/Drone_Bandwidth.png";
+
+        Attributes_Stasis_Webifier_Resistance.textContent = "Stasis Webifier Resistance";
+        Attributes_Stasis_Webifier_Resistance.className = "attribute_name";
+        Attributes_Stasis_Webifier_Resistance_Img.className = "attribute_name_img";
+        Attributes_Stasis_Webifier_Resistance_Img.src = "StyleSheets/ship_info_icons/Speed.png";
+
+        Attributes_Target_Painter_Resistance.textContent = "Target Painter Resistance";
+        Attributes_Target_Painter_Resistance.className = "attribute_name";
+        Attributes_Target_Painter_Resistance_Img.className = "attribute_name_img";
+        Attributes_Target_Painter_Resistance_Img.src = "StyleSheets/ship_info_icons/Signature_Radius.png";
+
+        Attributes_Weapon_Disruption_Resistance.textContent = "Weapon Disruption Resistance";
+        Attributes_Weapon_Disruption_Resistance.className = "attribute_name";
+        Attributes_Weapon_Disruption_Resistance_Img.className = "attribute_name_img";
+        Attributes_Weapon_Disruption_Resistance_Img.src = "StyleSheets/ship_info_icons/Drone_Bandwidth.png";
+        
+        var Attributes_Remote_Electronic = document.querySelector("#AT37");
+        var Attributes_Remote_Logistics = document.querySelector("#AT39");
+        var Attributes_Capacitor_Warfare = document.querySelector("#AT41");
+        var Attributes_Sensor_Warfare = document.querySelector("#AT43");
+        var Attributes_Stasis_Webifier = document.querySelector("#AT45");
+        var Attributes_Target_Painter = document.querySelector("#AT47");
+        var Attributes_Weapon_Disruption = document.querySelector("#AT49");
+        
+        Attributes_Remote_Electronic.style.display = "grid";
+        Attributes_Remote_Logistics.style.display = "grid";
+        Attributes_Capacitor_Warfare.style.display = "grid";
+        Attributes_Sensor_Warfare.style.display = "grid";
+        Attributes_Stasis_Webifier.style.display = "grid";
+        Attributes_Target_Painter.style.display = "grid";
+        Attributes_Weapon_Disruption.style.display = "grid";
+
+        Attributes_Remote_Electronic.appendChild(Attributes_Remote_Electronic_Assistance_Impedance_Img);
+        Attributes_Remote_Electronic.appendChild(Attributes_Remote_Electronic_Assistance_Impedance);
+        Attributes_Remote_Logistics.appendChild(Attributes_Remote_Logistics_Impedance_Img);
+        Attributes_Remote_Logistics.appendChild(Attributes_Remote_Logistics_Impedance);
+        Attributes_Capacitor_Warfare.appendChild(Attributes_Capacitor_Warfare_Resistance_Img);
+        Attributes_Capacitor_Warfare.appendChild(Attributes_Capacitor_Warfare_Resistance);
+        Attributes_Sensor_Warfare.appendChild(Attributes_Sensor_Warfare_Resistance_Img);
+        Attributes_Sensor_Warfare.appendChild(Attributes_Sensor_Warfare_Resistance);
+        Attributes_Stasis_Webifier.appendChild(Attributes_Stasis_Webifier_Resistance_Img);
+        Attributes_Stasis_Webifier.appendChild(Attributes_Stasis_Webifier_Resistance);
+        Attributes_Target_Painter.appendChild(Attributes_Target_Painter_Resistance_Img);
+        Attributes_Target_Painter.appendChild(Attributes_Target_Painter_Resistance);
+        Attributes_Weapon_Disruption.appendChild(Attributes_Weapon_Disruption_Resistance_Img);
+        Attributes_Weapon_Disruption.appendChild(Attributes_Weapon_Disruption_Resistance);
+        
+        var Attributes_Remote_Electronic_AT = document.querySelector("#AT38");
+        var Attributes_Remote_Logistics_AT = document.querySelector("#AT40");
+        var Attributes_Capacitor_Warfare_AT = document.querySelector("#AT42");
+        var Attributes_Sensor_Warfare_AT = document.querySelector("#AT44");
+        var Attributes_Stasis_Webifier_AT = document.querySelector("#AT46");
+        var Attributes_Target_Painter_AT = document.querySelector("#AT48");
+        var Attributes_Weapon_Disruption_AT = document.querySelector("#AT50");
+        Attributes_Remote_Electronic_AT.style.display = "grid";
+        Attributes_Remote_Logistics_AT.style.display = "grid";
+        Attributes_Capacitor_Warfare_AT.style.display = "grid";
+        Attributes_Sensor_Warfare_AT.style.display = "grid";
+        Attributes_Stasis_Webifier_AT.style.display = "grid";
+        Attributes_Target_Painter_AT.style.display = "grid";
+        Attributes_Weapon_Disruption_AT.style.display = "grid";
+
+    } else if (Toggle === false) {
+
+        var Attributes_Remote_Electronic = document.querySelector("#AT37");
+        var Attributes_Remote_Logistics = document.querySelector("#AT39");
+        var Attributes_Capacitor_Warfare = document.querySelector("#AT41");
+        var Attributes_Sensor_Warfare = document.querySelector("#AT43");
+        var Attributes_Stasis_Webifier = document.querySelector("#AT45");
+        var Attributes_Target_Painter = document.querySelector("#AT47");
+        var Attributes_Weapon_Disruption = document.querySelector("#AT49");
+        Attributes_Remote_Electronic.style.display = "none";
+        Attributes_Remote_Logistics.style.display = "none";
+        Attributes_Capacitor_Warfare.style.display = "none";
+        Attributes_Sensor_Warfare.style.display = "none";
+        Attributes_Stasis_Webifier.style.display = "none";
+        Attributes_Target_Painter.style.display = "none";
+        Attributes_Weapon_Disruption.style.display = "none";
+        var Attributes_Remote_Electronic_AT = document.querySelector("#AT38");
+        var Attributes_Remote_Logistics_AT = document.querySelector("#AT40");
+        var Attributes_Capacitor_Warfare_AT = document.querySelector("#AT42");
+        var Attributes_Sensor_Warfare_AT = document.querySelector("#AT44");
+        var Attributes_Stasis_Webifier_AT = document.querySelector("#AT46");
+        var Attributes_Target_Painter_AT = document.querySelector("#AT48");
+        var Attributes_Weapon_Disruption_AT = document.querySelector("#AT50");
+        Attributes_Remote_Electronic_AT.style.display = "none";
+        Attributes_Remote_Logistics_AT.style.display = "none";
+        Attributes_Capacitor_Warfare_AT.style.display = "none";
+        Attributes_Sensor_Warfare_AT.style.display = "none";
+        Attributes_Stasis_Webifier_AT.style.display = "none";
+        Attributes_Target_Painter_AT.style.display = "none";
+        Attributes_Weapon_Disruption_AT.style.display = "none";
+    }
+} 
 
 
 
