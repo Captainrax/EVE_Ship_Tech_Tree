@@ -1,0 +1,245 @@
+/* Includes background lines connecting ship categories, aswell as the 2 lines and classification above each ship category */
+.background_line{
+    z-index: -999;
+    position: absolute;
+    background-color:rgba(145, 175, 190, 1);
+    /* transition: all 1200ms ease-in-out; */
+    border-top: 2px solid rgba(45, 55, 65, 1);
+    border-bottom: 2px solid rgba(45, 55, 65, 1);
+	box-shadow: 0px 2px rgba(80, 90, 90, 0.9), 0px -2px rgba(80, 90, 90, 0.9);
+}
+#line1{
+    width: 216px;
+    height: 2px;
+    margin: 353px 620px;
+}
+#item1::before{
+  position: absolute;
+  margin: -5px 0px;
+  content: "";
+  width: 198px;
+  font-size: 12px;
+  border-bottom: solid rgb(63, 78, 88) 1px;
+}
+#item1::after{
+  position: absolute;
+  margin: -2px 0px;
+  content: "";
+  width: 198px;
+  border-top: solid rgb(63, 78, 88) 1px;
+}
+#ship_class_expedition_frigate::before{
+  position: absolute;
+  content: "EXPEDITION FRIGATE";
+  margin: -30px 30px;
+  font-size: 12px;
+}
+#line2{
+    width: 130px;
+    height: 2px;
+    margin: 267px 456px;
+    transform: rotate(-90deg);
+}
+#item2::before{
+  position: absolute;
+  margin: -5px 0px;
+  content: "";
+  width: 120px;
+  font-size: 12px;
+  border-bottom: solid rgb(63, 78, 88) 1px;
+}
+#item2::after{
+  position: absolute;
+  margin: -2px 0px;
+  content: "";
+  width: 120px;
+  border-top: solid rgb(63, 78, 88) 1px;
+}
+#ship_class_mining_frigate::before{
+  position: absolute;
+  content: "MINING FRIGATE";
+  margin: -30px 30px;
+  font-size: 12px;
+}
+#line3{
+    width: 112px;
+    height: 2px;
+    margin: 164px 504px;
+    transform: rotate(-45deg);
+}
+#line4{
+    width: 130px;
+    height: 2px;
+    margin: 267px 786px;
+    transform: rotate(-90deg);
+}
+#item4::before{
+  position: absolute;
+  margin: -5px 0px;
+  content: "";
+  width: 290px;
+  font-size: 12px;
+  border-bottom: solid rgb(63, 78, 88) 1px;
+}
+#item4::after{
+  position: absolute;
+  margin: -2px 0px;
+  content: "";
+  width: 290px;
+  border-top: solid rgb(63, 78, 88) 1px;
+}
+#ship_class_exhumer::before{
+  position: absolute;
+  content: "EXHUMER";
+  margin: -30px 30px;
+  font-size: 12px;
+}
+#line5{
+    width: 112px;
+    height: 2px;
+    margin: 164px 834px;
+    transform: rotate(-45deg);
+}
+#item5::before{
+  position: absolute;
+  margin: -5px 0px;
+  content: "";
+  width: 290px;
+  font-size: 12px;
+  border-bottom: solid rgb(63, 78, 88) 1px;
+}
+#item5::after{
+  position: absolute;
+  margin: -2px 0px;
+  content: "";
+  width: 290px;
+  border-top: solid rgb(63, 78, 88) 1px;
+}
+#ship_class_mining_barge::before{
+  position: absolute;
+  content: "MINING BARGE";
+  margin: -30px 30px;
+  font-size: 12px;
+}
+#line6{
+    width: 130px;
+    height: 2px;
+    margin: 353px 368px;
+}
+#item6::before{
+  position: absolute;
+  margin: -5px 0px;
+  content: "";
+  width: 125px;
+  font-size: 12px;
+  border-bottom: solid rgb(63, 78, 88) 1px;
+}
+#item6::after{
+  position: absolute;
+  margin: -2px 0px;
+  content: "";
+  width: 125px;
+  border-top: solid rgb(63, 78, 88) 1px;
+}
+#ship_class_industrial::before{
+  position: absolute;
+  content: "ORE INDUSTRIAL SHIP";
+  margin: -30px 30px;
+  font-size: 12px;
+}
+#line7{
+    z-index: -1001;
+    width: 236px;
+    height: 2px;
+    margin: 468px 254px;
+    transform: rotate(-90deg);
+}
+#line8{
+    width: 480px;
+    height: 2px;
+    margin: 583px 368px;
+}
+#item8::before{
+  position: absolute;
+  margin: -5px 0px;
+  content: "";
+  width: 218px;
+  font-size: 12px;
+  border-bottom: solid rgb(63, 78, 88) 1px;
+}
+#item8::after{
+  position: absolute;
+  margin: -2px 0px;
+  content: "";
+  width: 218px;
+  border-top: solid rgb(63, 78, 88) 1px;
+}
+#ship_class_industrial_command::before{
+  position: absolute;
+  content: "INDUSTRIAL COMMAND SHIP";
+  margin: -30px 30px;
+  font-size: 12px;
+}
+#line9{
+    width: 138px;
+    height: 2px;
+    margin: 583px 955px;
+}
+#line10{
+    width: 50px;
+    height: 2px;
+    margin: 583px 1308px;
+}
+#item10::before{
+  position: absolute;
+  margin: -5px 0px;
+  content: "";
+  width: 198px;
+  font-size: 12px;
+  border-bottom: solid rgb(63, 78, 88) 1px;
+}
+#item10::after{
+  position: absolute;
+  margin: -2px 0px;
+  content: "";
+  width: 198px;
+  border-top: solid rgb(63, 78, 88) 1px;
+}
+#ship_class_capital_industrial::before{
+  position: absolute;
+  content: "CAPITAL INDUSTRIAL SHIP";
+  margin: -30px 30px;
+  font-size: 12px;
+}
+#line11{
+    width: 190px;
+    height: 2px;
+    margin: 694px 756px;
+    transform: rotate(90deg);
+}
+#item11::before{
+  position: absolute;
+  margin: -5px 0px;
+  content: "";
+  width: 138px;
+  font-size: 12px;
+  border-bottom: solid rgb(63, 78, 88) 1px;
+}
+#item11::after{
+  position: absolute;
+  margin: -2px 0px;
+  content: "";
+  width: 138px;
+  border-top: solid rgb(63, 78, 88) 1px;
+}
+#ship_class_freighter::before{
+  position: absolute;
+  content: "FREIGHTER";
+  margin: -30px 30px;
+  font-size: 12px;
+}
+#line12{
+    width: 510px;
+    height: 2px;
+    margin: 793px 847px;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="StyleSheets/ORE.css" rel="stylesheet" />
+        <link href="StyleSheets/ORE_Lines.css" rel="stylesheet" />
+        <link href="StyleSheets/ShowShip.css" rel="stylesheet" />
+
+        <script src="Scripts/ORE_EventListeners.js" defer></script>
+        <script src="Scripts/DraggableDiv.js" defer></script>
+        <script src="Scripts/ShipBuilder.js" defer></script>
+        <script src="Scripts/ORE_Ship_Info.js" defer></script>
+
+        <title>EVE Ship Tree - ORE</title>
+</head>
+
+<body id="background">
+        <div class="faction_menu">
+                <ul class="menu_navbar" id="faction_menu_ul">
+                        <li class="menu_tab"><a href="Amarr.html"><img src="StyleSheets/icons/amarr.png"></a></li>
+                        <li class="menu_tab"><a href="index.html"><img src="StyleSheets/icons/caldari.png" alt=""></a></li>
+                        <li class="menu_tab"><a href="#Were you expecting a finished page?"><img src="StyleSheets/icons/gallente.png" alt=""></a></li>
+                        <li class="menu_tab"><a href="#yeah no, keep trying."><img src="StyleSheets/icons/minmatar.png" alt=""></a></li>
+                        <li class="menu_tab faction_active"><a href="ORE.html"><img src="StyleSheets/icons/ORE.png" alt=""></a></li>
+                        <li class="menu_tab"><a href="#yep... nothing here."><img src="StyleSheets/icons/guristas.png" alt=""></a></li>
+                        <li class="menu_tab"><a href="#about"><img src="StyleSheets/icons/sansha.png" alt=""></a></li>
+                        <li class="menu_tab"><a href="#about"><img src="StyleSheets/icons/bloodRaiders.png" alt=""></a></li>
+                        <li class="menu_tab"><a href="#about"><img src="StyleSheets/icons/angel.png" alt=""></a></li>
+                        <li class="menu_tab"><a href="#about"><img src="StyleSheets/icons/serpentis.png" alt=""></a></li>
+                        <li class="menu_tab"><a href="#about"><img src="StyleSheets/icons/soe.png" alt=""></a></li>
+                        <li class="menu_tab"><a href="#mordus? more like Murdr us! hah!"><img src="StyleSheets/icons/mordus.png" alt=""></a></li>
+                        <li class="menu_tab"><a href="#These dudes are spook aliens."><img src="StyleSheets/icons/triglavianCollective.png" alt=""></a></li>
+                </ul>
+        </div>
+
+
+    <div class="grid-container">
+        
+        <div class="grid-item" id="item1">
+
+                <div class="ship_class" id="ship_class_expedition_frigate"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon ship_icon_tier2">
+                                <div class="inner_ship_icon" id="showship_expedition_frigate1">
+                                   <div>
+                                        <img src="ship_tree_icons/ORE_Icons/Venture_isis.png" class="ghost_img">
+                                   </div>
+                                </div>  
+                        </div>
+                        <div class="ship_icon ship_icon_tier2">
+                                <div class="inner_ship_icon" id="showship_expedition_frigate2">
+                                   <div>
+                                        <img src="ship_tree_icons/ORE_Icons/Venture_isis.png" class="ghost_img">
+                                   </div>
+                                </div>  
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item2">
+        
+                <div class="ship_class" id="ship_class_mining_frigate"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_frigate1">
+                                   <div>
+                                        <img src="ship_tree_icons/ORE_Icons/Venture_isis.png" class="ghost_img">
+                                   </div>
+                                </div>  
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item3"></div>
+
+        <div class="grid-item" id="item4">
+                
+                <div class="ship_class" id="ship_class_exhumer"></div>
+                <div class="ship-icon-alignment" id="ship-icon-alignment_mining_barge">
+                        <div class="ship_icon ship_icon_tier2" id="ship_icon_mining_barge">
+                                <div class="inner_ship_icon" id="showship_exhumer1">
+                                   <div>
+                                        <img src="StyleSheets\icons\ORE_transparent.png" class="ghost_img" id="ghost_img_mining_barge">
+                                   </div>
+                                </div>  
+                        </div>
+                        <div class="ship_icon ship_icon_tier2" id="ship_icon_mining_barge">
+                                <div class="inner_ship_icon" id="showship_exhumer2">
+                                   <div>
+                                        <img src="StyleSheets\icons\ORE_transparent.png" class="ghost_img" id="ghost_img_mining_barge">
+                                   </div>
+                                </div>  
+                        </div>
+                        <div class="ship_icon ship_icon_tier2" id="ship_icon_mining_barge">
+                                <div class="inner_ship_icon" id="showship_exhumer3">
+                                   <div>
+                                        <img src="StyleSheets\icons\ORE_transparent.png" class="ghost_img" id="ghost_img_mining_barge">
+                                   </div>
+                                </div>  
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item5">
+
+                <div class="ship_class" id="ship_class_mining_barge"></div>
+                <div class="ship-icon-alignment" id="ship-icon-alignment_mining_barge">
+                        <div class="ship_icon" id="ship_icon_mining_barge">
+                                <div class="inner_ship_icon" id="showship_mining_barge1">
+                                        <div>
+                                            <img src="StyleSheets\icons\ORE_transparent.png" class="ghost_img" id="ghost_img_mining_barge">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon" id="ship_icon_mining_barge">
+                                <div class="inner_ship_icon" id="showship_mining_barge2">
+                                        <div>
+                                            <img src="StyleSheets\icons\ORE_transparent.png" class="ghost_img" id="ghost_img_mining_barge">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon" id="ship_icon_mining_barge">
+                                <div class="inner_ship_icon" id="showship_mining_barge3">
+                                        <div>
+                                            <img src="StyleSheets\icons\ORE_transparent.png" class="ghost_img" id="ghost_img_mining_barge">
+                                        </div>
+                                </div>
+                        </div>
+                       
+                </div>
+        </div>
+
+        <div class="grid-item" id="item6">
+
+                <div class="ship_class" id="ship_class_industrial"></div>
+                <div class="ship-icon-alignment" id="ship-icon-alignment_mining_barge">
+                        <div class="ship_icon" id="ship_icon_mining_barge">
+                                <div class="inner_ship_icon" id="showship_support1">
+                                        <div>
+                                            <img src="ship_tree_icons/ORE_Icons/Noctis_isis.png" class="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item7"></div>
+
+        <div class="grid-item" id="item8">
+
+                <div class="ship_class" id="ship_class_industrial_command"></div>
+                <div class="ship-icon-alignment" id="ship-icon-alignment_industrial_command">
+                        <div class="ship_icon" id="ship_icon_industrial_command">
+                                <div class="inner_ship_icon" id="showship_industrial_command_ship1">
+                                        <div>
+                                            <img src="ship_tree_icons/ORE_Icons/Noctis_isis.png" class="ghost_img" id="ghost_img_industrial_command">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon" id="ship_icon_industrial_command">
+                                <div class="inner_ship_icon" id="showship_industrial_command_ship2">
+                                        <div>
+                                            <img src="ship_tree_icons/ORE_Icons/Orca_isis.png" class="ghost_img" id="ghost_img_industrial_command">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item9"></div>
+
+        <div class="grid-item" id="item10">
+                <div class="ship_class" id="ship_class_capital_industrial"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_capital">
+                                <div class="inner_ship_icon" id="showship_capital_industrial1">
+                                        <div>
+                                            <img src="ship_tree_icons/ORE_Icons/Rorqual_isis.png" class="ghost_img" id="ghost_img_capital">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="grid-item" id="item11">
+
+                <div class="ship_class" id="ship_class_freighter"></div>
+                <div class="ship-icon-alignment">
+                        <div class="ship_icon" id="ship_icon_freighter">
+                                <div class="inner_ship_icon" id="showship_freighter1">
+                                        <div>
+                                            <img src="StyleSheets\icons\ORE_transparent.png" class="ghost_img" id="ghost_img_capital">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+
+
+    </div>
+
+
+    <hr class="background_line" id="line1">
+    <hr class="background_line" id="line2">
+    <hr class="background_line" id="line3">
+    <hr class="background_line" id="line4">
+    <hr class="background_line" id="line5">
+    <hr class="background_line" id="line6">
+    <hr class="background_line" id="line7">
+    <hr class="background_line" id="line8">
+    <hr class="background_line" id="line9">
+    <hr class="background_line" id="line10">
+    <hr class="background_line" id="line11">
+    <hr class="background_line" id="line12">
+
+    <p id="copyright">“©CCP hf. All rights reserved. Used with permission.</p>
+</body>
+
+</html> 

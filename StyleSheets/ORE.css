@@ -20,18 +20,19 @@ body {
     background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
 }
 .grid-container {
-  background-image: url("icons/amarr_transparent.png");
+  background-image: url("icons/ORE_transparent.png");
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center;
 
   display: grid;
   position: absolute;
-  grid-template-columns: repeat(7, auto);
-  grid-template-rows: repeat(6, auto);
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
   grid-gap: 10px;
   grid-auto-flow: column;
-  padding: 40px 0px 0px 20px;
+  padding: 84px 350px 0px 500px;
+  /* border: solid blue 2px; */
 }
 #filler_div{
   height: 100px;
@@ -40,9 +41,10 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   background-color: rgba(255, 255, 255, 0);
-  height: 100px;
-  width: 230px;
+  height: 150px;
+  width: 200px;
   gap: 2px 2px;
+  /* border: solid red 2px; */
 }
 .ship-icon-alignment{
   display: grid;
@@ -53,157 +55,56 @@ body {
 }
 #ship-icon-alignment-2row{
   display: grid;
+  grid-auto-flow: row;
   grid-template-columns: 58px 58px 58px;
   grid-template-rows: auto auto;
-  grid-auto-flow: row;
 }
 #item1{
-  grid-row: 1 / 5;
-  height: 620px;
+  margin: 0px 100px;
+  height: 240px;
+  width: 0px;
 }
 #item2{
-  display: grid;
-  
-  height: 100px;
-}
-#item3 {
-  height: 100px;
-}
-#item4{
-  margin: 0px 40px;
-  display: grid;
-  grid-row: 1 / 3;
-  height: 400px;
-  width: 100px;
-}
-#item5{
-  height: 100px;
-}
-#item6{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  width: 280px;
-  height: 100px;
-}
-#item9{
-  width: 200px;
-}
-#item10{
-  margin: 0px 40px;
   grid-row: 2 / 4;
   height: auto;
-  width: 100px;
 }
-#item11{
-  width: 200px;
+#item3 {
+  width: 320px;
 }
-#item12{
-  width: 200px;
+#item4{
+  margin: 0px 100px;
+  width: 0px;
 }
-#item13{
-  width: 200px;
-}
-#item14{
-  margin: 0px 60px;
-  width: 100px;
-  height: 80px;
-  grid-row: 1 / 2;
-}
-#item15{
-  margin: 0px 40px;
-  width: 100px;
-  height: 310px;
-  grid-row: 2 / 3;
-}
-#item17{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  width: 280px;
-  height: 100px;
-}
-#item20{
-  margin: 210px 40px;
-  width: 100px;
-  height: 0px;
-  grid-row: 1 / 3;
-}
-#item22{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+#item5{
+  height: 220px;
   width: 250px;
-  height: 100px;
 }
-#item23{
-  grid-row: 5 / 6 ;
-  display: grid;
-  grid-template-columns: auto auto;
-  margin: 0px 40px;
-  width: 200px;
-  height: 100px;
+#item6{
+  grid-row: 3 / 5;
+  height: auto;
 }
-#item25{
+#item7{
   grid-row: 1 / 3;
-  margin: 54px 40px;
-  width: 100px;
-  height: 310px;
+  height: auto;
+  width: 250px;
 }
-#item27{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  width: 280px;
-  height: 100px;
+#item8{
+  grid-row: 3 / 5;
+  height: auto;
 }
-#item30{
-  grid-row: 1 / 2;
-  height: 100px;
-  width: 200px;
+#item9{
+  grid-row: 1 / 3;
+  height: auto;
 }
-#item31{
-  grid-row: 2 / 3;
+#item10{
   height: 200px;
-  width: 120px;
-  margin: 0px 60px;
-}
-#item31 .ship-icon-alignment{
-  width: 80px;
-}
-#item32{
-  grid-row: 3 / 4;
-  margin: -90px 0px;
-  height: 190px;
-  width: 200px;
-}
-#item32 .ship-icon-alignment{
-  width: 156px;
-}
-#item33{
-  display: grid;
-  grid-template-columns: auto auto;
-  width: 100px;
-  height: 100px;
-  margin: 0px 50px;
-}
-#item33 .ship-icon-alignment{
-  width: 80px;
-}
-#item34{
-  margin: 0px 40px;
-  width: 120px;
-}
-#item34 .ship-icon-alignment{
-  width: 80px;
-}
-#item35{
-  width: 100px;
-}
-#item35 .ship-icon-alignment{
-  width: 80px;
 }
 .ship_class{
   width: 24px;
   height: 24px;
   margin: 0px;
   padding: 0px;
+  color: rgba(180, 185, 187, 1);
   background-color: rgb(12, 16, 20);
   background-repeat: no-repeat;
   background-size: 34px;
@@ -241,56 +142,92 @@ body {
   border-width: 4px;
   border-image: url("borders/ship_icon_border.png") 10 repeat;
 }
-#ghost_img{
+.ghost_img{
   height: 60px;
   opacity: 0.9;
+}
+/* class based icon sizes */
+#ship-icon-alignment_mining_barge{
+  /* +5 */
+  gap: 2px 25px;
+}
+#ship_icon_mining_barge{
+  /* +5 */
+  height: 75px;
+  width: 75px;
+}
+#ghost_img_mining_barge{
+  /* +5 */
+  height: 65px;
+}
+#showship_mining_barge1, #showship_mining_barge2, #showship_mining_barge3, #showship_exhumer1, #showship_exhumer2, #showship_exhumer3, #showship_support1{
+  /* +5 */
+  height: 65px;
+  width: 65px;
+}
+#ship-icon-alignment_industrial_command{
+  /* +10 */
+  gap: 2px 30px;
+}
+#ship_icon_industrial_command{
+  /* +10 */
+  height: 80px;
+  width: 80px;
+}
+#ghost_img_industrial_command{
+  /* +10 */
+  height: 70px;
+}
+#showship_industrial_command_ship1, #showship_industrial_command_ship2{
+  /* +10 */
+  height: 70px;
+  width: 70px;
+}
+#ship_icon_capital, #ship_icon_freighter{
+  /* +20 */
+  height: 90px;
+  width: 90px;
+}
+#ghost_img_capital{
+  /* +20 */
+  height: 80px;
+}
+#showship_capital_industrial1, #showship_freighter1{
+  /* +20 */
+  height: 80px;
+  width: 80px;
 }
 /* Tier Identification */
 #ship_icon_tier3{
   background-image: url("icons/tier3Class.png");
 }
-#ship_icon_tier2{
-  background-image: url("icons/tier2Class.png");
-}
-#ship_icon_tier2{
+.ship_icon_tier2{
   background-image: url("icons/tier2Class.png");
 }
 #ship_icon_navy{
   background-image: url("icons/navyClass.png");
 }
 /* Class Icon */
-#ship_class_rookie{
-  background-image: url("icons/rookie_64.png");
+#ship_class_expedition_frigate{
+  background-image: url("icons/miningFrigate_64.png");
 }
-#ship_class_shuttle{
-  background-image: url("icons/shuttle_64.png");
+#ship_class_mining_frigate{
+  background-image: url("icons/miningFrigate_64.png");
 }
-#ship_class_frigate{
-  background-image: url("icons/frigate_64.png");
+#ship_class_exhumer{
+  background-image: url("icons/miningBarge_64.png");
 }
-#ship_class_destroyer{
-  background-image: url("icons/destroyer_64.png");
-}
-#ship_class_cruiser{
-  background-image: url("icons/cruiser_64.png");
-}
-#ship_class_battlecruiser{
-  background-image: url("icons/battlecruiser_64.png");
+#ship_class_mining_barge{
+  background-image: url("icons/miningBarge_64.png");
 }
 #ship_class_industrial{
   background-image: url("icons/industrial_64.png");
 }
-#ship_class_battleship{
-  background-image: url("icons/battleship_64.png");
+#ship_class_industrial_command{
+  background-image: url("icons/industrialCommand_64.png");
 }
-#ship_class_titan{
-  background-image: url("icons/titan_64.png");
-}
-#ship_class_superCapital{
-  background-image: url("icons/superCapital_64.png");
-}
-#ship_class_capital{
-  background-image: url("icons/capital_64.png");
+#ship_class_capital_industrial{
+  background-image: url("icons/freighter_64.png");
 }
 #ship_class_freighter{
   background-image: url("icons/freighter_64.png");
