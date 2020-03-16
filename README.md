@@ -1,2 +1,2 @@
 # EVE_Ship_Tech_Tree
-EVE online ingame ship tech tree
+EVE online recreation of the ingame ship tech tree in the browser
