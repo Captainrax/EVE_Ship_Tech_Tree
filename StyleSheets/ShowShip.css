@@ -116,7 +116,7 @@
 }
 /* Attribute Tab */
 #attributes{
-    grid-template-columns: 246px 246px;
+    grid-template-columns: 210px 282px; /* this is set wonky so the text dosnt wrap weirdly */
 }
 #AT {
     height: 30px;

@@ -742,6 +742,8 @@ function Close() {
     Ship_Div.remove();
     //From Caldari_EventListener.js - ensures only 1 Ship_Div can be created
     pagecount = false;
+    // resets attributes title bool
+    Shared_Facilites_Toggled = false;
     });
 }
 
@@ -902,8 +904,8 @@ function InsertData(data){
     Mineral_Hold_Capacity(false);
     Ammo_Hold_Capacity(false);
     Electronic_Resistances(false);
-    Shared_Facilites(false);
     Ship_Maintenance_Bay(false);
+    Fleet_Hangar_Capacity(false);
     Jump_Clones(false);
     Jump_Drive_Systems(false);
     Jump_Portal_Activation_Cost(false);
@@ -919,7 +921,7 @@ function InsertData(data){
 
     for(x in data["dogma_attributes"]){
         switch(data["dogma_attributes"][x]["attribute_id"]){
-            case 4:
+            case 4: // Mass
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT10");
@@ -927,7 +929,7 @@ function InsertData(data){
                     spandata.textContent = DATA.toLocaleString() + " kg";
                     testdata.appendChild(spandata);
                 break;
-            case 9:
+            case 9: // Structure Hitpoints
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT2");
@@ -935,7 +937,7 @@ function InsertData(data){
                     spandata.textContent = DATA.toLocaleString() + " HP";
                     testdata.appendChild(spandata);
                 break;
-            case 70:
+            case 70: // Inertia Modifier
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT14");
@@ -982,7 +984,7 @@ function InsertData(data){
                         value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
                     }
                 break;
-            case 161:
+            case 161: // Volume
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT12");
@@ -992,7 +994,7 @@ function InsertData(data){
                     spandata.textContent += " (" + pack.toLocaleString() + " m3 Packaged)";
                     testdata.appendChild(spandata);
                 break;
-            case 263:
+            case 263: // Shield Capacity
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT32");
@@ -1000,7 +1002,7 @@ function InsertData(data){
                     spandata.textContent = DATA.toLocaleString() + " HP";
                     testdata.appendChild(spandata);
                 break;
-            case 265:
+            case 265: // Armor Hitpoints
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT28");
@@ -1088,7 +1090,7 @@ function InsertData(data){
                         value.textContent = parseFloat(value.textContent).toFixed(0) + "%";
                     }
                 break;
-            case 283:
+            case 283: // Drone Capacity
                     if(data["dogma_attributes"][x]["value"] != 0){
                         Attribute_Drone(true);
                     }
@@ -1098,7 +1100,7 @@ function InsertData(data){
                     spandata.textContent = data["dogma_attributes"][x]["value"] + " m3";
                     testdata.appendChild(spandata);
                 break;
-            case 479:
+            case 479: // Shield Recharge Time
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT34");
@@ -1106,7 +1108,7 @@ function InsertData(data){
                     spandata.textContent = (DATA / 1000).toFixed(2) + " s";
                     testdata.appendChild(spandata);
                 break;
-            case 482:
+            case 482: // Capacitor Capacity
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT53");
@@ -1114,7 +1116,7 @@ function InsertData(data){
                     spandata.textContent = DATA.toFixed(1) + " GJ";
                     testdata.appendChild(spandata);
                     break;
-            case 55:
+            case 55: // Capacitor Recharge Time
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT55");
@@ -1122,14 +1124,14 @@ function InsertData(data){
                     spandata.textContent = (DATA / 1000).toFixed(2) + " s";
                     testdata.appendChild(spandata);
                     break;
-            case 1271:
+            case 1271: // Drone Bandwidth
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT8");
                     spandata.textContent = data["dogma_attributes"][x]["value"] + " Mbit/sec";
                     testdata.appendChild(spandata);
                 break;
-            case 2675:
+            case 2675: // Sybsystem Hold Capacity
                     if(data["dogma_attributes"][x]["value"] != 0){
                         Subsystem_Hold_Capacity(true);
                     }
@@ -1140,7 +1142,7 @@ function InsertData(data){
                     spandata.textContent = DATA.toLocaleString() + " m3";
                     testdata.appendChild(spandata);
                 break;
-            case 1556:
+            case 1556: // Ore Hold Capacity
                     if(data["dogma_attributes"][x]["value"] != 0){
                         Ore_Hold_Capacity(true);
                     }
@@ -1151,7 +1153,7 @@ function InsertData(data){
                     spandata.textContent = DATA.toLocaleString() + " m3";
                     testdata.appendChild(spandata);
                 break;
-            case 1653:
+            case 1653: // Planetary Commodities Capacity
                     if(data["dogma_attributes"][x]["value"] != 0){
                         Planetary_Commodities_Capacity(true);
                     }
@@ -1162,7 +1164,7 @@ function InsertData(data){
                     spandata.textContent = DATA.toLocaleString() + " m3";
                     testdata.appendChild(spandata);
                 break;
-            case 1558:
+            case 1558: // Mineral Hold Capacity
                     if(data["dogma_attributes"][x]["value"] != 0){
                         Mineral_Hold_Capacity(true);
                     }
@@ -1173,7 +1175,7 @@ function InsertData(data){
                     spandata.textContent = DATA.toLocaleString() + " m3";
                     testdata.appendChild(spandata);
                 break;
-            case 1573:
+            case 1573: // Ammo Hold Capacity
                     if(data["dogma_attributes"][x]["value"] != 0){
                         Ammo_Hold_Capacity(true);
                     }
@@ -1184,7 +1186,7 @@ function InsertData(data){
                     spandata.textContent = DATA.toLocaleString() + " m3";
                     testdata.appendChild(spandata);
                 break;
-            case 2135:
+            case 2135: // Remote Electronic Assistance Impedance
                     if(data["dogma_attributes"][x]["value"] != 0){
                         Electronic_Resistances(true);
                     }
@@ -1197,7 +1199,7 @@ function InsertData(data){
                     }
                     testdata.appendChild(spandata);
                 break;
-            case 2116:
+            case 2116: // Remote Logistics Impedance
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT40");
@@ -1207,7 +1209,7 @@ function InsertData(data){
                     }
                     testdata.appendChild(spandata);
                 break;
-            case 2045:
+            case 2045: // Capacitor Warfare Resistance
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT42");
@@ -1217,7 +1219,7 @@ function InsertData(data){
                     }
                     testdata.appendChild(spandata);
                 break;
-            case 2112:
+            case 2112: // Sensor Warfare Resistance
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT44");
@@ -1227,7 +1229,7 @@ function InsertData(data){
                     }
                     testdata.appendChild(spandata);
                 break;
-            case 2115:
+            case 2115: // Stasis Webifier Resistance
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT46");
@@ -1237,7 +1239,7 @@ function InsertData(data){
                     }
                     testdata.appendChild(spandata);
                 break;
-            case 2114:
+            case 2114: // Target Painter Resistance
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT48");
@@ -1247,7 +1249,7 @@ function InsertData(data){
                     }
                     testdata.appendChild(spandata);
                 break;
-            case 2113:
+            case 2113: // Weapon Disruption Resistance
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT50");
@@ -1257,21 +1259,21 @@ function InsertData(data){
                     }
                     testdata.appendChild(spandata);
                 break;
-            case 76:
+            case 76: // Maximum Targeting Range
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT58");
                     spandata.textContent = ( data["dogma_attributes"][x]["value"] / 1000).toFixed(2) + " km";
                     testdata.appendChild(spandata);
                 break;
-            case 192:
+            case 192: // Maximum Locked Targets
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT60");
                     spandata.textContent = data["dogma_attributes"][x]["value"];
                     testdata.appendChild(spandata);
                 break;
-            case 552:
+            case 552: // Signature Radius
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT62");
@@ -1281,50 +1283,50 @@ function InsertData(data){
                     }
                     testdata.appendChild(spandata);
                 break;
-            case 564:
+            case 564: // Scan Resolution
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT64");
                     spandata.textContent = data["dogma_attributes"][x]["value"] + " mm";
                     testdata.appendChild(spandata);
                 break;
-            case 208:
+            case 208: // Radar Sensor Strength
                     var value = document.querySelector("#radar_sensor_value");
                     value.textContent = (data["dogma_attributes"][x]["value"]) + " points";
                     if(parseFloat(value.textContent) === 0){
                         value.textContent = " -";
                     }
                 break;
-            case 210:
+            case 210: // Magnetometric Sensor Strength
                     var value = document.querySelector("#magnetometric_sensor_value");
                     value.textContent = (data["dogma_attributes"][x]["value"]) + " points";
                     if(parseFloat(value.textContent) === 0){
                         value.textContent = " -";
                     }
                 break;
-            case 211:
+            case 211: // Gravimetric Sensor Strength
                     var value = document.querySelector("#gravimetric_sensor_value");
                     value.textContent = (data["dogma_attributes"][x]["value"]) + " points";
                     if(parseFloat(value.textContent) === 0){
                         value.textContent = " -";
                     }
                 break;
-            case 209:
+            case 209: // Ladar Sensor Strength
                     var value = document.querySelector("#ladar_sensor_value");
                     value.textContent = (data["dogma_attributes"][x]["value"]) + " points";
                     if(parseFloat(value.textContent) === 0){
                         value.textContent = " -";
                     }
                 break;
-            case 912:
-                        Shared_Facilites(true);
+            case 912: // Fleet Hangar Capacity
+                        Fleet_Hangar_Capacity(true);
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT69");
                     spandata.textContent = data["dogma_attributes"][x]["value"].toLocaleString() + " m3";
                     testdata.appendChild(spandata);
                 break;
-            case 908:
+            case 908: // Ship Maintenance Bay Capacity
                         Ship_Maintenance_Bay(true);
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
@@ -1332,7 +1334,7 @@ function InsertData(data){
                     spandata.textContent = data["dogma_attributes"][x]["value"].toLocaleString() + " m3";
                     testdata.appendChild(spandata);
                 break;
-            case 979:
+            case 979: // Maximum Jump Clones
                         Jump_Clones(true);
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
@@ -1340,7 +1342,7 @@ function InsertData(data){
                     spandata.textContent = data["dogma_attributes"][x]["value"];
                     testdata.appendChild(spandata);
                 break;
-            case 898:
+            case 898: // Jump Drive Capacitor Need
                         Jump_Drive_Systems(true);
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
@@ -1348,28 +1350,28 @@ function InsertData(data){
                     spandata.textContent = data["dogma_attributes"][x]["value"].toLocaleString() * 100 + " %";
                     testdata.appendChild(spandata);
                 break;
-            case 867:
+            case 867: // Maximum Jump Range
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT78");
                     spandata.textContent = data["dogma_attributes"][x]["value"].toLocaleString() + " ly";
                     testdata.appendChild(spandata);
                 break;
-            case 866:
+            case 866: // Jump Drive Fuel Need
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT80");
                     spandata.textContent = data["dogma_attributes"][x]["value"];
                     testdata.appendChild(spandata);
                 break;
-            case 868:
+            case 868: // Jump Drive Consumption Amount
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT82");
                     spandata.textContent = data["dogma_attributes"][x]["value"].toLocaleString() + " units";
                     testdata.appendChild(spandata);
                 break;
-            case 1005:
+            case 1005: // Jump Portal Activation Cost
                         Jump_Portal_Activation_Cost(true);
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
@@ -1377,7 +1379,7 @@ function InsertData(data){
                     spandata.textContent = data["dogma_attributes"][x]["value"] + " GJ";
                     testdata.appendChild(spandata);
                 break;
-            case 1549:
+            case 1549: // Fuel Bay Capacity
                     var spandata = document.createElement("span");
                     spandata.className = "spandata";
                     var testdata = document.querySelector("#AT86");
@@ -1727,6 +1729,8 @@ function Electronic_Resistances(Toggle){
 // move title to separate function.
 // and check if any one attribute from shared facilites category is true, if true, display title
 // stupid bowhead >:L
+var Shared_Facilites_Toggled = false;
+
 function Shared_Facilites(Toggle){
 
     if (Toggle === true) {
@@ -1736,7 +1740,16 @@ function Shared_Facilites(Toggle){
         Attributes_Shared_Facilites_Title.className = "attributes_titles";
         var Attributes_Shared = document.querySelector("#AT67");
         Attributes_Shared.appendChild(Attributes_Shared_Facilites_Title);
-        
+        // Bool Toggled
+        Shared_Facilites_Toggled = true;
+    }
+} 
+function Fleet_Hangar_Capacity(Toggle){
+
+    if (Toggle === true) {
+        if(Shared_Facilites_Toggled == false){
+            Shared_Facilites(true);
+        }
         // Stats - Only includes Fleet Hangar Capacity, may need to be moved to a separate function in the future
         var Attributes_Fleet_Hangar_Capacity = document.createElement("p");
         var Attributes_Fleet_Hangar_Capacity_Img = document.createElement("img");
@@ -1765,11 +1778,13 @@ function Shared_Facilites(Toggle){
         Attributes_Fleet_Hangar_AT.style.display = "none";
     }
 } 
-
 function Ship_Maintenance_Bay(Toggle){
     
     if (Toggle === true) {
 
+        if(Shared_Facilites_Toggled == false){
+            Shared_Facilites(true);
+        }
         var Attributes_Ship_Maintenance_Bay_Capacity = document.createElement("p");
         var Attributes_Ship_Maintenance_Bay_Capacity_Img = document.createElement("img");
 
@@ -1801,6 +1816,9 @@ function Ship_Maintenance_Bay(Toggle){
 function Jump_Clones(Toggle){
     
     if (Toggle === true) {
+        if(Shared_Facilites_Toggled == false){
+            Shared_Facilites(true);
+        }
 
         var Attributes_Maximum_Jump_Clones = document.createElement("p");
         var Attributes_Maximum_Jump_Clones_Img = document.createElement("img");
