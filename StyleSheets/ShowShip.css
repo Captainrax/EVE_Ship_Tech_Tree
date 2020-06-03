@@ -5,7 +5,7 @@
     top: 12vh;
     left: 35vw;
     background-color:rgba(10, 10, 10, 0.8);
-    height: 500px;
+    height: 600px;
     width: 500px;
     color: rgba(200, 200, 200, 0.9);
     font-size: 15px;
@@ -42,13 +42,16 @@
     background-color: rgba(40, 40, 40, 0.4);
     height: 80px;
     width: 80px;
+    
+    /* delete this */
+    /* transform: rotate(45deg); */
 }
 .ship_div_body{
     display: grid;
     overflow-y: hidden;
     grid-template-rows: 20px;
     align-items: start;
-    height: 390px;
+    height: 490px;
     background-color: rgba(15, 15, 15, 0.8);
 }
 .ship_div_body_nav{
@@ -60,7 +63,7 @@
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: rgb(30, 30, 30) rgb(15, 15, 15);
-    height: 366px;
+    height: 466px;
     background-color: rgba(25, 25, 25, 0.9);
 }
 .ship_div_content div{
@@ -121,7 +124,7 @@
 #AT {
     height: 30px;
 }
-#AT1, #AT3, #AT5, #AT7, #AT9, #AT11, #AT13, #AT15, #AT17, #AT19, #AT21, #AT23, #AT27, #AT31, #AT33, #AT37, #AT39, #AT41, #AT43, #AT45, #AT47, #AT49, #AT52, #AT54, #AT57, #AT59, #AT61, #AT63, #AT65, #AT68, #AT70, #AT72, #AT75, #AT77, #AT79, #AT81, #AT83, #AT85 { /* Left side */
+#AT1, #AT3, #AT5, #AT7, #AT9, #AT11, #AT13, #AT15, #AT17, #AT19, #AT21, #AT23, #AT27, #AT31, #AT33, #AT37, #AT39, #AT41, #AT43, #AT45, #AT47, #AT49, #AT52, #AT54, #AT57, #AT59, #AT61, #AT63, #AT65, #AT68, #AT70, #AT72, #AT75, #AT77, #AT79, #AT81, #AT83, #AT85, #AT88, #AT90 { /* Left side */
     display: grid;
     grid-template-columns: auto auto;
     margin-left: 0px;
@@ -138,7 +141,7 @@
 .attribute_name_img{
     width: 22px;
 }
-#AT2, #AT4, #AT6, #AT8, #AT10, #AT12, #AT14, #AT16, #AT18, #AT20, #AT22, #AT24, #AT28, #AT32, #AT34, #AT38, #AT40, #AT42, #AT44, #AT46, #AT48, #AT50, #AT53, #AT55, #AT58, #AT60, #AT62, #AT64, #AT69, #AT71, #AT73, #AT76, #AT78, #AT80, #AT82, #AT84, #AT86{ /* Right side */
+#AT2, #AT4, #AT6, #AT8, #AT10, #AT12, #AT14, #AT16, #AT18, #AT20, #AT22, #AT24, #AT28, #AT32, #AT34, #AT38, #AT40, #AT42, #AT44, #AT46, #AT48, #AT50, #AT53, #AT55, #AT58, #AT60, #AT62, #AT64, #AT69, #AT71, #AT73, #AT76, #AT78, #AT80, #AT82, #AT84, #AT86, #AT89, #AT91{ /* Right side */
     height: 30px;
     margin-left:auto; 
     margin-right:0;
@@ -240,7 +243,7 @@
     grid-column: 1 / 3;
     background-color: rgba(32, 32, 32, 0.9);
 }
-#AT90{
+#AT87{
     grid-column: 1 / 3;
     background-color: rgba(32, 32, 32, 0.9);
 }

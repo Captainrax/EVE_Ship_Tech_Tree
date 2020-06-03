@@ -1,17 +1,16 @@
 /* Includes background lines connecting ship categories, aswell as the 2 lines and classification above each ship category */
 .background_line{
-    z-index: -999;
-    position: absolute;
-    background-color:rgba(145, 175, 190, 1);
-    /* transition: all 1200ms ease-in-out; */
-    border-top: 2px solid rgba(45, 55, 65, 1);
-    border-bottom: 2px solid rgba(45, 55, 65, 1);
+  z-index: -999;
+  position: absolute;
+  background-color:rgba(145, 175, 190, 1);
+  border-top: 2px solid rgba(45, 55, 65, 1);
+  border-bottom: 2px solid rgba(45, 55, 65, 1);
 	box-shadow: 0px 2px rgba(80, 90, 90, 0.9), 0px -2px rgba(80, 90, 90, 0.9);
 }
 #line1{
-    width: 216px;
-    height: 2px;
-    margin: 353px 620px;
+  width: 216px;
+  height: 2px;
+  margin: 353px 620px;
 }
 #item1::before{
   position: absolute;
@@ -35,10 +34,10 @@
   font-size: 12px;
 }
 #line2{
-    width: 130px;
-    height: 2px;
-    margin: 267px 456px;
-    transform: rotate(-90deg);
+  width: 130px;
+  height: 2px;
+  margin: 267px 456px;
+  transform: rotate(-90deg);
 }
 #item2::before{
   position: absolute;

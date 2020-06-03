@@ -1,0 +1,395 @@
+<div id="ship_div">
+    <div class="ship_div_title">
+        <pre id="close">x</pre>
+        <pre class="ship_title_name"></pre>
+    </div>
+    <div class="ship_div_header">
+        <div class="ship_div_header_img"><img id="Ship_img"></div>
+        <div class="ship_div_header_name"><pre class="ship_name"></pre></div>
+    </div>
+    <div class="ship_div_body">
+        <div class="ship_div_body_nav">
+            <ul class="ship_navbar">
+                <li class="ship_tab active" id="ship_traits">
+                    <p id="ship_traits_tab">Traits</p>
+                </li>
+                <li class="ship_tab" id="ship_description">
+                    <p id="ship_description_tab">Description</p>
+                </li>
+                <li class="ship_tab" id="ship_attributes">
+                    <p id="ship_attributes_tab">Attributes</p>
+                </li>
+                <li class="ship_tab" id="ship_fitting">
+                    <p id="ship_fitting_tab">Fitting</p>
+                </li>
+                <li class="ship_tab" id="ship_requirements">
+                    <p id="ship_requirements_tab">Requirements</p>
+                </li>
+                <li class="ship_tab" id="ship_mastery">
+                    <p id="ship_mastery_tab">Mastery</p>
+                </li>
+                <li class="ship_tab" id="ship_variations">
+                    <p id="ship_variations_tab">Variations</p>
+                </li>
+                <li class="ship_tab" id="ship_industry">
+                    <p id="ship_industry_tab">Industry</p>
+                </li>
+                <li class="ship_tab" id="ship_skins">
+                    <p id="ship_skins_tab">Skins</p>
+                </li>
+            </ul>
+        </div>
+        <div class="ship_div_body_content">
+            <div id="traits" style="display: block;">
+                <p class="traits_header">Ship Characteristics:</p>
+                <img id="traits_icon1" class="traits_icon" src="StyleSheets/icons/dot.png">
+                <img id="traits_icon2" class="traits_icon" src="StyleSheets/icons/small.png">
+                <img id="traits_icon3" class="traits_icon" src="StyleSheets/icons/missiles.png">
+                <img id="traits_icon4" class="traits_icon" src="StyleSheets/icons/attack.png">
+                <img id="traits_icon5" class="traits_icon" src="StyleSheets/icons/shields.png">
+                <img id="traits_icon6" class="traits_icon" style="display: none;">
+                <img id="traits_icon7" class="traits_icon" style="display: none;">
+                <img id="traits_icon8" class="traits_icon" style="display: none;">
+            </div>
+            <div id="description" style="display: none;">
+                <p id="description_text"></p>
+            </div>
+            <div id="attributes" style="display: none;">
+                <div class="AT" id="AT0">
+                    <p class="attributes_titles">Structure</p>
+                </div>
+                <div class="AT" id="AT1">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Structure.png">
+                    <p class="attribute_name">Structure Hitpoints</p>
+                </div>
+                <div class="AT" id="AT2"><span class="spandata" id="SpanStructureHitpoints"></span></div>
+                <div class="AT" id="AT3">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Capacity.png">
+                    <p class="attribute_name">Capacity</p>
+                </div>
+                <div class="AT" id="AT4"><span class="spandata" id="SpanCapacity"></span></div>
+                <div class="AT" id="AT5" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Drone_Capacity.png">
+                    <p class="attribute_name">Drone Capacity</p>
+                </div>
+                <div class="AT" id="AT6" style="display: grid;"><span class="spandata" id="SpanDroneCapacity"></span></div>
+                <div class="AT" id="AT7" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Drone_Bandwidth.png">
+                    <p class="attribute_name">Drone Bandwidth</p>
+                </div>
+                <div class="AT" id="AT8" style="display: none;"><span class="spandata" id="SpanDroneBandwitch"></span></div>
+                <div class="AT" id="AT9">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Mass.png">
+                    <p class="attribute_name">Mass</p>
+                </div>
+                <div class="AT" id="AT10"><span class="spandata" id="SpanMass"></span></div>
+                <div class="AT" id="AT11">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Structure.png">
+                    <p class="attribute_name">Volume</p>
+                </div>
+                <div class="AT" id="AT12"><span class="spandata" id="SpanVolume"></span></div>
+                <div class="AT" id="AT13">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Inertia_Modifier.png">
+                    <p class="attribute_name">Inertia Modifier</p>
+                </div>
+                <div class="AT" id="AT14"><span class="spandata" id="SpanInertiaModifier"></span></div>
+                <div class="AT" id="AT15" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Capacity.png">
+                    <p class="attribute_name">Subsystem Hold Capacity</p>
+                </div>
+                <div class="AT" id="AT16" style="display: none;"><span class="spandata" id="SpanSybsystemHoldCapacity"></span></div>
+                <div class="AT" id="AT17" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Capacity.png">
+                    <p class="attribute_name">Ore Hold Capacity</p>
+                </div>
+                <div class="AT" id="AT18" style="display: grid;"><span class="spandata" id="SpanOreHoldCapacity"></span></div>
+                <div class="AT" id="AT19" style="display: none;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Capacity.png">
+                    <p class="attribute_name">Planetary Commodities Capacity</p>
+                </div>
+                <div class="AT" id="AT20" style="display: none;"><span class="spandata" id="SpanPlanetaryCommoditiesCapacity"></span></div>
+                <div class="AT" id="AT21" style="display: none;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Capacity.png">
+                    <p class="attribute_name">Mineral Hold Capacity</p>
+                </div>
+                <div class="AT" id="AT22" style="display: none;"><span class="spandata" id="SpanMineralHoldCapacity"></span></div>
+                <div class="AT" id="AT23" style="display: none;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Capacity.png">
+                    <p class="attribute_name">Ammo Hold Capacity</p>
+                </div>
+                <div class="AT" id="AT24" style="display: none;"><span class="spandata" id="SpanAmmoHoldCapacity"></span></div>
+                <div class="AT" id="AT25"><img class="attribute_name_img" src="StyleSheets/ship_info_icons/EM.png">
+                    <div class="attribute_resistance" id="structure_em_resistance">
+                        <div class="resistance_bar" id="structure_em_resistance_bar"></div><span
+                            class="resistance_value" id="structure_em_resistance_value"></span>
+                    </div><img class="attribute_name_img" src="StyleSheets/ship_info_icons/Thermal.png">
+                    <div class="attribute_resistance" id="structure_thermal_resistance">
+                        <div class="resistance_bar" id="structure_thermal_resistance_bar"></div>
+                        <span class="resistance_value" id="structure_thermal_resistance_value"></span>
+                    </div><img class="attribute_name_img" src="StyleSheets/ship_info_icons/Kinetic.png">
+                    <div class="attribute_resistance" id="structure_kinetic_resistance">
+                        <div class="resistance_bar" id="structure_kinetic_resistance_bar"></div>
+                        <span class="resistance_value" id="structure_kinetic_resistance_value"></span>
+                    </div><img class="attribute_name_img" src="StyleSheets/ship_info_icons/Explosive.png">
+                    <div class="attribute_resistance" id="structure_explosive_resistance">
+                        <div class="resistance_bar" id="structure_explosive_resistance_bar"></div>
+                        <span class="resistance_value" id="structure_explosive_resistance_value"></span>
+                    </div>
+                </div>
+                <div class="AT" id="AT26">
+                    <p class="attributes_titles">Armor</p>
+                </div>
+                <div class="AT" id="AT27">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Armor.png">
+                    <p class="attribute_name">Armor Hitpoints</p>
+                </div>
+                <div class="AT" id="AT28"><span class="spandata" id="SpanArmorHitpoints"></span></div>
+                <div class="AT" id="AT29">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/EM.png">
+                    <div class="attribute_resistance" id="armor_resistance">
+                        <div class="resistance_bar" id="armor_em_resistance_bar"></div>
+                        <span class="resistance_value" id="armor_em_resistance_value"></span>
+                    </div>
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Thermal.png">
+                    <div class="attribute_resistance" id="armor_resistance">
+                        <div class="resistance_bar" id="armor_thermal_resistance_bar"></div>
+                        <span class="resistance_value" id="armor_thermal_resistance_value"></span>
+                    </div>
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Kinetic.png">
+                    <div class="attribute_resistance" id="armor_kinetic_resistance">
+                        <div class="resistance_bar" id="armor_kinetic_resistance_bar"></div>
+                        <span class="resistance_value" id="armor_kinetic_resistance_value"></span>
+                    </div>
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Explosive.png">
+                    <div class="attribute_resistance" id="armor_explosive_resistance">
+                        <div class="resistance_bar" id="armor_explosive_resistance_bar"></div>
+                        <span class="resistance_value" id="armor_explosive_resistance_value"></span>
+                    </div>
+                </div>
+                <div class="AT" id="AT30">
+                    <p class="attributes_titles">Shield</p>
+                </div>
+                <div class="AT" id="AT31">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Shield.png">
+                    <p class="attribute_name">Shield Capacity</p>
+                </div>
+                <div class="AT" id="AT32"><span class="spandata" id="SpanShieldCapacity"></span></div>
+                <div class="AT" id="AT33">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Shield_Recharge.png">
+                    <p class="attribute_name">Shield recharge time</p>
+                </div>
+                <div class="AT" id="AT34"><span class="spandata" id="SpanShieldRechargeTime"></span></div>
+                <div class="AT" id="AT35">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/EM.png">
+                    <div class="attribute_resistance" id="shield_resistance">
+                        <div class="resistance_bar" id="shield_em_resistance_bar"></div>
+                        <span class="resistance_value" id="shield_em_resistance_value"></span>
+                    </div>
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Thermal.png">
+                    <div class="attribute_resistance" id="shield_resistance">
+                        <div class="resistance_bar" id="shield_thermal_resistance_bar"></div>
+                        <span class="resistance_value" id="shield_thermal_resistance_value"></span>
+                    </div>
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Kinetic.png">
+                    <div class="attribute_resistance" id="shield_kinetic_resistance">
+                        <div class="resistance_bar" id="shield_kinetic_resistance_bar"></div>
+                        <span class="resistance_value" id="shield_kinetic_resistance_value"></span>
+                    </div>
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Explosive.png">
+                    <div class="attribute_resistance" id="shield_explosive_resistance">
+                        <div class="resistance_bar" id="shield_explosive_resistance_bar"></div>
+                        <span class="resistance_value" id="shield_explosive_resistance_value"></span>
+                    </div>
+                </div>
+                <div class="AT" id="AT36">
+                    <p class="attributes_titles">Electronic Resistances</p>
+                </div>
+                <div class="AT" id="AT37" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Sensor.png">
+                    <p class="attribute_name">Remote Electronic Assistance Impedance</p>
+                </div>
+                <div class="AT" id="AT38" style="display: grid;">
+                    <span class="spandata" id="SpanRemoteElectronicAssistanceImpedance"></span>
+                </div>
+                <div class="AT" id="AT39" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Armour_Repairer.png">
+                    <p class="attribute_name">Remote Logistics Impedance</p>
+                </div>
+                <div class="AT" id="AT40" style="display: grid;">
+                    <span class="spandata" id="SpanRemoteLogisticsImpedance"></span>
+                </div>
+                <div class="AT" id="AT41" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Powergrid.png">
+                    <p class="attribute_name">Capacitor Warfare Resistance</p>
+                </div>
+                <div class="AT" id="AT42" style="display: grid;">
+                    <span class="spandata" id="SpanCapacitorWarfareResistance"></span>
+                </div>
+                <div class="AT" id="AT43" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Sensor.png">
+                    <p class="attribute_name">Sensor Warfare Resistance</p>
+                </div>
+                <div class="AT" id="AT44" style="display: grid;">
+                    <span class="spandata" id="SpanSensorWarfareResistance"></span>
+                </div>
+                <div class="AT" id="AT45" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Speed.png">
+                    <p class="attribute_name">Stasis Webifier Resistance</p>
+                </div>
+                <div class="AT" id="AT46" style="display: grid;">
+                    <span class="spandata" id="SpanStasisWebifierResistance"></span>
+                </div>
+                <div class="AT" id="AT47" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Signature_Radius.png">
+                    <p class="attribute_name">Target Painter Resistance</p>
+                </div>
+                <div class="AT" id="AT48" style="display: grid;">
+                    <span class="spandata" id="SpanTargetPainterResistance"></span>
+                </div>
+                <div class="AT" id="AT49" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Tracking.png">
+                    <p class="attribute_name">Weapon Disruption Resistance</p>
+                </div>
+                <div class="AT" id="AT50" style="display: grid;">
+                    <span class="spandata" id="SpanWeaponDisruptionResistance"></span>
+                </div>
+                <div class="AT" id="AT51">
+                    <p class="attributes_titles">Capacitor</p>
+                </div>
+                <div class="AT" id="AT52">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Capacitor.png">
+                    <p class="attribute_name">Capacitor Capacity</p>
+                </div>
+                <div class="AT" id="AT53"> <span class="spandata" id="SpanCapacitorCapacity"></span> </div>
+                <div class="AT" id="AT54">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Shield_Recharge.png">
+                    <p class="attribute_name">Capacitor Recharge Time</p>
+                </div>
+                <div class="AT" id="AT55"><span class="spandata" id="SpanCapacitorRechargeTime"></span></div>
+                <div class="AT" id="AT56">
+                    <p class="attributes_titles">Targeting</p>
+                </div>
+                <div class="AT" id="AT57">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Targeting_Range.png">
+                    <p class="attribute_name">Maximum Targeting Range</p>
+                </div>
+                <div class="AT" id="AT58"><span class="spandata" id="SpanMaximumTargetingRange"></span></div>
+                <div class="AT" id="AT59">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Locked_Targets.png">
+                    <p class="attribute_name">Maximum Locked Targets</p>
+                </div>
+                <div class="AT" id="AT60"><span class="spandata" id="SpanMaximumLockedTargets"></span></div>
+                <div class="AT" id="AT61">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Signature_Radius.png">
+                    <p class="attribute_name">Signature Radius</p>
+                </div>
+                <div class="AT" id="AT62"><span class="spandata" id="SpanSignatureRadius"></span></div>
+                <div class="AT" id="AT63">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Sensor.png">
+                    <p class="attribute_name">Scan Resolution</p>
+                </div>
+                <div class="AT" id="AT64"><span class="spandata" id="SpanScanResolution"></span></div>
+                <div class="AT" id="AT65">
+                    <p class="attribute_name">Sensor strength</p>
+                </div>
+                <div class="AT" id="AT66">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Radar_Sensor.png">
+                    <div class="attribute_sensor_strength" id="shield_resistance">
+                        <span class="sensor_value" id="radar_sensor_value"></span>
+                    </div>
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Magnetometric_Sensor.png">
+                    <div class="attribute_sensor_strength" id="shield_resistance">
+                        <span class="sensor_value" id="magnetometric_sensor_value"></span>
+                    </div>
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Gravimetric_Sensor.png">
+                    <div class="attribute_sensor_strength" id="shield_resistance">
+                        <span class="sensor_value" id="gravimetric_sensor_value"></span>
+                    </div>
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Ladar_Sensor.png">
+                    <div class="attribute_sensor_strength" id="shield_resistance">
+                        <span class="sensor_value" id="ladar_sensor_value"></span>
+                    </div>
+                </div>
+                <div class="AT" id="AT67">
+                    <p class="attributes_titles">Shared Facilites</p>
+                </div>
+                <div class="AT" id="AT68" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Capacity.png">
+                    <p class="attribute_name">Fleet Hangar Capacity</p>
+                </div>
+                <div class="AT" id="AT69" style="display: grid;"><span class="spandata" id="SpanFleetHangerCapacity"></span></div>
+                <div class="AT" id="AT70" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Capacity.png">
+                    <p class="attribute_name">Ship Maintenance Bay Capacity</p>
+                </div>
+                <div class="AT" id="AT71" style="display: grid;"><span class="spandata" id="SpanShipMaintenanceBayCapacity"></span></div>
+                <div class="AT" id="AT72" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Jump_Clone.png">
+                    <p class="attribute_name">Maximum Jump Clones</p>
+                </div>
+                <div class="AT" id="AT73" style="display: grid;"><span class="spandata" id="SpanMaximumJumpClones"></span></div>
+                <div class="AT" id="AT74">
+                    <p class="attributes_titles">Jump Drive Systems</p>
+                </div>
+                <div class="AT" id="AT75" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Capacitor_Cost.png">
+                    <p class="attribute_name">Jump Drive Capacitor Need</p>
+                </div>
+                <div class="AT" id="AT76" style="display: grid;"><span class="spandata" id="SpanJumpDriveCapacitorNeed"></span></div>
+                <div class="AT" id="AT77" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Targeting_Range.png">
+                    <p class="attribute_name">Maximum Jump Range</p>
+                </div>
+                <div class="AT" id="AT78" style="display: grid;"><span class="spandata" id="SpanMaximumJumpRange"></span></div>
+                <div class="AT" id="AT79" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Powergrid.png">
+                    <p class="attribute_name">Jump Drive Fuel Need</p>
+                </div>
+                <div class="AT" id="AT80" style="display: grid;"><span class="spandata" id="SpanJumpDriveFuelNeed"></span></div>
+                <div class="AT" id="AT81" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Blank.png">
+                    <p class="attribute_name">Jump Drive Consumption Amount</p>
+                </div>
+                <div class="AT" id="AT82" style="display: grid;"><span class="spandata" id="SpanJumpDriveConsumptionAmount"></span></div>
+                <div class="AT" id="AT83" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Capacitor_Cost.png">
+                    <p class="attribute_name">Jump portal activation cost</p>
+                </div>
+                <div class="AT" id="AT84" style="display: grid;"><span class="spandata" id="SpanJumpPortalActivationCost"></span></div>
+                <div class="AT" id="AT85" style="display: grid;">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Capacity.png">
+                    <p class="attribute_name">Fuel Bay Capacity</p>
+                </div>
+                <div class="AT" id="AT86" style="display: grid;"><span class="spandata" id="SpanFuelBayCapacity"></span></div>
+                <div class="AT" id="AT87">
+                    <p class="attributes_titles">Propulsion</p>
+                </div>
+                <div class="AT" id="AT88">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Speed.png">
+                    <p class="attribute_name">Maximum Velocity</p>
+                </div>
+                <div class="AT" id="AT89"><span class="spandata" id="SpanMaximumVelocity"></span></div>
+                <div class="AT" id="AT90">
+                    <img class="attribute_name_img" src="StyleSheets/ship_info_icons/Warp_Speed.png">
+                    <p class="attribute_name">Ship Warp Speed</p>
+                </div>
+                <div class="AT" id="AT91"><span class="spandata" id="SpanShipWarpSpeed"></span></div>
+                <div class="AT" id="AT92"></div>
+                <div class="AT" id="AT93"></div>
+                <div class="AT" id="AT94"></div>
+                <div class="AT" id="AT95"></div>
+                <div class="AT" id="AT96"></div>
+                <div class="AT" id="AT97"></div>
+                <div class="AT" id="AT98"></div>
+                <div class="AT" id="AT99"></div>
+                <div class="AT" id="AT100"></div>
+            </div>
+            <div id="fitting" style="display: none;"></div>
+            <div id="requirements" style="display: none;"></div>
+            <div id="mastery" style="display: none;"></div>
+            <div id="variations" style="display: none;"></div>
+            <div id="industry" style="display: none;"></div>
+            <div id="skins" style="display: none;"></div>
+        </div>
+    </div>
+</div>

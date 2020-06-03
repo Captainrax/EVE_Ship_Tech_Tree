@@ -27,98 +27,141 @@ Frigate1.addEventListener("click", function(){
 //ensures only 1 Ship_Div can be created
     if (pagecount === false){
         pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+        //ShipBuilder.js
         insert(Venture);
+        //FACTION_Ship_Info.js
         venture();
+        });
     }
 });
 Expedition_Frigate1.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
         insert(Prospect);
         prospect();
+        });
     }
 });
 Expedition_Frigate2.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
         insert(Endurance);
         endurance();
+        });
     }
 });
 Mining_Barge1.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
         insert(Procurer);
         procurer();
+        });
     }
 });
 Mining_Barge2.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
         insert(Covetor);
         covetor();
+        });
     }
 });
 Mining_Barge3.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
         insert(Retriever);
         retriever();
+        });
     }
 });
 Exhumer1.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
         insert(Hulk);
         hulk();
+        });
     }
 });
 Exhumer2.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
         insert(Skiff);
         skiff();
+        });
     }
 });
 Exhumer3.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
         insert(Mackinaw);
         mackinaw();
+        });
     }
 });
 Support1.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
         insert(Noctis);
         noctis();
+        });
     }
 });
 Industrial_Command_Ship1.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
         insert(Porpoise);
         porpoise();
+        });
     }
 });
 Industrial_Command_Ship2.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
         insert(Orca);
         orca();
+        });
     }
 });
 Capital_Industrial1.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
         insert(Rorqual);
         rorqual();
+        });
     }
 });
 Freighter1.addEventListener("click", function(){
     if (pagecount === false){
         pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
         insert(Bowhead);
         bowhead();
+        });
     }
 });
