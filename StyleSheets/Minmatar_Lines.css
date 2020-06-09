@@ -1,0 +1,270 @@
+.background_line{
+    z-index: -999;
+    position: absolute;
+    background-color:rgba(145, 175, 190, 1);
+    /* transition: all .5s ease-in-out; */
+    border-top: 2px solid rgba(45, 55, 65, 1);
+    border-bottom: 2px solid rgba(45, 55, 65, 1);
+	box-shadow: 0px 2px rgba(80, 90, 90, 0.9), 0px -2px rgba(80, 90, 90, 0.9);
+}
+#line1{
+    width: 116px;
+    height: 2px;
+    margin: 708px 140px;
+}
+#line2{
+    width: 40px;
+    height: 2px;
+    margin: 694px 249px;
+    transform: rotate(-45deg);
+}
+#line3{
+    width: 60px;
+    height: 2px;
+    margin: 652px 251px;
+    transform: rotate(-90deg);
+}
+#line4{
+    width: 64px;
+    height: 2px;
+    margin: 544px 249px;
+    transform: rotate(-90deg);
+}
+#line5{
+    width: 366px;
+    height: 2px;
+    margin: 283px 98px;
+    transform: rotate(-90deg);
+}
+#line6{
+    width: 26px;
+    height: 2px;
+    margin: 412px 276px;
+    transform: rotate(-45deg);
+}
+#line7{
+    width: 26px;
+    height: 2px;
+    margin: 331px 276px;
+    transform: rotate(-45deg);
+}
+#line8{
+    width: 26px;
+    height: 2px;
+    margin: 251px 276px;
+    transform: rotate(-45deg);
+}
+#line9{
+    width: 26px;
+    height: 2px;
+    margin: 170px 276px;
+    transform: rotate(-45deg);
+}
+#line10{
+    width: 26px;
+    height: 2px;
+    margin: 90px 276px;
+    transform: rotate(-45deg);
+}
+#line11{
+    width: 58px;
+    height: 2px;
+    margin: 761px 12px;
+    transform: rotate(90deg);
+}
+#line12{
+    width: 40px;
+    height: 2px;
+    margin: 804px 34px;
+    transform: rotate(45deg);
+}
+#line13{
+    width: 190px;
+    height: 2px;
+    margin: 819px 68px;
+}
+#line14{
+    width: 8px;
+    height: 2px;
+    margin: 600px 540px;
+}
+#line15{
+    width: 370px;
+    height: 2px;
+    margin: 391px 387px;
+    transform: rotate(90deg);
+}
+#line16{
+    width: 24px;
+    height: 2px;
+    margin: 481px 568px;
+    transform: rotate(-45deg);
+}
+#line17{
+    width: 24px;
+    height: 2px;
+    margin: 341px 568px;
+    transform: rotate(-45deg);
+}
+#line18{
+    width: 24px;
+    height: 2px;
+    margin: 200px 568px;
+    transform: rotate(-45deg);
+}
+#line19{
+    width: 668px;
+    height: 2px;
+    margin: 819px 380px;
+}
+#line20{
+    width: 46px;
+    height: 2px;
+    margin: 773px 1048px;
+    transform: rotate(90deg);
+}
+#line21{
+    width: 28px;
+    height: 2px;
+    margin: 741px 1065px;
+    transform: rotate(-45deg);
+}
+#line22{
+    width: 310px;
+    height: 2px;
+    margin: 819px 1325px;
+}
+#line23{
+    width: 47px;
+    height: 2px;
+    margin: 773px 1627px;
+    transform: rotate(90deg);
+}
+#line24{
+    width: 26px;
+    height: 2px;
+    margin: 740px 1647px;
+    transform: rotate(-45deg);
+}
+#line25{
+    width: 10px;
+    height: 2px;
+    margin: 600px 748px;
+}
+#line26{
+    width: 8px;
+    height: 2px;
+    margin: 600px 1040px;
+}
+#line27{
+    width: 11px;
+    height: 2px;
+    margin: 600px 1326px;
+}
+#line28{
+    width: 58px;
+    height: 2px;
+    margin: 600px 1620px;
+}
+#line29{
+    width: 176px;
+    height: 2px;
+    margin: 507px 1563px;
+    transform: rotate(90deg);
+}
+#line30{
+    width: 162px;
+    height: 2px;
+    margin: 310px 1570px;
+    transform: rotate(90deg);
+}
+#line31{
+    width: 64px;
+    height: 2px;
+    margin: 544px 749px;
+    transform: rotate(90deg);
+}
+#line32{
+    width: 348px;
+    height: 2px;
+    margin: 292px 606px;
+    transform: rotate(90deg);
+}
+#line33{
+    width: 58px;
+    height: 2px;
+    margin: 101px 770px;
+    transform: rotate(-45deg);
+}
+#line34{
+    width: 30px;
+    height: 2px;
+    margin: 435px 774px;
+    transform: rotate(-45deg);
+}
+#line35{
+    width: 30px;
+    height: 2px;
+    margin: 357px 774px;
+    transform: rotate(-45deg);
+}
+#line36{
+    width: 30px;
+    height: 2px;
+    margin: 279px 774px;
+    transform: rotate(-45deg);
+}
+#line37{
+    width: 30px;
+    height: 2px;
+    margin: 201px 774px;
+    transform: rotate(-45deg);
+}
+#line38{
+    width: 64px;
+    height: 2px;
+    margin: 544px 1039px;
+    transform: rotate(90deg);
+}
+#line39{
+    width: 156px;
+    height: 2px;
+    margin: 388px 993px;
+    transform: rotate(90deg);
+}
+#line40{
+    width: 28px;
+    height: 2px;
+    margin: 300px 1066px;
+    transform: rotate(-45deg);
+}
+#line41{
+    width: 64px;
+    height: 2px;
+    margin: 544px 1329px;
+    transform: rotate(90deg);
+}
+#line42{
+    width: 196px;
+    height: 2px;
+    margin: 372px 1263px;
+    transform: rotate(90deg);
+}
+#line43{
+    width: 28px;
+    height: 2px;
+    margin: 265px 1356px;
+    transform: rotate(-45deg);
+}
+#line44{
+    width: 28px;
+    height: 2px;
+    margin: 361px 1356px;
+    transform: rotate(-45deg);
+}
+#line45{
+    width: 56px;
+    height: 2px;
+    margin: 210px 1642px;
+    transform: rotate(-45deg);
+}

@@ -2,28 +2,29 @@
 <html>
 <head>
         <meta charset="UTF-8">
-        
 
         <link href="StyleSheets/Caldari_Index.css" rel="stylesheet" />
         <link href="StyleSheets/Caldari_Index_Lines.css" rel="stylesheet" />
         <link href="StyleSheets/ShowShip.css" rel="stylesheet" />
-        <!-- might need defer -->
-        <script src="Scripts/Libraries/jquery-3.5.1.js"></script>
+
+        <script src="Scripts/Libraries/jquery-3.5.1.js" defer></script>
         <script src="Scripts/Caldari_EventListeners.js" defer></script>
         <script src="Scripts/DraggableDiv.js" defer></script>
         <script src="Scripts/ShipBuilder.js" defer></script>
         <script src="Scripts/Caldari_Ship_Info.js" defer></script>
+        <script src="Scripts/SearchBar.js" defer></script>
 
         <title>EVE Ship Tree - Caldari</title>
 </head>
 
 <body id="background">
         <div class="faction_menu">
+                <input type="text" class="menu_searchbar" placeholder="Search New Eden">
                 <ul class="menu_navbar" id="faction_menu_ul">
                         <li class="menu_tab"><a href="Amarr.html"><img src="StyleSheets/icons/amarr.png"></a></li>
                         <li class="menu_tab faction_active"><a href="index.html"><img src="StyleSheets/icons/caldari.png" alt=""></a></li>
-                        <li class="menu_tab"><a href="#Were you expecting a finished page?"><img src="StyleSheets/icons/gallente.png" alt=""></a></li>
-                        <li class="menu_tab"><a href="#yeah no, keep trying."><img src="StyleSheets/icons/minmatar.png" alt=""></a></li>
+                        <li class="menu_tab"><a href="Gallente.html"><img src="StyleSheets/icons/gallente.png" alt=""></a></li>
+                        <li class="menu_tab"><a href="Minmatar.html"><img src="StyleSheets/icons/minmatar.png" alt=""></a></li>
                         <li class="menu_tab"><a href="ORE.html"><img src="StyleSheets/icons/ORE.png" alt=""></a></li>
                         <li class="menu_tab"><a href="#yep... nothing here."><img src="StyleSheets/icons/guristas.png" alt=""></a></li>
                         <li class="menu_tab"><a href="#about"><img src="StyleSheets/icons/sansha.png" alt=""></a></li>
@@ -48,7 +49,7 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_rookie1">
                                    <div>
-                                        <img src="ship_tree_icons\Caldari_Icons\Ibis_isis.png" id="ghost_img">
+                                        <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Ibis_isis.png" id="ghost_img">
                                    </div>
                                 </div>  
                         </div>
@@ -67,7 +68,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Bantam_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Bantam_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -80,7 +81,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate2">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Griffin_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Griffin_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -92,14 +93,14 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate3">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Heron_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Heron_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate4">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Manticore_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Manticore_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -111,14 +112,14 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate5">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Merlin_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Merlin_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate6">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Merlin_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Merlin_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -130,14 +131,14 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate7">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Condor_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Condor_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate8">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Condor_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Condor_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -154,14 +155,14 @@
                         <div class="ship_icon" id="ship_icon_navy">
                                 <div class="inner_ship_icon" id="showship_navy_frigate1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Griffin_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Griffin_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_navy">
                                 <div class="inner_ship_icon" id="showship_navy_frigate2">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Hookbill_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Hookbill_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -177,42 +178,42 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_frigate1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Bantam_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Bantam_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_frigate2">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Condor_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Condor_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_frigate3">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Griffin_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Griffin_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_frigate4">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Kestrel_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Kestrel_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_frigate5">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Merlin_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Merlin_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_frigate6">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Heron_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Heron_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -229,7 +230,7 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_shuttle">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Caldari_Shuttle_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Caldari_Shuttle_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -257,7 +258,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_destroyer1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Corax_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Corax_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -268,7 +269,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_destroyer2">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Cormorant_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Cormorant_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -284,14 +285,14 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_destroyer1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Cormorant_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Cormorant_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_destroyer2">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Corax_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Corax_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -311,7 +312,7 @@
                         <div class="ship_icon" id="ship_icon_tier3">
                                 <div class="inner_ship_icon" id="showship_t3_cruiser1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Tengu_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Tengu_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -326,7 +327,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_cruiser1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Ibis_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Ibis_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -355,7 +356,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_cruiser4">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Caracal_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Caracal_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -389,14 +390,14 @@
                         <div class="ship_icon" id="ship_icon_navy">
                                 <div class="inner_ship_icon" id="showship_navy_cruiser1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Osprey_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Osprey_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_navy">
                                 <div class="inner_ship_icon" id="showship_navy_cruiser2">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Caracal_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Caracal_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -411,14 +412,14 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_cruiser1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Osprey_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Osprey_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_cruiser2">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Caracal_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Caracal_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -451,14 +452,14 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_battlecruiser1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Drake_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Drake_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_battlecruiser2">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Ferox_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Ferox_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -473,7 +474,7 @@
                         <div class="ship_icon" id="ship_icon_navy">
                                 <div class="inner_ship_icon" id="showship_navy_battlecruiser1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Drake_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Drake_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -488,21 +489,21 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_battlecruiser1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Ferox_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Ferox_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_battlecruiser2">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Drake_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Drake_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_battlecruiser3">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Naga_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Naga_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -559,7 +560,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_battleship1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Golem_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Golem_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -570,7 +571,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_battleship2">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Scorpion_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Scorpion_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -584,14 +585,14 @@
                         <div class="ship_icon" id="ship_icon_navy">
                                 <div class="inner_ship_icon" id="showship_navy_battleship1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Scorpion_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Scorpion_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_navy">
                                 <div class="inner_ship_icon" id="showship_navy_battleship2">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Raven_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Raven_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -604,21 +605,21 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_battleship1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Scorpion_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Scorpion_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_battleship2">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Rokh_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Rokh_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_battleship3">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Raven_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Raven_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -638,7 +639,7 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_titan1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Leviathan_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Leviathan_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -659,14 +660,14 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_supercapital2">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Wyvern_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Wyvern_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_supercapital3">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Chimera_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Chimera_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -680,7 +681,7 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_capital1">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Phoenix_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Phoenix_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -694,7 +695,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_freighter">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Charon_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Charon_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -708,7 +709,7 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_freighter">
                                         <div>
-                                                <img src="ship_tree_icons\Caldari_Icons\Charon_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\ship_tree_icons\Caldari_Icons\Charon_isis.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>

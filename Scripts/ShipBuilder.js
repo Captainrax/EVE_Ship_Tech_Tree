@@ -25,6 +25,7 @@ function insert(Ship) {
     Ship_Name.textContent = Ship.Name;
     Ship_Title_Name.textContent = Ship.Name + " (" + Ship.Class + ")" + ": Information";
 
+    // Closes the ship_div window
     function Close() {
         var Ship_Div = document.querySelector("#ship_div");
         const CloseButton = document.querySelector("#close");

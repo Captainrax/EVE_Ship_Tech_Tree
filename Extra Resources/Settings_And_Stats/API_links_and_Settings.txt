@@ -1,0 +1,3 @@
+Search for ship stats with ID
+https://esi.evetech.net/ui/#/Universe/get_universe_types_type_id
+

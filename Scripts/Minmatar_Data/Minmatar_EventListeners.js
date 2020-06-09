@@ -55,6 +55,7 @@ var T2_Battlecruiser2 = document.querySelector("#showship_t2_battlecruiser2");
 
 var Industrial1 = document.querySelector("#showship_industrial1");
 var Industrial2 = document.querySelector("#showship_industrial2");
+var Industrial3 = document.querySelector("#showship_industrial3");
 
 var T2_Industrial1 = document.querySelector("#showship_t2_industrial1");
 var T2_Industrial2 = document.querySelector("#showship_t2_industrial2");
@@ -79,7 +80,6 @@ var Titan1 = document.querySelector("#showship_titan1");
 
 var Freighter = document.querySelector("#showship_freighter");
 var T2_Freighter = document.querySelector("#showship_t2_freighter");
-
 var pagecount = false;
 
 
@@ -518,6 +518,16 @@ Industrial1.addEventListener("click", function(){
     } 
 });
 Industrial2.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
+        insert(Tayra);
+        tayra();
+        });
+    } 
+});
+Industrial3.addEventListener("click", function(){
     if (pagecount == false){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){

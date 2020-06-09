@@ -2,28 +2,28 @@
 <html>
 <head>
         <meta charset="UTF-8">
-
-        <link href="StyleSheets/Amarr.css" rel="stylesheet" />
-        <link href="StyleSheets/Amarr_Lines.css" rel="stylesheet" />
+        
+        <link href="StyleSheets/Gallente.css" rel="stylesheet" />
+        <link href="StyleSheets/Gallente_Lines.css" rel="stylesheet" />
         <link href="StyleSheets/ShowShip.css" rel="stylesheet" />
         <!-- might need defer -->
         <script src="Scripts/Libraries/jquery-3.5.1.js"></script>
-        <script src="Scripts/Amarr_EventListeners.js" defer></script>
+        <script src="Scripts/Gallente_Data/Gallente_EventListeners.js" defer></script>
         <script src="Scripts/DraggableDiv.js" defer></script>
         <script src="Scripts/ShipBuilder.js" defer></script>
-        <script src="Scripts/Amarr_Ship_Info.js" defer></script>
+        <script src="Scripts/Gallente_Data/Gallente_Ship_Info.js" defer></script>
         <script src="Scripts/SearchBar.js" defer></script>
 
-        <title>EVE Ship Tree - Amarr</title>
+        <title>EVE Ship Tree - Gallente</title>
 </head>
 
 <body id="background">
         <div class="faction_menu">
                 <input type="text" class="menu_searchbar" placeholder="Search New Eden">
                 <ul class="menu_navbar" id="faction_menu_ul">
-                        <li class="menu_tab faction_active"><a href="Amarr.html"><img src="StyleSheets/icons/amarr.png"></a></li>
+                        <li class="menu_tab"><a href="Amarr.html"><img src="StyleSheets/icons/amarr.png"></a></li>
                         <li class="menu_tab"><a href="index.html"><img src="StyleSheets/icons/caldari.png" alt=""></a></li>
-                        <li class="menu_tab"><a href="Gallente.html"><img src="StyleSheets/icons/gallente.png" alt=""></a></li>
+                        <li class="menu_tab faction_active"><a href="Gallente.html"><img src="StyleSheets/icons/gallente.png" alt=""></a></li>
                         <li class="menu_tab"><a href="Minmatar.html"><img src="StyleSheets/icons/minmatar.png" alt=""></a></li>
                         <li class="menu_tab"><a href="ORE.html"><img src="StyleSheets/icons/ORE.png" alt=""></a></li>
                         <li class="menu_tab"><a href="#yep... nothing here."><img src="StyleSheets/icons/guristas.png" alt=""></a></li>
@@ -31,7 +31,7 @@
                         <li class="menu_tab"><a href="#about"><img src="StyleSheets/icons/bloodRaiders.png" alt=""></a></li>
                         <li class="menu_tab"><a href="#about"><img src="StyleSheets/icons/angel.png" alt=""></a></li>
                         <li class="menu_tab"><a href="#about"><img src="StyleSheets/icons/serpentis.png" alt=""></a></li>
-                        <li class="menu_tab"><a href="#about"><img src="StyleSheets/icons/soe.png" alt=""></a></li>
+                        <li class="menu_tab"><a href="#lmao"><img src="StyleSheets/icons/soe.png" alt=""></a></li>
                         <li class="menu_tab"><a href="#mordus? more like Murdr us! hah!"><img src="StyleSheets/icons/mordus.png" alt=""></a></li>
                         <li class="menu_tab"><a href="#These dudes are spook aliens."><img src="StyleSheets/icons/triglavianCollective.png" alt=""></a></li>
                 </ul>
@@ -49,7 +49,7 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_rookie1">
                                    <div>
-                                        <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Impairor_isis.png" id="ghost_img">
+                                        <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                    </div>
                                 </div>  
                         </div>
@@ -68,7 +68,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate1">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Inquisitor_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -81,7 +81,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate2">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -93,14 +93,14 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate3">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Magnate_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate4">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -112,14 +112,14 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate5">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Punisher_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate6">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Punisher_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -131,14 +131,14 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate7">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_frigate8">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -155,14 +155,14 @@
                         <div class="ship_icon" id="ship_icon_navy">
                                 <div class="inner_ship_icon" id="showship_navy_frigate1">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_navy">
                                 <div class="inner_ship_icon" id="showship_navy_frigate2">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Slicer_Navy_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -178,42 +178,42 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_frigate1">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_frigate2">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Magnate_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_frigate3">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_frigate4">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Inquisitor_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_frigate5">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Tormentor_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_frigate6">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Punisher_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -230,7 +230,7 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_shuttle">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Amarr_Shuttle_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -247,7 +247,7 @@
                         <div class="ship_icon" id="ship_icon_tier3">
                                 <div class="inner_ship_icon" id="showship_t3_destroyer1">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -258,7 +258,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_destroyer1">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Dragoon_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -269,7 +269,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_destroyer2">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Coercer_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -278,19 +278,21 @@
 
         <div class="grid-item" id="item11">
 
-                <div class="ship_class" id="ship_class_destroyer"></div>
+                <div class="ship_class" id="ship_class_destroyer">
+
+                </div>
                 <div class="ship-icon-alignment">
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_destroyer1">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Coercer_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_destroyer2">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Dragoon_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -303,12 +305,14 @@
 
         <div class="grid-item" id="item14">
 
-                <div class="ship_class" id="ship_class_cruiser"></div>
+                <div class="ship_class" id="ship_class_cruiser">
+
+                </div>
                 <div class="ship-icon-alignment">
                         <div class="ship_icon" id="ship_icon_tier3">
                                 <div class="inner_ship_icon" id="showship_t3_cruiser1">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Legion_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -323,7 +327,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_cruiser1">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Augoror_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -334,7 +338,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_cruiser2">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Maller_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -345,14 +349,14 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_cruiser3">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Omen_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_cruiser4">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Maller_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -363,14 +367,14 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_cruiser5">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_cruiser6">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -379,19 +383,21 @@
         </div>
 
         <div class="grid-item" id="item16">
-               <div class="ship_class" id="ship_class_cruiser"></div>
+               <div class="ship_class" id="ship_class_cruiser">
+
+                </div>
                 <div class="ship-icon-alignment">
                         <div class="ship_icon" id="ship_icon_navy">
                                 <div class="inner_ship_icon" id="showship_navy_cruiser1">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Augoror_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_navy">
                                 <div class="inner_ship_icon" id="showship_navy_cruiser2">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Omen_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -404,28 +410,28 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_cruiser1">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Maller_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_cruiser2">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Omen_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_cruiser3">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Augoror_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_cruiser4">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -433,7 +439,6 @@
         </div>
 
         <div class="grid-item" id="item18"></div>
-
         <div class="grid-item" id="item19"></div>
 
         <div class="grid-item" id="item20">
@@ -442,14 +447,14 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_battlecruiser1">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Harbinger_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_battlecruiser2">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Prophecy_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -457,12 +462,14 @@
         </div>
 
         <div class="grid-item" id="item21">
-                <div class="ship_class" id="ship_class_battlecruiser"></div>
+                <div class="ship_class" id="ship_class_battlecruiser">
+
+                </div>
                 <div class="ship-icon-alignment">
                         <div class="ship_icon" id="ship_icon_navy">
                                 <div class="inner_ship_icon" id="showship_navy_battlecruiser1">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Harbinger_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -470,26 +477,28 @@
         </div>
 
         <div class="grid-item" id="item22">
-                <div class="ship_class" id="ship_class_battlecruiser"></div>
+                <div class="ship_class" id="ship_class_battlecruiser">
+
+                </div>
                 <div class="ship-icon-alignment">
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_battlecruiser1">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Prophecy_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_battlecruiser2">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Harbinger_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_battlecruiser3">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Oracle_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -497,19 +506,21 @@
         </div>
 
         <div class="grid-item" id="item23">
-                <div class="ship_class" id="ship_class_industrial"></div>
+                <div class="ship_class" id="ship_class_industrial">
+
+                </div>
                 <div class="ship-icon-alignment">
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_industrial1">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_industrial2">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Impel_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -518,18 +529,39 @@
 
         <div class="grid-item" id="item24">
                 <div class="ship_class" id="ship_class_industrial"></div>
-                <div class="ship-icon-alignment">
+                <div class="ship-icon-alignment" id="ship-icon-alignment-2row">
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_industrial1">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Sigil_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_industrial2">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Bestower_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_industrial3">
+                                        <div>
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_industrial4">
+                                        <div>
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="ship_icon">
+                                <div class="inner_ship_icon" id="showship_industrial5">
+                                        <div>
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -544,7 +576,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_battleship1">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -555,7 +587,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_battleship2">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Armageddon_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -569,14 +601,14 @@
                         <div class="ship_icon" id="ship_icon_navy">
                                 <div class="inner_ship_icon" id="showship_navy_battleship1">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Armageddon_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon" id="ship_icon_navy">
                                 <div class="inner_ship_icon" id="showship_navy_battleship2">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -589,21 +621,21 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_battleship1">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_battleship2">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Armageddon_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_battleship3">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Abaddon_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -623,7 +655,7 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_titan1">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Avatar_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -637,21 +669,21 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_supercapital1">
                                         <div>
-                                            <img src="StyleSheets\icons\amarr_transparent.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_supercapital2">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Aeon_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_supercapital3">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Archon_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -665,7 +697,7 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_capital1">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Revelation_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -679,7 +711,7 @@
                         <div class="ship_icon" id="ship_icon_tier2">
                                 <div class="inner_ship_icon" id="showship_t2_freighter">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Providence_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -693,7 +725,7 @@
                         <div class="ship_icon">
                                 <div class="inner_ship_icon" id="showship_freighter">
                                         <div>
-                                            <img src="StyleSheets\ship_tree_icons\Amarr_Icons\Providence_isis.png" id="ghost_img">
+                                                <img src="StyleSheets\icons\gallente_transparent.png" id="ghost_img">
                                         </div>
                                 </div>
                         </div>
@@ -703,11 +735,10 @@
     </div>
 
 
-
-
-
     
     <div id="template"></div>
+
+
 
     <hr class="background_line" id="line1">
     <hr class="background_line" id="line2">

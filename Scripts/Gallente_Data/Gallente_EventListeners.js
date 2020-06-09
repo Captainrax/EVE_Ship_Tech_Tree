@@ -55,6 +55,9 @@ var T2_Battlecruiser2 = document.querySelector("#showship_t2_battlecruiser2");
 
 var Industrial1 = document.querySelector("#showship_industrial1");
 var Industrial2 = document.querySelector("#showship_industrial2");
+var Industrial3 = document.querySelector("#showship_industrial3");
+var Industrial4 = document.querySelector("#showship_industrial4");
+var Industrial5 = document.querySelector("#showship_industrial5");
 
 var T2_Industrial1 = document.querySelector("#showship_t2_industrial1");
 var T2_Industrial2 = document.querySelector("#showship_t2_industrial2");
@@ -79,7 +82,6 @@ var Titan1 = document.querySelector("#showship_titan1");
 
 var Freighter = document.querySelector("#showship_freighter");
 var T2_Freighter = document.querySelector("#showship_t2_freighter");
-
 var pagecount = false;
 
 
@@ -90,9 +92,9 @@ Rookie1.addEventListener("click", function(){
         
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
         //ShipBuilder.js
-        insert(Ibis);
+        insert(Velator);
         //FACTION_Ship_Info.js
-        ibis();
+        velator();
         });
     }
 });
@@ -112,8 +114,8 @@ Frigate1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Bantam);
-        bantam();
+        insert(Navitas);
+        navitas();
         });
     }
 });
@@ -122,8 +124,8 @@ Frigate2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Condor);
-        condor();
+        insert(Tristan);
+        tristan();
         });
     } 
 });
@@ -132,8 +134,8 @@ Frigate3.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Griffin);
-        griffin();
+        insert(Incursus);
+        incursus();
         });
     }
 });
@@ -142,8 +144,8 @@ Frigate4.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Kestrel);
-        kestrel();
+        insert(Imicus);
+        imicus();
         });
     } 
 });
@@ -152,8 +154,8 @@ Frigate5.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Merlin);
-        merlin();
+        insert(Atron);
+        atron();
         });
     } 
 });
@@ -162,8 +164,8 @@ Frigate6.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Heron);
-        heron();
+        insert(Maulus);
+        maulus();
         });
     } 
 });
@@ -172,8 +174,8 @@ T2_Frigate1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Kirin);
-        kirin();
+        insert(Thalia);
+        thalia();
         });
     } 
 });
@@ -182,8 +184,8 @@ T2_Frigate2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Kitsune);
-        kitsune();
+        insert(Keres);
+        keres();
         });
     } 
 });
@@ -192,8 +194,8 @@ T2_Frigate3.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Buzzard);
-        buzzard();
+        insert(Helios);
+        helios();
         });
     } 
 });
@@ -202,8 +204,8 @@ T2_Frigate4.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Manticore);
-        manticore();
+        insert(Nemesis);
+        nemesis();
         });
     } 
 });
@@ -212,8 +214,8 @@ T2_Frigate5.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Hawk);
-        hawk();
+        insert(Ishkur);
+        ishkur();
         });
     } 
 });
@@ -222,8 +224,8 @@ T2_Frigate6.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Harpy);
-        harpy();
+        insert(Enyo);
+        enyo();
         });
     } 
 });
@@ -232,8 +234,8 @@ T2_Frigate7.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Crow);
-        crow();
+        insert(Taranis);
+        taranis();
         });
     } 
 });
@@ -242,8 +244,8 @@ T2_Frigate8.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Raptor);
-        raptor();
+        insert(Ares);
+        ares();
         });
     } 
 });
@@ -252,8 +254,8 @@ Navy_Frigate1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Griffin_Navy);
-        griffin_navy();
+        insert(Comet_Navy);
+        comet_Navy();
         });
     } 
 });
@@ -262,8 +264,8 @@ Navy_Frigate2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Hookbill);
-        hookbill();
+        insert(Maulus_Navy);
+        maulus_Navy();
         });
     } 
 });
@@ -272,8 +274,8 @@ Destroyer1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Cormorant);
-        cormorant();
+        insert(Catalyst);
+        catalyst();
         });
     } 
 });
@@ -282,8 +284,8 @@ Destroyer2.addEventListener("click", function(){
         pagecount = true;
 
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
-            insert(Corax);
-            corax();
+            insert(Algos);
+            algos();
         });
     } 
 });
@@ -292,8 +294,8 @@ T2_Destroyer1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Stork);
-        stork();
+        insert(Magus);
+        magus();
         });
     } 
 });
@@ -302,8 +304,8 @@ T2_Destroyer2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Flycatcher);
-        flycatcher();
+        insert(Eris);
+        eris();
         });
     } 
 });
@@ -312,8 +314,8 @@ T3_Destroyer1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Jackdaw);
-        jackdaw();
+        insert(Hecate);
+        hecate();
         });
     } 
 });
@@ -322,8 +324,8 @@ Cruiser1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Osprey);
-        osprey();
+        insert(Vexor);
+        vexor();
         });
     } 
 });
@@ -332,8 +334,8 @@ Cruiser2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Caracal);
-        caracal();
+        insert(Thorax);
+        thorax();
         });
     } 
 });
@@ -342,8 +344,8 @@ Cruiser3.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Blackbird);
-        blackbird();
+        insert(Celestis);
+        celestis();
         });
     } 
 });
@@ -352,8 +354,8 @@ Cruiser4.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Moa);
-        moa();
+        insert(Exequror);
+        exequror();
         });
     } 
 });
@@ -362,8 +364,8 @@ Navy_Cruiser1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Osprey_Navy);
-        osprey_navy();
+        insert(Exequror_Navy);
+        exequror_Navy();
         });
     } 
 });
@@ -372,8 +374,8 @@ Navy_Cruiser2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Caracal_Navy);
-        caracal_navy();
+        insert(Vexor_Navy);
+        vexor_Navy();
         });
     } 
 });
@@ -382,8 +384,8 @@ T2_Cruiser1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Basilisk);
-        basilisk();
+        insert(Oneiros);
+        oneiros();
         });
     } 
 });
@@ -392,8 +394,8 @@ T2_Cruiser2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Onyx);
-        onyx();
+        insert(Phobos);
+        phobos();
         });
     } 
 });
@@ -402,8 +404,8 @@ T2_Cruiser3.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Eagle);
-        eagle();
+        insert(Ishtar);
+        ishtar();
         });
     } 
 });
@@ -412,8 +414,8 @@ T2_Cruiser4.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Cerberus);
-        cerberus();
+        insert(Deimos);
+        deimos();
         });
     } 
 });
@@ -422,8 +424,8 @@ T2_Cruiser5.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Rook);
-        rook();
+        insert(Lachesis);
+        lachesis();
         });
     } 
 });
@@ -432,8 +434,8 @@ T2_Cruiser6.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Falcon);
-        falcon();
+        insert(Arazu);
+        arazu();
         });
     } 
 });
@@ -442,8 +444,8 @@ T3_Cruiser1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Tengu);
-        tengu();
+        insert(Proteus);
+        proteus();
         });
     } 
 });
@@ -452,8 +454,8 @@ Battlecruiser1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Ferox);
-        ferox();
+        insert(Brutix);
+        brutix();
         });
     } 
 });
@@ -462,8 +464,8 @@ Battlecruiser2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Drake);
-        drake();
+        insert(Myrmidon);
+        myrmidon();
         });
     } 
 });
@@ -472,8 +474,8 @@ Battlecruiser3.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Naga);
-        naga();
+        insert(Talos);
+        talos();
         });
     } 
 });
@@ -482,8 +484,8 @@ Navy_Battlecruiser1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Drake_Navy);
-        drake_navy();
+        insert(Brutix_Navy);
+        brutix_Navy();
         });
     } 
 });
@@ -492,8 +494,8 @@ T2_Battlecruiser1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Nighthawk);
-        nighthawk();
+        insert(Astarte);
+        astarte();
         });
     } 
 });
@@ -502,8 +504,8 @@ T2_Battlecruiser2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Vulture);
-        vulture();
+        insert(Eos);
+        eos();
         });
     } 
 });
@@ -512,8 +514,8 @@ Industrial1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Badger);
-        badger();
+        insert(Nereus);
+        nereus();
         });
     } 
 });
@@ -522,8 +524,38 @@ Industrial2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Tayra);
-        tayra();
+        insert(Kryos);
+        kryos();
+        });
+    } 
+});
+Industrial3.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
+        insert(Epithal);
+        epithal();
+        });
+    } 
+});
+Industrial4.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
+        insert(Miasmos);
+        miasmos();
+        });
+    } 
+});
+Industrial5.addEventListener("click", function(){
+    if (pagecount == false){
+        pagecount = true;
+        $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
+          
+        insert(IteronMarkV);
+        iteronMarkV();
         });
     } 
 });
@@ -532,8 +564,8 @@ T2_Industrial1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Crane);
-        crane();
+        insert(Viator);
+        viator();
         });
     } 
 });
@@ -542,8 +574,8 @@ T2_Industrial2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Bustard);
-        bustard();
+        insert(Occator);
+        occator();
         });
     } 
 });
@@ -552,8 +584,8 @@ Battleship1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Scorpion);
-        scorpion();
+        insert(Megathron);
+        megathron();
         });
     } 
 });
@@ -562,8 +594,8 @@ Battleship2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Rokh);
-        rokh();
+        insert(Dominix);
+        dominix();
         });
     } 
 });
@@ -572,8 +604,8 @@ Battleship3.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Raven);
-        raven();
+        insert(Hyperion);
+        hyperion();
         });
     } 
 });
@@ -582,8 +614,8 @@ Navy_Battleship1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Scorpion_Navy);
-        scorpion_navy();
+        insert(Dominix_Navy);
+        dominix_Navy();
         });
     } 
 });
@@ -592,8 +624,8 @@ Navy_Battleship2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Raven_Navy);
-        raven_navy();
+        insert(Megathron_Navy);
+        megathron_Navy();
         });
     } 
 });
@@ -602,8 +634,8 @@ T2_Battleship1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Golem);
-        golem();
+        insert(Kronos);
+        kronos();
         });
     } 
 });
@@ -612,8 +644,8 @@ T2_Battleship2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Widow);
-        widow();
+        insert(Sin);
+        sin();
         });
     } 
 });
@@ -622,8 +654,8 @@ Capital1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Phoenix);
-        phoenix();
+        insert(Moros);
+        moros();
         });
     } 
 });
@@ -632,8 +664,8 @@ Supercapital1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Minokawa);
-        minokawa();
+        insert(Ninazu);
+        ninazu();
         });
     } 
 });
@@ -642,8 +674,8 @@ Supercapital2.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Wyvern);
-        wyvern();
+        insert(Nyx);
+        nyx();
         });
     } 
 });
@@ -652,8 +684,8 @@ Supercapital3.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Chimera);
-        chimera();
+        insert(Thanatos);
+        thanatos();
         });
     } 
 });
@@ -662,8 +694,8 @@ Titan1.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Leviathan);
-        leviathan();
+        insert(Erebus);
+        erebus();
         });
     } 
 });
@@ -672,8 +704,8 @@ Freighter.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Charon);
-        charon();
+        insert(Obelisk);
+        obelisk();
         });
     }
 });
@@ -682,8 +714,8 @@ T2_Freighter.addEventListener("click", function(){
         pagecount = true;
         $("#template").load("StyleSheets/templates/ShipTemplate.html", function(){
           
-        insert(Rhea);
-        rhea();
+        insert(Anshar);
+        anshar();
         });
     }
 });

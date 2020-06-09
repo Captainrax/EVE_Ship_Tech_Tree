@@ -3,7 +3,7 @@ html {
 }
 @font-face {
   font-family:"evesans";
-  src: url("evesansneue-regular.ttf") format("truetype");
+  src: url("fonts/evesansneue-regular.ttf") format("truetype");
 }
 body {
     padding: 0px;
@@ -296,18 +296,36 @@ body {
   background-image: url("icons/freighter_64.png");
 }
 
+/* Search Bar*/
+#menu_searchbar{
+  padding: 4px;
+  margin: 0px;
+  border: 0px;
+  box-shadow: 1px 1px rgb(70,70,70);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(220, 220, 220, 0.9);
+  
+  font-family: evesans;
+}
+.highlighted{
+  /* background-color: rgba(100, 100, 100, 0.2); */ /* bring this back when you fix selection in SearchBar.js */
+  border-color: cyan;
+}
+/*           */
 
-
+/* Faction Select Menu */
 .faction_menu{
   z-index: 2;
   position: absolute;
+  display: grid;
+  margin: 20px 4px;
 }
 #faction_menu_ul{
   display: grid;
   grid-template-columns: 56px 56px 56px 56px 56px;
   grid-template-rows: 56px 56px 56px;
   padding: 0px;
-  margin: 50px 8px;
+  margin: 20px 8px;
   text-decoration: none;
   list-style-type: none;
 }
