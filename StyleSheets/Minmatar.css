@@ -298,7 +298,7 @@ body {
 
 
 /* Search Bar*/
-#menu_searchbar{
+.menu_searchbar{
   padding: 4px;
   margin: 0px;
   border: 0px;

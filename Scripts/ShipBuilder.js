@@ -203,6 +203,9 @@ function InsertData(data){
     Ship_Maintenance_Bay(false);
     Fleet_Hangar_Capacity(false);
     Jump_Clones(false);
+    Fighter_Squadron_Facitilies(false);
+    LightFighterSquadronLimit(false);
+    LargeFighterSquadronLimit(false);
     Jump_Drive_Systems(false);
     Jump_Portal_Activation_Cost(false);
     
@@ -547,6 +550,29 @@ function InsertData(data){
                 var spandata = document.querySelector("#SpanMaximumJumpClones");
                 spandata.textContent = data["dogma_attributes"][x]["value"];
                 break;
+            case 2055: // Fighter Squadron Size  
+                    Fighter_Squadron_Facitilies(true);
+                var spandata = document.querySelector("#FighterHangarCapacity");
+                spandata.textContent = data["dogma_attributes"][x]["value"].toLocaleString() + " m3";
+                break;
+            case 2216: // Figher Squadron Launch Tubes
+                var spandata = document.querySelector("#FighterSquadronLaunchTubes");
+                spandata.textContent = data["dogma_attributes"][x]["value"];
+                break;
+            case 2217: // Light Fighter Squadron Limit
+                    LightFighterSquadronLimit(true);
+                var spandata = document.querySelector("#LightFighterSquadronLimit");
+                spandata.textContent = data["dogma_attributes"][x]["value"];
+                break;
+            case 2218: // Support Fighter Squadron Limit
+                var spandata = document.querySelector("#SupportFighterSquadronLimit");
+                spandata.textContent = data["dogma_attributes"][x]["value"];
+                break;
+            case 2219: // Large Fighter Squadron Limit
+                    LargeFighterSquadronLimit(true);
+                var spandata = document.querySelector("#LargeFighterSquadronLimit");
+                spandata.textContent = data["dogma_attributes"][x]["value"];
+                break;
             case 898: // Jump Drive Capacitor Need
                     Jump_Drive_Systems(true);
                 var spandata = document.querySelector("#SpanJumpDriveCapacitorNeed");
@@ -588,7 +614,6 @@ function InsertData(data){
 
 }
 
-
 // used in the same place as the json is fetched to display an error if a stat is missing (though it just overrides everything to "error")
 function DisplayError(){
     for(var x = 0; x < 100; x++){
@@ -599,7 +624,6 @@ function DisplayError(){
         }
     }
 }
-
 
 
 function Attribute_Drone(Toggle){
@@ -643,8 +667,7 @@ function Subsystem_Hold_Capacity(Toggle){
         var Attributes_Str_Subsystem_Hold_AT = document.querySelector("#AT16");
         Attributes_Str_Subsystem_Hold_AT.style.display = "none";
     }
-} 
-
+}
 function Ore_Hold_Capacity(Toggle){
 
     if (Toggle === true) {
@@ -707,7 +730,6 @@ function Ammo_Hold_Capacity(Toggle){
         Attributes_Str_Hold_AT.style.display = "none";
     }
 } 
-
 
 function Electronic_Resistances(Toggle){
 
@@ -858,28 +880,102 @@ function Jump_Clones(Toggle){
     }
 }
 
+function Fighter_Squadron_Facitilies(Toggle){
+      
+    if (Toggle === true) {
+        
+        var Attributes_Fighter_Squadron = document.querySelector("#AT74");
+        Attributes_Fighter_Squadron.style.display = "grid";
+
+        var Attributes_Fighter_Hangar_Capacity = document.querySelector("#AT75");
+        var Attributes_Fighter_Squadron_Launch_Tubes = document.querySelector("#AT77");
+        var Attributes_Support_Fighter_Squadron_Limit = document.querySelector("#AT83");
+        Attributes_Fighter_Hangar_Capacity.style.display = "grid";
+        Attributes_Fighter_Squadron_Launch_Tubes.style.display = "grid";
+        Attributes_Support_Fighter_Squadron_Limit.style.display = "grid";
+        var Attributes_Fighter_Hangar_Capacity_AT = document.querySelector("#AT76");
+        var Attributes_Fighter_Squadron_Launch_Tubes_AT = document.querySelector("#AT78");
+        var Attributes_Support_Fighter_Squadron_Limit_AT = document.querySelector("#AT84");
+        Attributes_Fighter_Hangar_Capacity_AT.style.display = "grid";
+        Attributes_Fighter_Squadron_Launch_Tubes_AT.style.display = "grid";
+        Attributes_Support_Fighter_Squadron_Limit_AT.style.display = "grid";
+
+    } else if (Toggle === false) {
+        
+        var Attributes_Fighter_Squadron = document.querySelector("#AT74");
+        Attributes_Fighter_Squadron.style.display = "none";
+
+        var Attributes_Fighter_Hangar_Capacity = document.querySelector("#AT75");
+        var Attributes_Fighter_Squadron_Launch_Tubes = document.querySelector("#AT77");
+        var Attributes_Support_Fighter_Squadron_Limit = document.querySelector("#AT83");
+        Attributes_Fighter_Hangar_Capacity.style.display = "none";
+        Attributes_Fighter_Squadron_Launch_Tubes.style.display = "none";
+        Attributes_Support_Fighter_Squadron_Limit.style.display = "none";
+        var Attributes_Fighter_Hangar_Capacity_AT = document.querySelector("#AT76");
+        var Attributes_Fighter_Squadron_Launch_Tubes_AT = document.querySelector("#AT78");
+        var Attributes_Support_Fighter_Squadron_Limit_AT = document.querySelector("#AT84");
+        Attributes_Fighter_Hangar_Capacity_AT.style.display = "none";
+        Attributes_Fighter_Squadron_Launch_Tubes_AT.style.display = "none";
+        Attributes_Support_Fighter_Squadron_Limit_AT.style.display = "none";
+    }
+}
+function LightFighterSquadronLimit(Toggle){
+    
+    if (Toggle === true) {
+
+        var Attributes_Light_Fighter_Squadron = document.querySelector("#AT79");
+        Attributes_Light_Fighter_Squadron.style.display = "grid";
+        var Attributes_Light_Fighter_Squadron_AT = document.querySelector("#AT80");
+        Attributes_Light_Fighter_Squadron_AT.style.display = "grid";
+
+    } else if (Toggle === false) {
+        
+        var Attributes_Light_Fighter_Squadron = document.querySelector("#AT79");
+        Attributes_Light_Fighter_Squadron.style.display = "none";
+        var Attributes_Light_Fighter_Squadron_AT = document.querySelector("#AT80");
+        Attributes_Light_Fighter_Squadron_AT.style.display = "none";
+    }
+}
+function LargeFighterSquadronLimit(Toggle){
+    
+    if (Toggle === true) {
+
+        var Attributes_Large_Fighter_Squadron = document.querySelector("#AT81");
+        Attributes_Large_Fighter_Squadron.style.display = "grid";
+        var Attributes_Large_Fighter_Squadron_AT = document.querySelector("#AT82");
+        Attributes_Large_Fighter_Squadron_AT.style.display = "grid";
+
+    } else if (Toggle === false) {
+        
+        var Attributes_Large_Fighter_Squadron = document.querySelector("#AT81");
+        Attributes_Large_Fighter_Squadron.style.display = "none";
+        var Attributes_Large_Fighter_Squadron_AT = document.querySelector("#AT82");
+        Attributes_Large_Fighter_Squadron_AT.style.display = "none";
+    }
+}
+
 function Jump_Drive_Systems(Toggle){
 
     if (Toggle === true) {
         // Title
-        var Attributes_Jump = document.querySelector("#AT74");
+        var Attributes_Jump = document.querySelector("#AT85");
         Attributes_Jump.style.display = "grid";
         
-        var Attributes_Jump_Drive_Cap = document.querySelector("#AT75");
-        var Attributes_Maximum_Jump = document.querySelector("#AT77");
-        var Attributes_Jump_Drive_Fue = document.querySelector("#AT79");
-        var Attributes_Jump_Drive_Con = document.querySelector("#AT81");
-        var Attributes_Fuel_Bay = document.querySelector("#AT85");
+        var Attributes_Jump_Drive_Cap = document.querySelector("#AT86");
+        var Attributes_Maximum_Jump = document.querySelector("#AT88");
+        var Attributes_Jump_Drive_Fue = document.querySelector("#AT90");
+        var Attributes_Jump_Drive_Con = document.querySelector("#AT92");
+        var Attributes_Fuel_Bay = document.querySelector("#AT96");
         Attributes_Jump_Drive_Cap.style.display = "grid";
         Attributes_Maximum_Jump.style.display = "grid";
         Attributes_Jump_Drive_Fue.style.display = "grid";
         Attributes_Jump_Drive_Con.style.display = "grid";
         Attributes_Fuel_Bay.style.display = "grid";
-        var Attributes_Jump_Drive_Cap_AT = document.querySelector("#AT76");
-        var Attributes_Maximum_Jump_AT = document.querySelector("#AT78");
-        var Attributes_Jump_Drive_Fue_AT = document.querySelector("#AT80");
-        var Attributes_Jump_Drive_Con_AT = document.querySelector("#AT82");
-        var Attributes_Fuel_Bay_AT = document.querySelector("#AT86");
+        var Attributes_Jump_Drive_Cap_AT = document.querySelector("#AT87");
+        var Attributes_Maximum_Jump_AT = document.querySelector("#AT89");
+        var Attributes_Jump_Drive_Fue_AT = document.querySelector("#AT91");
+        var Attributes_Jump_Drive_Con_AT = document.querySelector("#AT93");
+        var Attributes_Fuel_Bay_AT = document.querySelector("#AT97");
         Attributes_Jump_Drive_Cap_AT.style.display = "grid";
         Attributes_Maximum_Jump_AT.style.display = "grid";
         Attributes_Jump_Drive_Fue_AT.style.display = "grid";
@@ -889,24 +985,24 @@ function Jump_Drive_Systems(Toggle){
     } else if (Toggle === false) {
 
         
-        var Attributes_Jump = document.querySelector("#AT74");
+        var Attributes_Jump = document.querySelector("#AT85");
         Attributes_Jump.style.display = "none";
 
-        var Attributes_Jump_Drive_Cap = document.querySelector("#AT75");
-        var Attributes_Maximum_Jump = document.querySelector("#AT77");
-        var Attributes_Jump_Drive_Fue = document.querySelector("#AT79");
-        var Attributes_Jump_Drive_Con = document.querySelector("#AT81");
-        var Attributes_Fuel_Bay = document.querySelector("#AT85");
+        var Attributes_Jump_Drive_Cap = document.querySelector("#AT86");
+        var Attributes_Maximum_Jump = document.querySelector("#AT88");
+        var Attributes_Jump_Drive_Fue = document.querySelector("#AT90");
+        var Attributes_Jump_Drive_Con = document.querySelector("#AT92");
+        var Attributes_Fuel_Bay = document.querySelector("#AT96");
         Attributes_Jump_Drive_Cap.style.display = "none";
         Attributes_Maximum_Jump.style.display = "none";
         Attributes_Jump_Drive_Fue.style.display = "none";
         Attributes_Jump_Drive_Con.style.display = "none";
         Attributes_Fuel_Bay.style.display = "none";
-       var Attributes_Jump_Drive_Cap_AT = document.querySelector("#AT76");
-        var Attributes_Maximum_Jump_AT = document.querySelector("#AT78");
-        var Attributes_Jump_Drive_Fue_AT = document.querySelector("#AT80");
-        var Attributes_Jump_Drive_Con_AT = document.querySelector("#AT82");
-        var Attributes_Fuel_Bay_AT = document.querySelector("#AT86");
+        var Attributes_Jump_Drive_Cap_AT = document.querySelector("#AT87");
+        var Attributes_Maximum_Jump_AT = document.querySelector("#AT89");
+        var Attributes_Jump_Drive_Fue_AT = document.querySelector("#AT91");
+        var Attributes_Jump_Drive_Con_AT = document.querySelector("#AT93");
+        var Attributes_Fuel_Bay_AT = document.querySelector("#AT97");
         Attributes_Jump_Drive_Cap_AT.style.display = "none";
         Attributes_Maximum_Jump_AT.style.display = "none";
         Attributes_Jump_Drive_Fue_AT.style.display = "none";
@@ -919,16 +1015,16 @@ function Jump_Portal_Activation_Cost(Toggle){
     
     if (Toggle === true) {
 
-        var Attributes_Jump_Portal = document.querySelector("#AT83");
+        var Attributes_Jump_Portal = document.querySelector("#AT94");
         Attributes_Jump_Portal.style.display = "grid";
-        var Attributes_Jump_Portal_AT = document.querySelector("#AT84");
+        var Attributes_Jump_Portal_AT = document.querySelector("#AT95");
         Attributes_Jump_Portal_AT.style.display = "grid";
 
     } else if (Toggle === false) {
         
-        var Attributes_Jump_Portal = document.querySelector("#AT83");
+        var Attributes_Jump_Portal = document.querySelector("#AT94");
         Attributes_Jump_Portal.style.display = "none";
-        var Attributes_Jump_Portal_AT = document.querySelector("#AT84");
+        var Attributes_Jump_Portal_AT = document.querySelector("#AT95");
         Attributes_Jump_Portal_AT.style.display = "none";
     }
 }
